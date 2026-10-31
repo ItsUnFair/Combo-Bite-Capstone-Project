@@ -1,0 +1,62 @@
+{
+  "format_version": 1,
+  "chain": {
+    "id": "taco_bell",
+    "name": "Taco Bell",
+    "aliases": ["TacoBell", "Taco Hell", "TB"]
+  },
+  "prices_checked": {
+    "date": "2026-10-25",
+    "store": "National-average estimates from price-tracking sites, not one store (see data/chains/SOURCES.md). Verify at your store."
+  },
+  "categories": ["taco", "burrito", "specialty", "side", "drink", "dessert"],
+
+  "items": [
+    { "id": "crunchy_taco", "name": "Crunchy Taco", "category": "taco",
+      "sizes": [ { "size": "regular", "price_cents": 199, "calories": 170 } ] },
+    { "id": "soft_taco", "name": "Soft Taco", "category": "taco",
+      "sizes": [ { "size": "regular", "price_cents": 199, "calories": 180 } ] },
+    { "id": "doritos_locos_taco", "name": "Nacho Cheese Doritos Locos Tacos", "category": "taco",
+      "sizes": [ { "size": "regular", "price_cents": 289, "calories": 170 } ] },
+    { "id": "bean_burrito", "name": "Bean Burrito", "category": "burrito",
+      "sizes": [ { "size": "regular", "price_cents": 199, "calories": 360 } ] },
+    { "id": "cheesy_bean_rice_burrito", "name": "Cheesy Bean and Rice Burrito", "category": "burrito",
+      "sizes": [ { "size": "regular", "price_cents": 149, "calories": 400 } ] },
+    { "id": "burrito_supreme", "name": "Burrito Supreme", "category": "burrito",
+      "sizes": [ { "size": "regular", "price_cents": 569, "calories": 390 } ] },
+    { "id": "crunchwrap_supreme", "name": "Crunchwrap Supreme", "category": "specialty",
+      "sizes": [ { "size": "regular", "price_cents": 689, "calories": 530 } ] },
+    { "id": "chalupa_supreme", "name": "Chalupa Supreme", "category": "specialty",
+      "sizes": [ { "size": "regular", "price_cents": 569, "calories": 350 } ] },
+    { "id": "cheesy_gordita_crunch", "name": "Cheesy Gordita Crunch", "category": "specialty",
+      "sizes": [ { "size": "regular", "price_cents": 569, "calories": 340 } ] },
+    { "id": "chicken_quesadilla", "name": "Chicken Quesadilla", "category": "specialty",
+      "sizes": [ { "size": "regular", "price_cents": 589, "calories": 490 } ] },
+    { "id": "nachos_bellgrande", "name": "Nachos BellGrande", "category": "specialty",
+      "sizes": [ { "size": "regular", "price_cents": 679, "calories": 730 } ] },
+    { "id": "cheesy_roll_up", "name": "Cheesy Roll Up", "category": "side",
+      "sizes": [ { "size": "regular", "price_cents": 139, "calories": 170 } ] },
+    { "id": "chips_nacho_cheese", "name": "Chips and Nacho Cheese Sauce", "category": "side",
+      "sizes": [ { "size": "regular", "price_cents": 299, "calories": 220 } ] },
+    { "id": "fountain_drink", "name": "Pepsi", "category": "drink",
+      "sizes": [
+        { "size": "small",  "price_cents": 299, "calories": null },
+        { "size": "medium", "price_cents": 319, "calories": 250 },
+        { "size": "large",  "price_cents": 339, "calories": null } ] },
+    { "id": "cinnamon_twists", "name": "Cinnamon Twists", "category": "dessert",
+      "sizes": [ { "size": "regular", "price_cents": 169, "calories": 170 } ] }
+  ],
+
+  "add_ons": [],
+  "combos": [],
+  "bundles": [],
+
+  "unsupported_deals": [
+    "TO ADD AT YOUR STORE: $5 Classic Luxe Cravings Box (Beefy 5-Layer Burrito, Crunchy Taco, Cinnamon Twists, medium drink). Needs the Beefy 5-Layer Burrito's price and calories; contents are from January 2025 and may have changed.",
+    "TO ADD AT YOUR STORE: Supreme Luxe Cravings Box ($7 to $7.99; Chicken Chalupa Supreme, Beefy 5-Layer Burrito, Crunchy Taco, Chips and Nacho Cheese, medium drink). Same missing item, and sources disagree on the price.",
+    "TO ADD AT YOUR STORE: combos (Crunchwrap Supreme Combo $8.99, 3 Crunchy Tacos Combo $7.99, Burrito Supreme Combo $8.49, Chalupa Supreme Combo $9.29). Sources didn't say what side each combo includes.",
+    "$9 Discovery Luxe Cravings Box: one item rotates regularly.",
+    "Build Your Own Luxe Cravings Box: slot choices weren't found, and sources disagree on the price ($7 or $7.69).",
+    "Small and large drink calories weren't found; the medium figure is for Pepsi."
+  ]
+}

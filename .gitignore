@@ -1,0 +1,28 @@
+# C++ build output
+build/
+out/
+cmake-build-*/
+CMakeUserPresets.json
+
+# IDE folders (Visual Studio, VS Code, CLion)
+.vs/
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+dist/
+
+# Secrets: the LLM API key is read from an environment variable, never committed
+.env
+*.key
+api_key*.txt
+
+# OS clutter
+.DS_Store
+Thumbs.db

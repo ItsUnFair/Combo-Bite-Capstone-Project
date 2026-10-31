@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "combobite"
+version = "0.1.0"
+description = "Find the cheapest fast food order for what you want to eat (Python front end)"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Bryan Jimenez", email = "bryanajimenez@lewisu.edu" }]
+# The LLM provider's Python SDK is added here in task 2.2, once the provider is chosen.
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+combobite = "combobite.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["frontend"]
+
+[tool.pytest.ini_options]
+testpaths = ["frontend/tests"]

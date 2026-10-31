@@ -1,0 +1,128 @@
+{
+  "format_version": 1,
+  "chain": {
+    "id": "wendys",
+    "name": "Wendy's",
+    "aliases": ["Wendys", "Wendy"]
+  },
+  "prices_checked": {
+    "date": "2026-10-25",
+    "store": "National-average estimates from price-tracking sites, not one store (see data/chains/SOURCES.md). Verify at your store."
+  },
+  "categories": ["burger", "chicken", "side", "drink", "dessert"],
+
+  "items": [
+    { "id": "daves_single", "name": "Dave's Single", "category": "burger",
+      "sizes": [ { "size": "regular", "price_cents": 649, "calories": 570 } ] },
+    { "id": "daves_double", "name": "Dave's Double", "category": "burger",
+      "sizes": [ { "size": "regular", "price_cents": 849, "calories": 810 } ] },
+    { "id": "baconator", "name": "Baconator", "category": "burger",
+      "sizes": [ { "size": "regular", "price_cents": 849, "calories": 900 } ] },
+    { "id": "jr_bacon_cheeseburger", "name": "Jr. Bacon Cheeseburger", "category": "burger",
+      "sizes": [ { "size": "regular", "price_cents": 329, "calories": 350 } ] },
+    { "id": "jr_cheeseburger", "name": "Jr. Cheeseburger", "category": "burger",
+      "sizes": [ { "size": "regular", "price_cents": 249, "calories": 270 } ] },
+    { "id": "double_stack", "name": "Double Stack", "category": "burger",
+      "sizes": [ { "size": "regular", "price_cents": 349, "calories": null } ] },
+    { "id": "spicy_chicken_sandwich", "name": "Spicy Chicken Sandwich", "category": "chicken",
+      "sizes": [ { "size": "regular", "price_cents": 679, "calories": 470 } ] },
+    { "id": "crispy_chicken_sandwich", "name": "Crispy Chicken Sandwich", "category": "chicken",
+      "sizes": [ { "size": "regular", "price_cents": 249, "calories": 340 } ] },
+    { "id": "nuggets", "name": "Chicken Nuggets", "category": "chicken",
+      "sizes": [
+        { "size": "4 pc",  "price_cents": 199, "calories": 170 },
+        { "size": "6 pc",  "price_cents": 349, "calories": 260 },
+        { "size": "10 pc", "price_cents": 549, "calories": 430 } ] },
+    { "id": "fries", "name": "Fries", "category": "side",
+      "sizes": [
+        { "size": "small",  "price_cents": 219, "calories": 210 },
+        { "size": "medium", "price_cents": 279, "calories": 320 },
+        { "size": "large",  "price_cents": 329, "calories": 430 } ] },
+    { "id": "soft_drink", "name": "Coca-Cola", "category": "drink",
+      "sizes": [
+        { "size": "small",  "price_cents": 229, "calories": 210 },
+        { "size": "medium", "price_cents": 279, "calories": 290 },
+        { "size": "large",  "price_cents": 329, "calories": 330 } ] },
+    { "id": "frosty", "name": "Chocolate Frosty", "category": "dessert",
+      "sizes": [
+        { "size": "small",  "price_cents": 229, "calories": 350 },
+        { "size": "medium", "price_cents": 279, "calories": 450 },
+        { "size": "large",  "price_cents": 319, "calories": 510 } ] }
+  ],
+
+  "add_ons": [],
+
+  "combos": [
+    {
+      "id": "daves_single_combo", "name": "Dave's Single Combo", "price_cents": 929, "base_size": "medium",
+      "slots": [
+        { "role": "main",  "choices": [ { "item": "daves_single" } ] },
+        { "role": "side",  "choices": [ { "item": "fries", "size": "medium" } ] },
+        { "role": "drink", "choices": [ { "item": "soft_drink", "size": "medium" } ] }
+      ]
+    },
+    {
+      "id": "daves_double_combo", "name": "Dave's Double Combo", "price_cents": 1109, "base_size": "medium",
+      "slots": [
+        { "role": "main",  "choices": [ { "item": "daves_double" } ] },
+        { "role": "side",  "choices": [ { "item": "fries", "size": "medium" } ] },
+        { "role": "drink", "choices": [ { "item": "soft_drink", "size": "medium" } ] }
+      ]
+    },
+    {
+      "id": "baconator_combo", "name": "Baconator Combo", "price_cents": 1149, "base_size": "medium",
+      "slots": [
+        { "role": "main",  "choices": [ { "item": "baconator" } ] },
+        { "role": "side",  "choices": [ { "item": "fries", "size": "medium" } ] },
+        { "role": "drink", "choices": [ { "item": "soft_drink", "size": "medium" } ] }
+      ]
+    },
+    {
+      "id": "spicy_chicken_combo", "name": "Spicy Chicken Sandwich Combo", "price_cents": 969, "base_size": "medium",
+      "slots": [
+        { "role": "main",  "choices": [ { "item": "spicy_chicken_sandwich" } ] },
+        { "role": "side",  "choices": [ { "item": "fries", "size": "medium" } ] },
+        { "role": "drink", "choices": [ { "item": "soft_drink", "size": "medium" } ] }
+      ]
+    },
+    {
+      "id": "nuggets_10_combo", "name": "10 pc Nuggets Combo", "price_cents": 849, "base_size": "medium",
+      "slots": [
+        { "role": "main",  "choices": [ { "item": "nuggets", "size": "10 pc" } ] },
+        { "role": "side",  "choices": [ { "item": "fries", "size": "medium" } ] },
+        { "role": "drink", "choices": [ { "item": "soft_drink", "size": "medium" } ] }
+      ]
+    }
+  ],
+
+  "bundles": [
+    {
+      "id": "biggie_bag_6", "name": "$6 Biggie Bag", "price_cents": 600,
+      "slots": [
+        { "role": "main",    "choices": [ { "item": "double_stack" }, { "item": "crispy_chicken_sandwich" } ] },
+        { "role": "nuggets", "choices": [ { "item": "nuggets", "size": "4 pc" } ] },
+        { "role": "side",    "choices": [ { "item": "fries", "size": "small" } ] },
+        { "role": "drink",   "choices": [ { "item": "soft_drink", "size": "small" } ] }
+      ]
+    },
+    {
+      "id": "biggie_bites_4", "name": "$4 Biggie Bites", "price_cents": 400,
+      "slots": [
+        { "role": "first",  "choices": [
+            { "item": "crispy_chicken_sandwich" }, { "item": "jr_cheeseburger" },
+            { "item": "jr_bacon_cheeseburger" }, { "item": "nuggets", "size": "4 pc" } ] },
+        { "role": "second", "choices": [
+            { "item": "nuggets", "size": "4 pc" }, { "item": "soft_drink", "size": "small" } ] }
+      ]
+    }
+  ],
+
+  "unsupported_deals": [
+    "Large combo upgrade: the charge wasn't found; add an upsize to each combo at your store.",
+    "$8 Biggie Bundle (two sandwiches, Jr. fries, small drink): Jr. fries price wasn't found.",
+    "$4 Biggie Bites also allows Jr. fries in either slot; left out because the Jr. fries price wasn't found.",
+    "Biggie Bag tiers and sandwich choices vary by market ($5, $6 and $7 bags); only the $6 bag is included.",
+    "Breakfast Biggie Bundles 2 for $3: breakfast hours only.",
+    "$7.99 Dave's Single Combo: limited-time price; the regular combo price is used instead."
+  ]
+}

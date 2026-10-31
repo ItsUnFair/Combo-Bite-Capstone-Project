@@ -1,0 +1,120 @@
+{
+  "format_version": 1,
+  "chain": {
+    "id": "mcdonalds",
+    "name": "McDonald's",
+    "aliases": ["McDonalds", "Mcdonald's", "McD", "McD's", "Mickey D's", "Micky D's", "Mickey Ds"]
+  },
+  "prices_checked": {
+    "date": "2026-10-25",
+    "store": "National-average estimates from price-tracking sites, not one store (see data/chains/SOURCES.md). Verify at your store."
+  },
+  "categories": ["burger", "chicken", "side", "drink", "dessert"],
+
+  "items": [
+    { "id": "big_mac", "name": "Big Mac", "category": "burger",
+      "sizes": [ { "size": "regular", "price_cents": 599, "calories": 580 } ] },
+    { "id": "quarter_pounder_cheese", "name": "Quarter Pounder with Cheese", "category": "burger",
+      "sizes": [ { "size": "regular", "price_cents": 649, "calories": 520 } ] },
+    { "id": "mcdouble", "name": "McDouble", "category": "burger",
+      "sizes": [ { "size": "regular", "price_cents": 399, "calories": 390 } ] },
+    { "id": "cheeseburger", "name": "Cheeseburger", "category": "burger",
+      "sizes": [ { "size": "regular", "price_cents": 249, "calories": 300 } ] },
+    { "id": "hamburger", "name": "Hamburger", "category": "burger",
+      "sizes": [ { "size": "regular", "price_cents": 239, "calories": 250 } ] },
+    { "id": "mcchicken", "name": "McChicken", "category": "chicken",
+      "sizes": [ { "size": "regular", "price_cents": 349, "calories": 390 } ] },
+    { "id": "mccrispy", "name": "McCrispy", "category": "chicken",
+      "sizes": [ { "size": "regular", "price_cents": 569, "calories": 470 } ] },
+    { "id": "mcnuggets", "name": "Chicken McNuggets", "category": "chicken",
+      "sizes": [
+        { "size": "4 pc",  "price_cents": 259, "calories": 170 },
+        { "size": "6 pc",  "price_cents": 429, "calories": 250 },
+        { "size": "10 pc", "price_cents": 619, "calories": 410 } ] },
+    { "id": "fries", "name": "World Famous Fries", "category": "side",
+      "sizes": [
+        { "size": "small",  "price_cents": 279, "calories": 230 },
+        { "size": "medium", "price_cents": 399, "calories": 320 },
+        { "size": "large",  "price_cents": 449, "calories": 480 } ] },
+    { "id": "apple_slices", "name": "Apple Slices", "category": "side",
+      "sizes": [ { "size": "regular", "price_cents": 139, "calories": 15 } ] },
+    { "id": "coca_cola", "name": "Coca-Cola", "category": "drink",
+      "sizes": [
+        { "size": "small",  "price_cents": 179, "calories": 200 },
+        { "size": "medium", "price_cents": 219, "calories": 270 },
+        { "size": "large",  "price_cents": 259, "calories": 380 } ] },
+    { "id": "apple_pie", "name": "Baked Apple Pie", "category": "dessert",
+      "sizes": [ { "size": "regular", "price_cents": 219, "calories": 230 } ] }
+  ],
+
+  "add_ons": [],
+
+  "combos": [
+    {
+      "id": "big_mac_meal", "name": "Big Mac Meal", "price_cents": 1049, "base_size": "medium",
+      "slots": [
+        { "role": "main",  "choices": [ { "item": "big_mac" } ] },
+        { "role": "side",  "choices": [ { "item": "fries", "size": "medium" } ] },
+        { "role": "drink", "choices": [ { "item": "coca_cola", "size": "medium" } ] }
+      ],
+      "upsizes": [ { "name": "large", "extra_cents": 81, "resize": { "side": "large", "drink": "large" } } ]
+    },
+    {
+      "id": "quarter_pounder_cheese_meal", "name": "Quarter Pounder with Cheese Meal", "price_cents": 1119, "base_size": "medium",
+      "slots": [
+        { "role": "main",  "choices": [ { "item": "quarter_pounder_cheese" } ] },
+        { "role": "side",  "choices": [ { "item": "fries", "size": "medium" } ] },
+        { "role": "drink", "choices": [ { "item": "coca_cola", "size": "medium" } ] }
+      ],
+      "upsizes": [ { "name": "large", "extra_cents": 81, "resize": { "side": "large", "drink": "large" } } ]
+    },
+    {
+      "id": "mccrispy_meal", "name": "McCrispy Meal", "price_cents": 999, "base_size": "medium",
+      "slots": [
+        { "role": "main",  "choices": [ { "item": "mccrispy" } ] },
+        { "role": "side",  "choices": [ { "item": "fries", "size": "medium" } ] },
+        { "role": "drink", "choices": [ { "item": "coca_cola", "size": "medium" } ] }
+      ],
+      "upsizes": [ { "name": "large", "extra_cents": 81, "resize": { "side": "large", "drink": "large" } } ]
+    },
+    {
+      "id": "mcnuggets_10_meal", "name": "10 pc Chicken McNuggets Meal", "price_cents": 1049, "base_size": "medium",
+      "slots": [
+        { "role": "main",  "choices": [ { "item": "mcnuggets", "size": "10 pc" } ] },
+        { "role": "side",  "choices": [ { "item": "fries", "size": "medium" } ] },
+        { "role": "drink", "choices": [ { "item": "coca_cola", "size": "medium" } ] }
+      ],
+      "upsizes": [ { "name": "large", "extra_cents": 81, "resize": { "side": "large", "drink": "large" } } ]
+    }
+  ],
+
+  "bundles": [
+    {
+      "id": "five_dollar_meal_deal", "name": "$5 Meal Deal", "price_cents": 500,
+      "slots": [
+        { "role": "main",    "choices": [ { "item": "mcdouble" }, { "item": "mcchicken" } ] },
+        { "role": "nuggets", "choices": [ { "item": "mcnuggets", "size": "4 pc" } ] },
+        { "role": "side",    "choices": [ { "item": "fries", "size": "small" } ] },
+        { "role": "drink",   "choices": [ { "item": "coca_cola", "size": "small" } ] }
+      ]
+    },
+    {
+      "id": "two_for_six", "name": "2 for $6 Mix & Match", "price_cents": 600,
+      "slots": [
+        { "role": "pick", "count": 2, "choices": [
+            { "item": "big_mac" },
+            { "item": "quarter_pounder_cheese" },
+            { "item": "mcnuggets", "size": "10 pc" },
+            { "item": "mcchicken" },
+            { "item": "mccrispy" } ] }
+      ]
+    }
+  ],
+
+  "unsupported_deals": [
+    "Buy One, Add One for $1 (McValue): app-only and the qualifying items rotate.",
+    "$8 Big Mac Meal: limited-time price at participating stores; the regular meal price is used instead.",
+    "Meal side and drink swaps (other drinks, apple slices): swap charges weren't found; add them at your store.",
+    "Add-ons (extra cheese, bacon): prices weren't found; add them at your store."
+  ]
+}

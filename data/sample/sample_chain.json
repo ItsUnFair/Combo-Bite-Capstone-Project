@@ -1,0 +1,124 @@
+{
+  "format_version": 1,
+  "chain": {
+    "id": "sample_burger",
+    "name": "Sample Burger Co.",
+    "aliases": ["Sample Burger", "SBC"]
+  },
+  "prices_checked": {
+    "date": "2026-10-30",
+    "store": "EXAMPLE ONLY: made-up chain and prices to show the format"
+  },
+  "categories": ["burger", "chicken", "side", "drink", "dessert"],
+
+  "items": [
+    { "id": "classic_burger", "name": "Classic Burger", "category": "burger",
+      "sizes": [ { "size": "regular", "price_cents": 449, "calories": 540 } ] },
+    { "id": "cheeseburger", "name": "Cheeseburger", "category": "burger",
+      "sizes": [ { "size": "regular", "price_cents": 249, "calories": 300 } ] },
+    { "id": "double_cheeseburger", "name": "Double Cheeseburger", "category": "burger",
+      "sizes": [ { "size": "regular", "price_cents": 349, "calories": 450 } ] },
+    { "id": "chicken_sandwich", "name": "Crispy Chicken Sandwich", "category": "chicken",
+      "sizes": [ { "size": "regular", "price_cents": 499, "calories": 470 } ] },
+    { "id": "nuggets", "name": "Chicken Nuggets", "category": "chicken",
+      "sizes": [
+        { "size": "4 pc",  "price_cents": 229, "calories": 170 },
+        { "size": "6 pc",  "price_cents": 329, "calories": 250 },
+        { "size": "10 pc", "price_cents": 499, "calories": 420 } ] },
+    { "id": "fries", "name": "Fries", "category": "side",
+      "sizes": [
+        { "size": "small",  "price_cents": 199, "calories": 230 },
+        { "size": "medium", "price_cents": 309, "calories": 320 },
+        { "size": "large",  "price_cents": 379, "calories": 480 } ] },
+    { "id": "apple_slices", "name": "Apple Slices", "category": "side",
+      "sizes": [ { "size": "regular", "price_cents": 129, "calories": 15 } ] },
+    { "id": "side_salad", "name": "Side Salad", "category": "side",
+      "sizes": [ { "size": "regular", "price_cents": 249, "calories": 60 } ] },
+    { "id": "soft_drink", "name": "Soft Drink", "category": "drink",
+      "sizes": [
+        { "size": "small",  "price_cents": 129, "calories": 150 },
+        { "size": "medium", "price_cents": 179, "calories": 210 },
+        { "size": "large",  "price_cents": 219, "calories": 290 } ] },
+    { "id": "cookie", "name": "Chocolate Chip Cookie", "category": "dessert",
+      "sizes": [ { "size": "regular", "price_cents": 119, "calories": null } ] }
+  ],
+
+  "add_ons": [
+    { "id": "add_cheese", "name": "Add Cheese", "price_cents": 60, "calories": 50,
+      "applies_to_categories": ["burger"], "max_per_item": 2 },
+    { "id": "add_bacon", "name": "Add Bacon", "price_cents": 129, "calories": 90,
+      "applies_to_categories": ["burger"],
+      "applies_to_items": ["chicken_sandwich"] }
+  ],
+
+  "combos": [
+    {
+      "id": "classic_burger_combo",
+      "name": "Classic Burger Combo",
+      "price_cents": 849,
+      "base_size": "medium",
+      "slots": [
+        { "role": "main",  "choices": [ { "item": "classic_burger" } ] },
+        { "role": "side",  "choices": [
+            { "item": "fries", "size": "medium" },
+            { "item": "apple_slices" },
+            { "item": "side_salad", "extra_cents": 100 } ] },
+        { "role": "drink", "choices": [ { "item": "soft_drink", "size": "medium" } ] }
+      ],
+      "upsizes": [
+        { "name": "large", "extra_cents": 120,
+          "resize": { "side": "large", "drink": "large" } }
+      ]
+    },
+    {
+      "id": "chicken_combo",
+      "name": "Chicken Combo",
+      "price_cents": 899,
+      "base_size": "medium",
+      "slots": [
+        { "role": "main",  "choices": [
+            { "item": "chicken_sandwich" },
+            { "item": "nuggets", "size": "10 pc" } ] },
+        { "role": "side",  "choices": [
+            { "item": "fries", "size": "medium" },
+            { "item": "apple_slices" } ] },
+        { "role": "drink", "choices": [ { "item": "soft_drink", "size": "medium" } ] }
+      ],
+      "upsizes": [
+        { "name": "large", "extra_cents": 120,
+          "resize": { "side": "large", "drink": "large" } }
+      ]
+    }
+  ],
+
+  "bundles": [
+    {
+      "id": "two_for_six",
+      "name": "2 for $6 Mix & Match",
+      "price_cents": 600,
+      "slots": [
+        { "role": "pick", "count": 2, "choices": [
+            { "item": "classic_burger" },
+            { "item": "chicken_sandwich" },
+            { "item": "nuggets", "size": "6 pc" } ] }
+      ]
+    },
+    {
+      "id": "five_dollar_box",
+      "name": "$5 Snack Box",
+      "price_cents": 500,
+      "slots": [
+        { "role": "main",    "choices": [
+            { "item": "cheeseburger" },
+            { "item": "double_cheeseburger", "extra_cents": 100 } ] },
+        { "role": "nuggets", "choices": [ { "item": "nuggets", "size": "4 pc" } ] },
+        { "role": "side",    "choices": [ { "item": "fries", "size": "small" } ] },
+        { "role": "drink",   "choices": [ { "item": "soft_drink", "size": "small" } ] }
+      ]
+    }
+  ],
+
+  "unsupported_deals": [
+    "App-only Free Fries Friday: needs an app account and a minimum purchase, so it's left out."
+  ]
+}

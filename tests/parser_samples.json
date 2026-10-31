@@ -1,0 +1,234 @@
+{
+  "about": [
+    "Sample requests for the parser tests (task 9.1; run by --test-parser in task 9.2).",
+    "Each sample is sent through the LLM call and the reply checks, and the result is compared field by field with 'expect'.",
+    "'session_chain' is the chain already picked earlier in the session (null if none). When a request names no chain, the expected target uses the session chain.",
+    "'expect' is either {\"target\": ...} in the target format (docs/target-format.md; left-out fields count as null or empty), or {\"error\": kind, ...} for requests ComboBite should refuse or ask about.",
+    "Error kinds: not_food, unknown_chain, multiple_chains, contradiction, item_not_on_menu.",
+    "'also_accept' lists other targets that are fair readings of the same request; matching any of them counts as a pass.",
+    "'unsupported' phrases match when the reply's phrase contains the expected words, ignoring case, since the LLM may word them slightly differently."
+  ],
+
+  "samples": [
+    {
+      "id": "p01", "kind": "plain",
+      "request": "under $10, at least 600 calories at McDonald's",
+      "session_chain": null,
+      "expect": { "target": { "format_version": 1, "chain": "mcdonalds", "max_price_cents": 1000, "min_calories": 600 } }
+    },
+    {
+      "id": "p02", "kind": "plain",
+      "request": "cheapest burger and a drink at Wendy's",
+      "session_chain": null,
+      "expect": { "target": { "format_version": 1, "chain": "wendys",
+        "items": [ { "category": "burger" }, { "category": "drink" } ] } }
+    },
+    {
+      "id": "p03", "kind": "plain",
+      "request": "two cheeseburgers and a large fries at mcdonalds",
+      "session_chain": null,
+      "expect": { "target": { "format_version": 1, "chain": "mcdonalds",
+        "items": [ { "item": "cheeseburger", "quantity": 2 }, { "item": "fries", "size": "large" } ] } }
+    },
+    {
+      "id": "p04", "kind": "plain",
+      "request": "Big Mac and a large Coke, nothing over 1100 calories",
+      "session_chain": "mcdonalds",
+      "expect": { "target": { "format_version": 1, "chain": "mcdonalds", "max_calories": 1100,
+        "items": [ { "item": "big_mac" }, { "item": "coca_cola", "size": "large" } ] } }
+    },
+    {
+      "id": "p05", "kind": "plain",
+      "request": "a large Frosty and 10 piece nuggets from wendys",
+      "session_chain": null,
+      "expect": { "target": { "format_version": 1, "chain": "wendys",
+        "items": [ { "item": "frosty", "size": "large" }, { "item": "nuggets", "size": "10 pc" } ] } }
+    },
+    {
+      "id": "p06", "kind": "plain",
+      "request": "cheapest way to get at least 1200 calories at Burger King",
+      "session_chain": null,
+      "expect": { "target": { "format_version": 1, "chain": "burger_king", "min_calories": 1200 } }
+    },
+
+    {
+      "id": "s01", "kind": "slang",
+      "request": "what can i get for ten bucks at taco bell",
+      "session_chain": null,
+      "expect": { "target": { "format_version": 1, "chain": "taco_bell", "goal": "most_calories", "max_price_cents": 1000 } }
+    },
+    {
+      "id": "s02", "kind": "slang",
+      "request": "Mickey D's McCrispy and some apple slices",
+      "session_chain": null,
+      "expect": { "target": { "format_version": 1, "chain": "mcdonalds",
+        "items": [ { "item": "mccrispy" }, { "item": "apple_slices" } ] } }
+    },
+    {
+      "id": "s03", "kind": "slang",
+      "request": "most food i can get for 7 dollars at wendys",
+      "session_chain": null,
+      "expect": { "target": { "format_version": 1, "chain": "wendys", "goal": "most_calories", "max_price_cents": 700 } }
+    },
+    {
+      "id": "s04", "kind": "slang",
+      "request": "a whopper meal from BK",
+      "session_chain": null,
+      "note": "A 'meal' means the item plus a side and a drink; the optimizer decides whether the combo is cheapest.",
+      "expect": { "target": { "format_version": 1, "chain": "burger_king",
+        "items": [ { "item": "whopper" }, { "category": "side" }, { "category": "drink" } ] } },
+      "also_accept": [
+        { "format_version": 1, "chain": "burger_king",
+          "items": [ { "item": "whopper" }, { "item": "fries" }, { "category": "drink" } ] },
+        { "format_version": 1, "chain": "burger_king",
+          "items": [ { "item": "whopper" }, { "item": "fries" }, { "item": "coca_cola" } ] }
+      ]
+    },
+
+    {
+      "id": "t01", "kind": "typo",
+      "request": "a chesseburger and medium fry from mcdonalds",
+      "session_chain": null,
+      "expect": { "target": { "format_version": 1, "chain": "mcdonalds",
+        "items": [ { "item": "cheeseburger" }, { "item": "fries", "size": "medium" } ] } }
+    },
+    {
+      "id": "t02", "kind": "typo",
+      "request": "crunchwarp supreme and cinamon twists at taco bel",
+      "session_chain": null,
+      "expect": { "target": { "format_version": 1, "chain": "taco_bell",
+        "items": [ { "item": "crunchwrap_supreme" }, { "item": "cinnamon_twists" } ] } }
+    },
+    {
+      "id": "t03", "kind": "typo",
+      "request": "bacanator and a medum fries",
+      "session_chain": "wendys",
+      "expect": { "target": { "format_version": 1, "chain": "wendys",
+        "items": [ { "item": "baconator" }, { "item": "fries", "size": "medium" } ] } }
+    },
+
+    {
+      "id": "q01", "kind": "quantity",
+      "request": "burgers and drinks for both of us at BK",
+      "session_chain": null,
+      "expect": { "target": { "format_version": 1, "chain": "burger_king",
+        "items": [ { "category": "burger", "quantity": 2 }, { "category": "drink", "quantity": 2 } ] } }
+    },
+    {
+      "id": "q02", "kind": "quantity",
+      "request": "3 crunchy tacos and a baja blast",
+      "session_chain": "taco_bell",
+      "expect": { "target": { "format_version": 1, "chain": "taco_bell",
+        "items": [ { "item": "crunchy_taco", "quantity": 3 }, { "category": "drink" } ] } },
+      "also_accept": [
+        { "format_version": 1, "chain": "taco_bell",
+          "items": [ { "item": "crunchy_taco", "quantity": 3 }, { "item": "fountain_drink" } ] }
+      ]
+    },
+    {
+      "id": "q03", "kind": "quantity",
+      "request": "a dozen nuggets... ok fine, two 6 piece nuggets and a small fry",
+      "session_chain": "mcdonalds",
+      "note": "The customer corrects themselves; the last version counts.",
+      "expect": { "target": { "format_version": 1, "chain": "mcdonalds",
+        "items": [ { "item": "mcnuggets", "quantity": 2, "size": "6 pc" }, { "item": "fries", "size": "small" } ] } }
+    },
+    {
+      "id": "q04", "kind": "quantity",
+      "request": "two whopper jrs and two medium cokes under $12",
+      "session_chain": "burger_king",
+      "expect": { "target": { "format_version": 1, "chain": "burger_king", "max_price_cents": 1200,
+        "items": [ { "item": "whopper_jr", "quantity": 2 }, { "item": "coca_cola", "quantity": 2, "size": "medium" } ] } }
+    },
+
+    {
+      "id": "c01", "kind": "calories",
+      "request": "nothing over 500 cal at taco bell, i want a burrito",
+      "session_chain": null,
+      "expect": { "target": { "format_version": 1, "chain": "taco_bell", "max_calories": 500,
+        "items": [ { "category": "burrito" } ] } }
+    },
+    {
+      "id": "c02", "kind": "calories",
+      "request": "a chicken sandwich and fries, somewhere between 700 and 900 calories",
+      "session_chain": "wendys",
+      "expect": { "target": { "format_version": 1, "chain": "wendys", "min_calories": 700, "max_calories": 900,
+        "items": [ { "category": "chicken" }, { "item": "fries" } ] } }
+    },
+    {
+      "id": "c03", "kind": "calories",
+      "request": "1k calories minimum, cheap as possible, mcdonalds",
+      "session_chain": null,
+      "expect": { "target": { "format_version": 1, "chain": "mcdonalds", "min_calories": 1000 } }
+    },
+
+    {
+      "id": "f01", "kind": "flag",
+      "request": "a vegetarian burrito at taco bell",
+      "session_chain": null,
+      "expect": { "target": { "format_version": 1, "chain": "taco_bell",
+        "items": [ { "category": "burrito" } ], "unsupported": ["vegetarian"] } }
+    },
+    {
+      "id": "f02", "kind": "flag",
+      "request": "whopper with no pickles and a medium coke",
+      "session_chain": "burger_king",
+      "expect": { "target": { "format_version": 1, "chain": "burger_king",
+        "items": [ { "item": "whopper" }, { "item": "coca_cola", "size": "medium" } ], "unsupported": ["no pickles"] } }
+    },
+    {
+      "id": "f03", "kind": "flag",
+      "request": "healthy lunch under $9 at McDonald's",
+      "session_chain": null,
+      "note": "'healthy' is ignored, which leaves a budget-only request, so the goal becomes most calories. The summary line should make that obvious.",
+      "expect": { "target": { "format_version": 1, "chain": "mcdonalds", "goal": "most_calories", "max_price_cents": 900,
+        "unsupported": ["healthy"] } }
+    },
+    {
+      "id": "f04", "kind": "flag",
+      "request": "baconator with extra cheese",
+      "session_chain": "wendys",
+      "note": "Wendy's data has no add-ons yet, so extra cheese can't be ordered and is flagged.",
+      "expect": { "target": { "format_version": 1, "chain": "wendys",
+        "items": [ { "item": "baconator" } ], "unsupported": ["extra cheese"] } }
+    },
+    {
+      "id": "f05", "kind": "flag",
+      "request": "cheap meal under five dollars",
+      "session_chain": null,
+      "note": "No chain named and none picked yet, so chain stays null and the front end asks.",
+      "expect": { "target": { "format_version": 1, "chain": null, "goal": "most_calories", "max_price_cents": 500 } }
+    },
+
+    {
+      "id": "e01", "kind": "error",
+      "request": "a Big Mac at Wendy's",
+      "session_chain": null,
+      "expect": { "error": "item_not_on_menu", "chain": "wendys", "item_text": "Big Mac", "fallback_category": "burger" }
+    },
+    {
+      "id": "e02", "kind": "error",
+      "request": "spicy chicken sandwich from chick-fil-a",
+      "session_chain": null,
+      "expect": { "error": "unknown_chain", "chain_text": "chick-fil-a" }
+    },
+    {
+      "id": "e03", "kind": "error",
+      "request": "compare mcdonalds and wendys for a cheap burger",
+      "session_chain": null,
+      "expect": { "error": "multiple_chains", "chains": ["mcdonalds", "wendys"] }
+    },
+    {
+      "id": "e04", "kind": "error",
+      "request": "at least 800 calories but under 600 at BK",
+      "session_chain": null,
+      "expect": { "error": "contradiction" }
+    },
+    {
+      "id": "e05", "kind": "error",
+      "request": "what's the weather tomorrow?",
+      "session_chain": null,
+      "expect": { "error": "not_food" }
+    }
+  ]
+}

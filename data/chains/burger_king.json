@@ -1,0 +1,372 @@
+{
+  "format_version": 1,
+  "chain": {
+    "id": "burger_king",
+    "name": "Burger King",
+    "aliases": [
+      "BK",
+      "Burger King's",
+      "Burgerking",
+      "BurgerKing"
+    ]
+  },
+  "prices_checked": {
+    "date": "2026-10-25",
+    "store": "National-average estimates from price-tracking sites, not one store (see data/chains/SOURCES.md). Verify at your store."
+  },
+  "categories": [
+    "burger",
+    "chicken",
+    "side",
+    "drink"
+  ],
+  "items": [
+    {
+      "id": "whopper",
+      "name": "Whopper",
+      "category": "burger",
+      "sizes": [
+        {
+          "size": "regular",
+          "price_cents": 759,
+          "calories": 670
+        }
+      ]
+    },
+    {
+      "id": "double_whopper",
+      "name": "Double Whopper",
+      "category": "burger",
+      "sizes": [
+        {
+          "size": "regular",
+          "price_cents": 1109,
+          "calories": 900
+        }
+      ]
+    },
+    {
+      "id": "whopper_jr",
+      "name": "Whopper Jr.",
+      "category": "burger",
+      "sizes": [
+        {
+          "size": "regular",
+          "price_cents": 449,
+          "calories": 330
+        }
+      ]
+    },
+    {
+      "id": "cheeseburger",
+      "name": "Cheeseburger",
+      "category": "burger",
+      "sizes": [
+        {
+          "size": "regular",
+          "price_cents": 339,
+          "calories": 300
+        }
+      ]
+    },
+    {
+      "id": "bacon_king",
+      "name": "Bacon King",
+      "category": "burger",
+      "sizes": [
+        {
+          "size": "regular",
+          "price_cents": 1249,
+          "calories": 1150
+        }
+      ]
+    },
+    {
+      "id": "original_chicken_sandwich",
+      "name": "Original Chicken Sandwich",
+      "category": "chicken",
+      "sizes": [
+        {
+          "size": "regular",
+          "price_cents": 709,
+          "calories": 660
+        }
+      ]
+    },
+    {
+      "id": "royal_crispy_chicken",
+      "name": "Royal Crispy Chicken",
+      "category": "chicken",
+      "sizes": [
+        {
+          "size": "regular",
+          "price_cents": 739,
+          "calories": 630
+        }
+      ]
+    },
+    {
+      "id": "nuggets",
+      "name": "Crown Nuggets",
+      "category": "chicken",
+      "sizes": [
+        {
+          "size": "4 pc",
+          "price_cents": 259,
+          "calories": 170
+        },
+        {
+          "size": "8 pc",
+          "price_cents": 459,
+          "calories": 340
+        }
+      ]
+    },
+    {
+      "id": "fries",
+      "name": "Classic Fries",
+      "category": "side",
+      "sizes": [
+        {
+          "size": "medium",
+          "price_cents": 429,
+          "calories": 380
+        }
+      ]
+    },
+    {
+      "id": "coca_cola",
+      "name": "Coca-Cola",
+      "category": "drink",
+      "sizes": [
+        {
+          "size": "medium",
+          "price_cents": 369,
+          "calories": 330
+        },
+        {
+          "size": "large",
+          "price_cents": 419,
+          "calories": 430
+        }
+      ]
+    }
+  ],
+  "add_ons": [],
+  "combos": [
+    {
+      "id": "whopper_meal",
+      "name": "Whopper Meal",
+      "price_cents": 1149,
+      "base_size": "medium",
+      "slots": [
+        {
+          "role": "main",
+          "choices": [
+            {
+              "item": "whopper"
+            }
+          ]
+        },
+        {
+          "role": "side",
+          "choices": [
+            {
+              "item": "fries",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "role": "drink",
+          "choices": [
+            {
+              "item": "coca_cola",
+              "size": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "double_whopper_meal",
+      "name": "Double Whopper Meal",
+      "price_cents": 1499,
+      "base_size": "medium",
+      "slots": [
+        {
+          "role": "main",
+          "choices": [
+            {
+              "item": "double_whopper"
+            }
+          ]
+        },
+        {
+          "role": "side",
+          "choices": [
+            {
+              "item": "fries",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "role": "drink",
+          "choices": [
+            {
+              "item": "coca_cola",
+              "size": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bacon_king_meal",
+      "name": "Bacon King Meal",
+      "price_cents": 1639,
+      "base_size": "medium",
+      "slots": [
+        {
+          "role": "main",
+          "choices": [
+            {
+              "item": "bacon_king"
+            }
+          ]
+        },
+        {
+          "role": "side",
+          "choices": [
+            {
+              "item": "fries",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "role": "drink",
+          "choices": [
+            {
+              "item": "coca_cola",
+              "size": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "original_chicken_meal",
+      "name": "Original Chicken Sandwich Meal",
+      "price_cents": 1099,
+      "base_size": "medium",
+      "slots": [
+        {
+          "role": "main",
+          "choices": [
+            {
+              "item": "original_chicken_sandwich"
+            }
+          ]
+        },
+        {
+          "role": "side",
+          "choices": [
+            {
+              "item": "fries",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "role": "drink",
+          "choices": [
+            {
+              "item": "coca_cola",
+              "size": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "royal_crispy_meal",
+      "name": "Royal Crispy Chicken Meal",
+      "price_cents": 1129,
+      "base_size": "medium",
+      "slots": [
+        {
+          "role": "main",
+          "choices": [
+            {
+              "item": "royal_crispy_chicken"
+            }
+          ]
+        },
+        {
+          "role": "side",
+          "choices": [
+            {
+              "item": "fries",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "role": "drink",
+          "choices": [
+            {
+              "item": "coca_cola",
+              "size": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nuggets_8_meal",
+      "name": "8 pc Nuggets Meal",
+      "price_cents": 829,
+      "base_size": "medium",
+      "slots": [
+        {
+          "role": "main",
+          "choices": [
+            {
+              "item": "nuggets",
+              "size": "8 pc"
+            }
+          ]
+        },
+        {
+          "role": "side",
+          "choices": [
+            {
+              "item": "fries",
+              "size": "medium"
+            }
+          ]
+        },
+        {
+          "role": "drink",
+          "choices": [
+            {
+              "item": "coca_cola",
+              "size": "medium"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "bundles": [],
+  "unsupported_deals": [
+    "TO ADD AT YOUR STORE: $5 Your Way Meal (Whopper Jr., Chicken Jr. or Bacon Cheeseburger, 4 pc nuggets, small fries, small drink). Needs small fries and small drink prices from the same source as the rest; some stores charge $6.",
+    "Small and large fries and a small drink: prices weren't found in the main source; add them at your store.",
+    "Large meal upgrade: the charge wasn't found; add an upsize to each meal at your store.",
+    "2 for $X Mix & Match, $5 Duos and $7 Trio: the price and eligible items vary by store and promotion.",
+    "2 for $10 Whopper and $7 Whopper Jr. Duo: often app-only; check whether your store honors them at the counter.",
+    "Add-ons (extra cheese, bacon): prices weren't found; add them at your store."
+  ]
+}

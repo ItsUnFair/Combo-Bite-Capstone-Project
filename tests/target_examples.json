@@ -1,0 +1,102 @@
+{
+  "about": "Shared examples for the target format (docs/target-format.md). Both the C++ test (engine/tests/test_target_format.cpp) and the Python test (frontend/tests/test_target.py) read this file. For each valid example, reading 'target' and writing it back must give 'canonical' (or 'target' itself when there's no 'canonical'). Each invalid example must be rejected.",
+
+  "valid": [
+    {
+      "name": "budget and calorie minimum",
+      "request": "under $10, at least 600 calories at McDonald's",
+      "target": {
+        "format_version": 1, "chain": "mcdonalds", "goal": "cheapest",
+        "max_price_cents": 1000, "min_calories": 600, "max_calories": null,
+        "items": [], "unsupported": []
+      }
+    },
+    {
+      "name": "category items",
+      "request": "cheapest burger and a drink",
+      "target": {
+        "format_version": 1, "chain": null, "goal": "cheapest",
+        "max_price_cents": null, "min_calories": null, "max_calories": null,
+        "items": [
+          { "category": "burger", "quantity": 1, "size": null, "add_ons": [] },
+          { "category": "drink", "quantity": 1, "size": null, "add_ons": [] }
+        ],
+        "unsupported": []
+      }
+    },
+    {
+      "name": "exact items with quantity and size",
+      "request": "two cheeseburgers and a large fries",
+      "target": {
+        "format_version": 1, "chain": "mcdonalds", "goal": "cheapest",
+        "max_price_cents": null, "min_calories": null, "max_calories": null,
+        "items": [
+          { "item": "cheeseburger", "quantity": 2, "size": null, "add_ons": [] },
+          { "item": "fries", "quantity": 1, "size": "large", "add_ons": [] }
+        ],
+        "unsupported": []
+      }
+    },
+    {
+      "name": "budget only",
+      "request": "what can I get for $6 at Wendy's?",
+      "target": {
+        "format_version": 1, "chain": "wendys", "goal": "most_calories",
+        "max_price_cents": 600, "min_calories": null, "max_calories": null,
+        "items": [], "unsupported": []
+      }
+    },
+    {
+      "name": "unsupported part kept",
+      "request": "vegetarian burrito under 500 calories at Taco Bell",
+      "target": {
+        "format_version": 1, "chain": "taco_bell", "goal": "cheapest",
+        "max_price_cents": null, "min_calories": null, "max_calories": 500,
+        "items": [ { "category": "burrito", "quantity": 1, "size": null, "add_ons": [] } ],
+        "unsupported": ["vegetarian"]
+      }
+    },
+    {
+      "name": "add-ons",
+      "request": "a Whopper with extra bacon",
+      "target": {
+        "format_version": 1, "chain": "burger_king", "goal": "cheapest",
+        "max_price_cents": null, "min_calories": null, "max_calories": null,
+        "items": [ { "item": "whopper", "quantity": 1, "size": null, "add_ons": ["add_bacon"] } ],
+        "unsupported": []
+      }
+    },
+    {
+      "name": "left-out fields fill in",
+      "request": "a Big Mac",
+      "target": {
+        "format_version": 1, "chain": "mcdonalds",
+        "items": [ { "item": "big_mac" } ]
+      },
+      "canonical": {
+        "format_version": 1, "chain": "mcdonalds", "goal": "cheapest",
+        "max_price_cents": null, "min_calories": null, "max_calories": null,
+        "items": [ { "item": "big_mac", "quantity": 1, "size": null, "add_ons": [] } ],
+        "unsupported": []
+      }
+    }
+  ],
+
+  "invalid": [
+    { "name": "missing format_version", "target": { "chain": "mcdonalds" } },
+    { "name": "wrong format_version", "target": { "format_version": 2 } },
+    { "name": "format_version as text", "target": { "format_version": "1" } },
+    { "name": "not an object", "target": [1, 2, 3] },
+    { "name": "unknown goal", "target": { "format_version": 1, "goal": "fastest" } },
+    { "name": "price in dollars", "target": { "format_version": 1, "max_price_cents": 9.99 } },
+    { "name": "price as text", "target": { "format_version": 1, "max_price_cents": "$10" } },
+    { "name": "empty chain name", "target": { "format_version": 1, "chain": "" } },
+    { "name": "items not a list", "target": { "format_version": 1, "items": { "item": "big_mac" } } },
+    { "name": "item and category both", "target": { "format_version": 1, "items": [ { "item": "big_mac", "category": "burger" } ] } },
+    { "name": "neither item nor category", "target": { "format_version": 1, "items": [ { "quantity": 2 } ] } },
+    { "name": "zero quantity", "target": { "format_version": 1, "items": [ { "item": "big_mac", "quantity": 0 } ] } },
+    { "name": "fractional quantity", "target": { "format_version": 1, "items": [ { "item": "big_mac", "quantity": 1.5 } ] } },
+    { "name": "add-ons not a list", "target": { "format_version": 1, "items": [ { "item": "big_mac", "add_ons": "add_bacon" } ] } },
+    { "name": "unsupported not strings", "target": { "format_version": 1, "unsupported": [1] } }
+  ]
+}
