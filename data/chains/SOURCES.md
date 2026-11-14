@@ -13,6 +13,12 @@ unless the store shows something different.
 
 Collected October 30, 2026, for task 6.2.
 
+**Since November 2026**, `combobite --refresh-prices` can replace these
+estimates with one store's real prices for Burger King, Wendy's and Taco Bell
+(see [docs/price-refresh.md](../../docs/price-refresh.md)). After a refresh,
+each file's `prices_checked` names the store and says how many prices came
+from it. McDonald's has no price source and stays hand-entered.
+
 ## Rules used
 
 - For each chain, one site was the main source for prices (the most recently

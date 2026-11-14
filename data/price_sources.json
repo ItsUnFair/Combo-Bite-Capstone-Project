@@ -1,0 +1,51 @@
+{
+  "about": [
+    "Where `combobite --refresh-prices` gets each chain's store prices. See docs/price-refresh.md.",
+    "Each source is an Apify actor that reads one restaurant's own online menu. A chain with no entry here (McDonald's) keeps its hand-entered prices.",
+    "'input' is sent to the actor as-is, plus the location you type, in the field named by 'location_field'.",
+    "'item_names' lists other names the store's menu may use for one of our items, by item id. Sizes are added automatically ('Medium French Fries', 'French Fries | Medium').",
+    "'aliases' gives exact menu names for one priced entry, by key: 'item_id/size', 'combo:id', 'bundle:id' or 'add_on:id'. A variant of a menu item is written 'Item name | Variant name'.",
+    "The names below are first guesses from each chain's website. Run a refresh with --dry-run, read the 'no match' lines, and add the store's real names here."
+  ],
+  "chains": {
+    "burger_king": {
+      "actor": "memo23~burger-king-menu-scraper",
+      "location_field": "addresses",
+      "input": {
+        "maxStoresPerAddress": 1,
+        "serviceMode": "pickup",
+        "includeNutrition": false,
+        "includeVariants": true,
+        "includeModifiers": false
+      },
+      "item_names": {
+        "fries": ["French Fries"],
+        "nuggets": ["Chicken Nuggets"]
+      },
+      "aliases": {}
+    },
+    "wendys": {
+      "actor": "memo23~wendys-menu-scraper",
+      "location_field": "addresses",
+      "input": { "maxStoresPerAddress": 1 },
+      "item_names": {
+        "fries": ["French Fries", "Natural-Cut Fries"],
+        "frosty": ["Classic Chocolate Frosty"]
+      },
+      "aliases": {}
+    },
+    "taco_bell": {
+      "actor": "memo23~taco-bell-menu-scraper",
+      "location_field": "addresses",
+      "input": {
+        "maxStoresPerAddress": 1,
+        "proxy": { "useApifyProxy": true, "apifyProxyGroups": ["RESIDENTIAL"], "apifyProxyCountry": "US" }
+      },
+      "item_names": {
+        "doritos_locos_taco": ["Nacho Cheese Doritos Locos Taco"],
+        "fountain_drink": ["Pepsi", "Fountain Drink"]
+      },
+      "aliases": {}
+    }
+  }
+}

@@ -1,0 +1,6017 @@
+[
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "picker_5520",
+  "itemName": "Whopper",
+  "itemType": "PICKER",
+  "sectionName": "Burgers for Breakfast",
+  "sections": [
+   "Burgers for Breakfast",
+   "Flame Grilled Burgers"
+  ],
+  "description": "Whopper",
+  "dayParts": [
+   "Main Menu",
+   "Burgers for Breakfast"
+  ],
+  "price": 6.09,
+  "pickupPrice": 6.09,
+  "deliveryPrice": 8.09,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Just the Sandwich - Entre\u00e9 only",
+    "pickupPrice": 6.09,
+    "deliveryPrice": 8.09,
+    "calories": null
+   },
+   {
+    "name": "Small - Side and Drink Included",
+    "pickupPrice": 9.89,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium - Side and Drink Included",
+    "pickupPrice": 10.89,
+    "deliveryPrice": 14.49,
+    "calories": null
+   },
+   {
+    "name": "Large - Side and Drink Included",
+    "pickupPrice": 11.59,
+    "deliveryPrice": 15.38,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-1c9fe7bcdcb04ef9904726873c96060fcc0d7d0a-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "427c504e-44f1-45b3-94d3-9fc5cdaa4787",
+  "itemName": "Texas Whopper\u00ae",
+  "itemType": "PICKER",
+  "sectionName": "Burgers for Breakfast",
+  "sections": [
+   "Burgers for Breakfast",
+   "Flame Grilled Burgers"
+  ],
+  "description": "The Texas Whopper features \u00bc lb. 100% flame-grilled beef patty, topped with melty American cheese, crispy bacon, juicy tomatoes, crisp lettuce, sliced white onions, crunchy pickles, jalape\u00f1os, creamy mayonnaise, yellow mustard on a toasted sesame seed bun.\r\n*Weight based on pre-cooked patty.",
+  "dayParts": [
+   "Main Menu",
+   "Burgers for Breakfast"
+  ],
+  "price": 8.29,
+  "pickupPrice": 8.29,
+  "deliveryPrice": 10.99,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Just the Sandwich - Entre\u00e9 only",
+    "pickupPrice": 8.29,
+    "deliveryPrice": 10.99,
+    "calories": null
+   },
+   {
+    "name": "Small - Side and Drink Included",
+    "pickupPrice": 12.09,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium - Side and Drink Included",
+    "pickupPrice": 13.09,
+    "deliveryPrice": 17.39,
+    "calories": null
+   },
+   {
+    "name": "Large - Side and Drink Included",
+    "pickupPrice": 13.79,
+    "deliveryPrice": 18.28,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-36a2f945c7bddde31619dcf0fd2596916dc9da1c-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "95eb0a67-9e69-4849-9bc6-6715b3790e9a",
+  "itemName": "Impossible\u2122 Whopper",
+  "itemType": "PICKER",
+  "sectionName": "Burgers for Breakfast",
+  "sections": [
+   "Burgers for Breakfast",
+   "Flame Grilled Burgers"
+  ],
+  "description": "A flame-grilled, plant-based patty with juicy tomatoes, crisp lettuce, creamy mayonnaise, ketchup, crunchy pickles, and sliced white onions on a toasted sesame seed bun.\r\n*Patty cooked on the same broiler as beef patties.",
+  "dayParts": [
+   "Main Menu",
+   "Burgers for Breakfast"
+  ],
+  "price": 7.09,
+  "pickupPrice": 7.09,
+  "deliveryPrice": 9.39,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Just the Sandwich - Entre\u00e9 only",
+    "pickupPrice": 7.09,
+    "deliveryPrice": 9.39,
+    "calories": null
+   },
+   {
+    "name": "Small - Side and Drink Included",
+    "pickupPrice": 10.89,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium - Side and Drink Included",
+    "pickupPrice": 11.89,
+    "deliveryPrice": 15.79,
+    "calories": null
+   },
+   {
+    "name": "Large - Side and Drink Included",
+    "pickupPrice": 12.59,
+    "deliveryPrice": 16.68,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-95ad26e647d14c129ac45d10bdb78babbc87fac9-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "95207a44-0620-485a-a2a6-1ab8abcd4b2d",
+  "itemName": "Impossible\u2122 Texas Whopper\u00ae",
+  "itemType": "PICKER",
+  "sectionName": "Burgers for Breakfast",
+  "sections": [
+   "Burgers for Breakfast",
+   "Flame Grilled Burgers"
+  ],
+  "description": "The Impossible \u2122 Texas Whopper Features a flame-grilled Impossible\u2122 patty made from plants, topped with melty American cheese, crispy bacon, juicy tomatoes, crisp lettuce, sliced white onions, crunchy pickles, jalape\u00f1os, creamy mayonnaise, yellow mustard on a toasted sesame seed bun.\r\n*Weight based on pre-cooked patty.",
+  "dayParts": [
+   "Burgers for Breakfast",
+   "Main Menu"
+  ],
+  "price": 9.09,
+  "pickupPrice": 9.09,
+  "deliveryPrice": 11.99,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Just the Sandwich - Entre\u00e9 only",
+    "pickupPrice": 9.09,
+    "deliveryPrice": 11.99,
+    "calories": null
+   },
+   {
+    "name": "Small - Side and Drink Included",
+    "pickupPrice": 12.89,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium - Side and Drink Included",
+    "pickupPrice": 13.89,
+    "deliveryPrice": 18.49,
+    "calories": null
+   },
+   {
+    "name": "Large - Side and Drink Included",
+    "pickupPrice": 14.59,
+    "deliveryPrice": 19.38,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-d6bb7de044fd2be67d95911208aed8ff9226a858-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "picker_5521",
+  "itemName": "Double Whopper",
+  "itemType": "PICKER",
+  "sectionName": "Burgers for Breakfast",
+  "sections": [
+   "Burgers for Breakfast",
+   "Flame Grilled Burgers"
+  ],
+  "description": "Two \u00bc lb.* flame-grilled beef patties with juicy tomatoes, crisp lettuce, creamy mayonnaise, ketchup, crunchy pickles, and sliced white onions on a toasted sesame seed bun.\r\n*Weight based on pre-cooked patty",
+  "dayParts": [
+   "Main Menu",
+   "Burgers for Breakfast"
+  ],
+  "price": 7.29,
+  "pickupPrice": 7.29,
+  "deliveryPrice": 9.69,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Just the Sandwich - Entre\u00e9 only",
+    "pickupPrice": 7.29,
+    "deliveryPrice": 9.69,
+    "calories": null
+   },
+   {
+    "name": "Small - Side and Drink Included",
+    "pickupPrice": 11.09,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium - Side and Drink Included",
+    "pickupPrice": 12.09,
+    "deliveryPrice": 16.09,
+    "calories": null
+   },
+   {
+    "name": "Large - Side and Drink Included",
+    "pickupPrice": 12.79,
+    "deliveryPrice": 16.98,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-723f70536cfd35e9b7bea3c54589bdd4da6e628b-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "picker_5550",
+  "itemName": "Texas Double Whopper\u00ae",
+  "itemType": "PICKER",
+  "sectionName": "Burgers for Breakfast",
+  "sections": [
+   "Burgers for Breakfast",
+   "Flame Grilled Burgers"
+  ],
+  "description": "The Texas Double Whopper features two \u00bc lb. 100% flame-grilled beef patties topped with melty American cheese, crispy bacon, juicy tomatoes, crisp lettuce, sliced white onions, crunchy pickles, jalape\u00f1os, creamy mayonnaise, yellow mustard on a toasted sesame seed bun.\r\n*Weight based on pre-cooked patty.",
+  "dayParts": [
+   "Main Menu",
+   "Burgers for Breakfast"
+  ],
+  "price": 9.49,
+  "pickupPrice": 9.49,
+  "deliveryPrice": 12.59,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Just the Sandwich - Entre\u00e9 only",
+    "pickupPrice": 9.49,
+    "deliveryPrice": 12.59,
+    "calories": null
+   },
+   {
+    "name": "Small - Side and Drink Included",
+    "pickupPrice": 13.29,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium - Side and Drink Included",
+    "pickupPrice": 14.29,
+    "deliveryPrice": 18.99,
+    "calories": null
+   },
+   {
+    "name": "Large - Side and Drink Included",
+    "pickupPrice": 14.99,
+    "deliveryPrice": 19.88,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-67f125e5ad20235d3baa7ed6f6d0c54291f10cf1-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "picker_5523",
+  "itemName": "Triple Whopper",
+  "itemType": "PICKER",
+  "sectionName": "Burgers for Breakfast",
+  "sections": [
+   "Burgers for Breakfast",
+   "Flame Grilled Burgers"
+  ],
+  "description": "Three \u00bc lb* flame-grilled beef patties with juicy tomatoes, crisp lettuce, creamy mayonnaise, ketchup, crunchy pickles, and sliced white onions on a toasted sesame seed bun.\r\n*Weight based on pre-cooked patty.",
+  "dayParts": [
+   "Main Menu",
+   "Burgers for Breakfast"
+  ],
+  "price": 8.49,
+  "pickupPrice": 8.49,
+  "deliveryPrice": 11.29,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Just the Sandwich - Entre\u00e9 only",
+    "pickupPrice": 8.49,
+    "deliveryPrice": 11.29,
+    "calories": null
+   },
+   {
+    "name": "Small - Side and Drink Included",
+    "pickupPrice": 12.29,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium - Side and Drink Included",
+    "pickupPrice": 13.29,
+    "deliveryPrice": 17.69,
+    "calories": null
+   },
+   {
+    "name": "Large - Side and Drink Included",
+    "pickupPrice": 13.99,
+    "deliveryPrice": 18.58,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-c50dc29710edf7191ae4dde59f23f5654439fde4-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "picker_5529",
+  "itemName": "Bacon King",
+  "itemType": "PICKER",
+  "sectionName": "Burgers for Breakfast",
+  "sections": [
+   "Burgers for Breakfast",
+   "Flame Grilled Burgers"
+  ],
+  "description": "Two 1/4 lb* flame-grilled beef patties with crispy bacon, melted American cheese, ketchup, and creamy mayonnaise on a toasted sesame seed bun.\r\n*Weight based on pre-cooked patty.",
+  "dayParts": [
+   "Main Menu",
+   "Burgers for Breakfast"
+  ],
+  "price": 9.49,
+  "pickupPrice": 9.49,
+  "deliveryPrice": 12.59,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Just the Sandwich - Entre\u00e9 only",
+    "pickupPrice": 9.49,
+    "deliveryPrice": 12.59,
+    "calories": null
+   },
+   {
+    "name": "Small - Side and Drink Included",
+    "pickupPrice": 13.29,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium - Side and Drink Included",
+    "pickupPrice": 14.29,
+    "deliveryPrice": 18.99,
+    "calories": null
+   },
+   {
+    "name": "Large - Side and Drink Included",
+    "pickupPrice": 14.99,
+    "deliveryPrice": 19.88,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-a75e576a4203e0bf641cee10d50278cf8c0decaf-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "picker_5530",
+  "itemName": "Whopper Jr.",
+  "itemType": "PICKER",
+  "sectionName": "Burgers for Breakfast",
+  "sections": [
+   "Burgers for Breakfast",
+   "Flame Grilled Burgers"
+  ],
+  "description": "A flame-grilled beef patty with juicy tomatoes, crisp lettuce, creamy mayonnaise, ketchup, crunchy pickles, and sliced white onions on a toasted sesame seed bun.",
+  "dayParts": [
+   "Main Menu",
+   "Burgers for Breakfast"
+  ],
+  "price": 3.29,
+  "pickupPrice": 3.29,
+  "deliveryPrice": 4.39,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Just the Sandwich - Entre\u00e9 only",
+    "pickupPrice": 3.29,
+    "deliveryPrice": 4.39,
+    "calories": null
+   },
+   {
+    "name": "Small - Side and Drink Included",
+    "pickupPrice": 6.79,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium - Side and Drink Included",
+    "pickupPrice": 7.79,
+    "deliveryPrice": 10.39,
+    "calories": null
+   },
+   {
+    "name": "Large - Side and Drink Included",
+    "pickupPrice": 8.49,
+    "deliveryPrice": 11.28,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-a18250eb58852c438734edbfc138104b76b6f2a8-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "13838270-9f3a-4e65-a11f-5535508c2b50",
+  "itemName": "Texas Whopper\u00ae Jr.",
+  "itemType": "PICKER",
+  "sectionName": "Burgers for Breakfast",
+  "sections": [
+   "Burgers for Breakfast",
+   "Flame Grilled Burgers"
+  ],
+  "description": "The Texas Whopper Jr. features 100% flame-grilled beef patty, topped with melty American cheese, crispy bacon, juicy tomatoes, crisp lettuce, sliced white onions, crunchy pickles, jalape\u00f1os, creamy mayonnaise, yellow mustard on a toasted sesame seed bun.",
+  "dayParts": [
+   "Main Menu",
+   "Burgers for Breakfast"
+  ],
+  "price": 5.19,
+  "pickupPrice": 5.19,
+  "deliveryPrice": 6.89,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Just the Sandwich - Entre\u00e9 only",
+    "pickupPrice": 5.19,
+    "deliveryPrice": 6.89,
+    "calories": null
+   },
+   {
+    "name": "Small - Side and Drink Included",
+    "pickupPrice": 8.89,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium - Side and Drink Included",
+    "pickupPrice": 9.89,
+    "deliveryPrice": 13.19,
+    "calories": null
+   },
+   {
+    "name": "Large - Side and Drink Included",
+    "pickupPrice": 10.59,
+    "deliveryPrice": 14.08,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-ead980abd48788968bd1a3d291f349cbc542a1dd-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "picker_5541",
+  "itemName": "Bacon Double Cheeseburger",
+  "itemType": "PICKER",
+  "sectionName": "Burgers for Breakfast",
+  "sections": [
+   "Burgers for Breakfast",
+   "Flame Grilled Burgers"
+  ],
+  "description": "Two flame-grilled patties\u2013for a 1/4 lb* of beef\u2013with crispy bacon, melted American cheese, crunchy pickles, yellow mustard, and ketchup on a toasted sesame seed bun.\r\n*Weight based on pre-cooked patty.",
+  "dayParts": [
+   "Main Menu",
+   "Burgers for Breakfast"
+  ],
+  "price": 4.19,
+  "pickupPrice": 4.19,
+  "deliveryPrice": 5.59,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Just the Sandwich - Entre\u00e9 only",
+    "pickupPrice": 4.19,
+    "deliveryPrice": 5.59,
+    "calories": null
+   },
+   {
+    "name": "Small - Side and Drink Included",
+    "pickupPrice": 7.49,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium - Side and Drink Included",
+    "pickupPrice": 8.49,
+    "deliveryPrice": 11.39,
+    "calories": null
+   },
+   {
+    "name": "Large - Side and Drink Included",
+    "pickupPrice": 9.19,
+    "deliveryPrice": 12.28,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-4d70aaf9b6f0921d5b3fd79692eff49b1120e72d-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "12906801-fe4e-479b-9f4e-58e26cdd83cf",
+  "itemName": "Bacon Cheeseburger",
+  "itemType": "PICKER",
+  "sectionName": "Burgers for Breakfast",
+  "sections": [
+   "Burgers for Breakfast",
+   "Flame Grilled Burgers"
+  ],
+  "description": "A flame-grilled beef patty with crispy bacon, melted American cheese, crunchy pickles, yellow mustard, and ketchup on a toasted sesame seed bun.",
+  "dayParts": [
+   "Main Menu",
+   "Burgers for Breakfast"
+  ],
+  "price": 2.99,
+  "pickupPrice": 2.99,
+  "deliveryPrice": 3.99,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Just the Sandwich - Entre\u00e9 only",
+    "pickupPrice": 2.99,
+    "deliveryPrice": 3.99,
+    "calories": null
+   },
+   {
+    "name": "Small - Side and Drink Included",
+    "pickupPrice": 6.29,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium - Side and Drink Included",
+    "pickupPrice": 7.29,
+    "deliveryPrice": 9.79,
+    "calories": null
+   },
+   {
+    "name": "Large - Side and Drink Included",
+    "pickupPrice": 7.99,
+    "deliveryPrice": 10.68,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-aeef10c0e12c152e0819a29ed96e280f4256ea74-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "bef67622-5c59-43d1-aa95-2b07e76f204c",
+  "itemName": "Double Cheeseburger",
+  "itemType": "PICKER",
+  "sectionName": "Burgers for Breakfast",
+  "sections": [
+   "Burgers for Breakfast",
+   "Flame Grilled Burgers"
+  ],
+  "description": "Two flame-grilled patties. 1/4 lb* of 100% beef. All topped with 2 slices of melted American cheese, crunchy pickles, yellow mustard, and ketchup on a toasted sesame seed bun.\r\n*Weight based on pre-cooked patty.",
+  "dayParts": [
+   "Main Menu",
+   "Burgers for Breakfast"
+  ],
+  "price": 3.59,
+  "pickupPrice": 3.59,
+  "deliveryPrice": 4.79,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Just the Sandwich - Entre\u00e9 only",
+    "pickupPrice": 3.59,
+    "deliveryPrice": 4.79,
+    "calories": null
+   },
+   {
+    "name": "Small - Side and Drink Included",
+    "pickupPrice": 6.89,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium - Side and Drink Included",
+    "pickupPrice": 7.89,
+    "deliveryPrice": 10.49,
+    "calories": null
+   },
+   {
+    "name": "Large - Side and Drink Included",
+    "pickupPrice": 8.59,
+    "deliveryPrice": 11.38,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-20e33b05372cf2fc830180f8519734cc8bc2d490-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "b8d37e4f-ae6e-42e9-8182-fd7ee9493855",
+  "itemName": "Cheeseburger",
+  "itemType": "PICKER",
+  "sectionName": "Burgers for Breakfast",
+  "sections": [
+   "Burgers for Breakfast",
+   "Flame Grilled Burgers"
+  ],
+  "description": "A flame-grilled beef patty topped with melted American cheese, crunchy pickles, yellow mustard, and ketchup on a toasted sesame seed bun.",
+  "dayParts": [
+   "Main Menu",
+   "Burgers for Breakfast"
+  ],
+  "price": 2.49,
+  "pickupPrice": 2.49,
+  "deliveryPrice": 3.29,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Just the Sandwich - Entre\u00e9 only",
+    "pickupPrice": 2.49,
+    "deliveryPrice": 3.29,
+    "calories": null
+   },
+   {
+    "name": "Small - Side and Drink Included",
+    "pickupPrice": 6.09,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium - Side and Drink Included",
+    "pickupPrice": 7.09,
+    "deliveryPrice": 9.49,
+    "calories": null
+   },
+   {
+    "name": "Large - Side and Drink Included",
+    "pickupPrice": 7.79,
+    "deliveryPrice": 10.38,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-73bad2e8571ef9deeb190f941c1b5b53b399b206-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "a90bce88-db32-43cd-ba7d-eaa61d3ea4c4",
+  "itemName": "Hamburger",
+  "itemType": "PICKER",
+  "sectionName": "Burgers for Breakfast",
+  "sections": [
+   "Burgers for Breakfast",
+   "Flame Grilled Burgers"
+  ],
+  "description": "A flame-grilled beef patty with crunchy pickles, yellow mustard, and ketchup on a toasted sesame seed bun.",
+  "dayParts": [
+   "Main Menu",
+   "Burgers for Breakfast"
+  ],
+  "price": 1.99,
+  "pickupPrice": 1.99,
+  "deliveryPrice": 2.69,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Just the Sandwich - Entre\u00e9 only",
+    "pickupPrice": 1.99,
+    "deliveryPrice": 2.69,
+    "calories": null
+   },
+   {
+    "name": "Small - Side and Drink Included",
+    "pickupPrice": 5.39,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium - Side and Drink Included",
+    "pickupPrice": 6.39,
+    "deliveryPrice": 8.59,
+    "calories": null
+   },
+   {
+    "name": "Large - Side and Drink Included",
+    "pickupPrice": 7.09,
+    "deliveryPrice": 9.48,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-8021458565e6bebd000566babdcbd50cc5890ec4-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "picker_5531",
+  "itemName": "Original Chicken Sandwich",
+  "itemType": "PICKER",
+  "sectionName": "Burgers for Breakfast",
+  "sections": [
+   "Burgers for Breakfast",
+   "Chicken & Fish"
+  ],
+  "description": "Lightly breaded chicken topped with crisp lettuce and creamy mayonnaise on a sesame seed bun.",
+  "dayParts": [
+   "Main Menu",
+   "Burgers for Breakfast"
+  ],
+  "price": 5.69,
+  "pickupPrice": 5.69,
+  "deliveryPrice": 7.59,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Just the Sandwich - Entre\u00e9 only",
+    "pickupPrice": 5.69,
+    "deliveryPrice": 7.59,
+    "calories": null
+   },
+   {
+    "name": "Small - Side and Drink Included",
+    "pickupPrice": 9.19,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium - Side and Drink Included",
+    "pickupPrice": 10.19,
+    "deliveryPrice": 13.59,
+    "calories": null
+   },
+   {
+    "name": "Large - Side and Drink Included",
+    "pickupPrice": 10.89,
+    "deliveryPrice": 14.48,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-1c813c67eab5a70757e76c785076312952dcc173-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "picker_4740",
+  "itemName": "Fully Loaded Croissan'wich Meals",
+  "itemType": "PICKER",
+  "sectionName": "Breakfast Meals",
+  "sections": [
+   "Breakfast Meals"
+  ],
+  "description": "Black Forest ham, sizzling sausage, crispy bacon, fluffy eggs, and melted American cheese on a toasted croissant. Served with Hash Browns, and your choice of Drink.",
+  "dayParts": [
+   "Breakfast"
+  ],
+  "price": 9.89,
+  "pickupPrice": 9.89,
+  "deliveryPrice": 12.98,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Small - Side and Drink Included",
+    "pickupPrice": 9.39,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium - Side and Drink Included",
+    "pickupPrice": 9.89,
+    "deliveryPrice": 12.98,
+    "calories": null
+   },
+   {
+    "name": "Large - Side and Drink Included",
+    "pickupPrice": 10.24,
+    "deliveryPrice": 13.47,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-a1e121f10760a5d241c104f49abf53f7179906f4-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "picker_4737",
+  "itemName": "Double Sausage, Egg, & Cheese Croissan'wich Meals",
+  "itemType": "PICKER",
+  "sectionName": "Breakfast Meals",
+  "sections": [
+   "Breakfast Meals"
+  ],
+  "description": "Two sizzling sausage patties, fluffy eggs, and two slices of melted American cheese on a toasted croissant. Served with Hash Browns and your choice of Drink.",
+  "dayParts": [
+   "Breakfast"
+  ],
+  "price": 9.49,
+  "pickupPrice": 9.49,
+  "deliveryPrice": 12.48,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Small - Side and Drink Included",
+    "pickupPrice": 8.69,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium - Side and Drink Included",
+    "pickupPrice": 9.49,
+    "deliveryPrice": 12.48,
+    "calories": null
+   },
+   {
+    "name": "Large - Side and Drink Included",
+    "pickupPrice": 10.04,
+    "deliveryPrice": 13.27,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-6db1a96b23228b6964c55e77053916742fe699b1-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "picker_4736",
+  "itemName": "Bacon, Sausage, Egg & Cheese Croissan'wich Meals",
+  "itemType": "PICKER",
+  "sectionName": "Breakfast Meals",
+  "sections": [
+   "Breakfast Meals"
+  ],
+  "description": "Sizzling sausage, crispy bacon, fluffy eggs, and two slices of melted American cheese on a toasted croissant. Served with Hash Browns and your choice of Drink.",
+  "dayParts": [
+   "Breakfast"
+  ],
+  "price": 9.59,
+  "pickupPrice": 9.59,
+  "deliveryPrice": 12.58,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Small - Side and Drink Included",
+    "pickupPrice": 9.09,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium - Side and Drink Included",
+    "pickupPrice": 9.59,
+    "deliveryPrice": 12.58,
+    "calories": null
+   },
+   {
+    "name": "Large - Side and Drink Included",
+    "pickupPrice": 9.94,
+    "deliveryPrice": 13.07,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-0050e91abe00b3aead3447cc55d7a7c81f9ffdcc-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "picker_4735",
+  "itemName": "Sausage, Egg & Cheese Croissan'wich Meals",
+  "itemType": "PICKER",
+  "sectionName": "Breakfast Meals",
+  "sections": [
+   "Breakfast Meals"
+  ],
+  "description": "Sizzling sausage, fluffy eggs, and melted American cheese on a toasted croissant. Served with Hash Browns and your choice of Drink.",
+  "dayParts": [
+   "Breakfast"
+  ],
+  "price": 7.89,
+  "pickupPrice": 7.89,
+  "deliveryPrice": 10.49,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Small - Side and Drink Included",
+    "pickupPrice": 6.89,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium - Side and Drink Included",
+    "pickupPrice": 7.89,
+    "deliveryPrice": 10.49,
+    "calories": null
+   },
+   {
+    "name": "Large - Side and Drink Included",
+    "pickupPrice": 8.59,
+    "deliveryPrice": 11.47,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-8922cdc20391d6580118febb51fd3333928aa76c-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "picker_4738",
+  "itemName": "Bacon, Egg, & Cheese Croissan'wich Meals",
+  "itemType": "PICKER",
+  "sectionName": "Breakfast Meals",
+  "sections": [
+   "Breakfast Meals"
+  ],
+  "description": "Crispy bacon, fluffy eggs, and melted American cheese on a toasted croissant. Served with Hash Browns and your choice of Drink.",
+  "dayParts": [
+   "Breakfast"
+  ],
+  "price": 7.89,
+  "pickupPrice": 7.89,
+  "deliveryPrice": 10.49,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Small - Side and Drink Included",
+    "pickupPrice": 6.89,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium - Side and Drink Included",
+    "pickupPrice": 7.89,
+    "deliveryPrice": 10.49,
+    "calories": null
+   },
+   {
+    "name": "Large - Side and Drink Included",
+    "pickupPrice": 8.59,
+    "deliveryPrice": 11.47,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-27b2aec6c092378bbce67634e588508ab96d5a7d-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "picker_4739",
+  "itemName": "Ham, Egg, & Cheese Croissan'wich Meals",
+  "itemType": "PICKER",
+  "sectionName": "Breakfast Meals",
+  "sections": [
+   "Breakfast Meals"
+  ],
+  "description": "Black Forest ham, fluffy eggs, and melted American cheese on a toasted croissant. Served with Hash Browns and your choice of Drink.",
+  "dayParts": [
+   "Breakfast"
+  ],
+  "price": 7.89,
+  "pickupPrice": 7.89,
+  "deliveryPrice": 10.49,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Small - Side and Drink Included",
+    "pickupPrice": 6.89,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium - Side and Drink Included",
+    "pickupPrice": 7.89,
+    "deliveryPrice": 10.49,
+    "calories": null
+   },
+   {
+    "name": "Large - Side and Drink Included",
+    "pickupPrice": 8.59,
+    "deliveryPrice": 11.47,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-dc8812d4395a18b4397cffae0b1e2c714fc50907-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "95b98506-2e2e-4e69-8729-0a5af5e5730a",
+  "itemName": "Egg & Cheese Croissan'wich Meals",
+  "itemType": "PICKER",
+  "sectionName": "Breakfast Meals",
+  "sections": [
+   "Breakfast Meals"
+  ],
+  "description": "Fluffy eggs and melted American cheese on a toasted croissant. Served with Hash Browns and your choice of Drink.",
+  "dayParts": [
+   "Breakfast"
+  ],
+  "price": 6.79,
+  "pickupPrice": 6.79,
+  "deliveryPrice": 9.09,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Small - Side and Drink Included",
+    "pickupPrice": 5.79,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium - Side and Drink Included",
+    "pickupPrice": 6.79,
+    "deliveryPrice": 9.09,
+    "calories": null
+   },
+   {
+    "name": "Large - Side and Drink Included",
+    "pickupPrice": 7.49,
+    "deliveryPrice": 10.07,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-dc6af719aaf7ec8fb70986b99c883825f52f3201-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "picker_4743",
+  "itemName": "Fully Loaded Biscuit Meals",
+  "itemType": "PICKER",
+  "sectionName": "Breakfast Meals",
+  "sections": [
+   "Breakfast Meals"
+  ],
+  "description": "Black Forest ham, sizzling sausage, crispy bacon, fluffy eggs, and melted American cheese on a warm buttermilk biscuit. Served with Hash Browns and your choice of Drink.",
+  "dayParts": [
+   "Breakfast"
+  ],
+  "price": 8.89,
+  "pickupPrice": 8.89,
+  "deliveryPrice": 11.89,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Small - Side and Drink Included",
+    "pickupPrice": 7.89,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium - Side and Drink Included",
+    "pickupPrice": 8.89,
+    "deliveryPrice": 11.89,
+    "calories": null
+   },
+   {
+    "name": "Large - Side and Drink Included",
+    "pickupPrice": 9.59,
+    "deliveryPrice": 12.87,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-1885c2abcbf80f1f018faff19b798b5044cd0781-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "picker_4741",
+  "itemName": "Sausage, Egg, & Cheese Biscuit Meals",
+  "itemType": "PICKER",
+  "sectionName": "Breakfast Meals",
+  "sections": [
+   "Breakfast Meals"
+  ],
+  "description": "Sizzling sausage, fluffy eggs, and melted American cheese on a warm buttermilk biscuit. Served with Hash Browns and your choice of Drink.",
+  "dayParts": [
+   "Breakfast"
+  ],
+  "price": 7.89,
+  "pickupPrice": 7.89,
+  "deliveryPrice": 10.49,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Small - Side and Drink Included",
+    "pickupPrice": 6.89,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium - Side and Drink Included",
+    "pickupPrice": 7.89,
+    "deliveryPrice": 10.49,
+    "calories": null
+   },
+   {
+    "name": "Large - Side and Drink Included",
+    "pickupPrice": 8.59,
+    "deliveryPrice": 11.47,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-d9bea5cbd1fe94c334307958374b1819d939511c-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "74422cf8-c8bc-4eb2-8d7f-93b1dbf3bdab",
+  "itemName": "Bacon, Egg & Cheese Biscuit Meals",
+  "itemType": "PICKER",
+  "sectionName": "Breakfast Meals",
+  "sections": [
+   "Breakfast Meals"
+  ],
+  "description": "Crispy bacon, fluffy eggs, and melted American cheese on a warm buttermilk biscuit. Served with Hash Browns and your choice of Drink.",
+  "dayParts": [
+   "Breakfast"
+  ],
+  "price": 7.89,
+  "pickupPrice": 7.89,
+  "deliveryPrice": 10.49,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Small - Side and Drink Included",
+    "pickupPrice": 6.89,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium - Side and Drink Included",
+    "pickupPrice": 7.89,
+    "deliveryPrice": 10.49,
+    "calories": null
+   },
+   {
+    "name": "Large - Side and Drink Included",
+    "pickupPrice": 8.59,
+    "deliveryPrice": 11.47,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-98cbcb3229b2c40c3f50f40f4e39bd81391b6624-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "a9ded791-1e24-4f08-86bc-a488d0194d01",
+  "itemName": "Ham, Egg, & Cheese Biscuit Meals",
+  "itemType": "PICKER",
+  "sectionName": "Breakfast Meals",
+  "sections": [
+   "Breakfast Meals"
+  ],
+  "description": "Black Forest ham, fluffy eggs, and melted American cheese on a warm buttermilk biscuit. Served with Hash Browns and your choice of Drink.",
+  "dayParts": [
+   "Breakfast"
+  ],
+  "price": 7.89,
+  "pickupPrice": 7.89,
+  "deliveryPrice": 10.49,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Small - Side and Drink Included",
+    "pickupPrice": 6.89,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium - Side and Drink Included",
+    "pickupPrice": 7.89,
+    "deliveryPrice": 10.49,
+    "calories": null
+   },
+   {
+    "name": "Large - Side and Drink Included",
+    "pickupPrice": 8.59,
+    "deliveryPrice": 11.47,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-7702fc5265734ef3109519da5a88d1f4560cd2ca-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "d7a5b461-e46b-4367-9d43-3f6cc3c1ddfb",
+  "itemName": "Egg & Cheese Biscuit Meals",
+  "itemType": "PICKER",
+  "sectionName": "Breakfast Meals",
+  "sections": [
+   "Breakfast Meals"
+  ],
+  "description": "Fluffy eggs and melted American cheese on a warm buttermilk biscuit. Served with Hash Browns and your choice of Drink.",
+  "dayParts": [
+   "Breakfast"
+  ],
+  "price": 6.79,
+  "pickupPrice": 6.79,
+  "deliveryPrice": 9.09,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Small - Side and Drink Included",
+    "pickupPrice": 5.79,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium - Side and Drink Included",
+    "pickupPrice": 6.79,
+    "deliveryPrice": 9.09,
+    "calories": null
+   },
+   {
+    "name": "Large - Side and Drink Included",
+    "pickupPrice": 7.49,
+    "deliveryPrice": 10.07,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-932015c7d60d6d005d6e86135ade87259f3595fe-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "a94f7d4b-1638-46b6-9239-29e1371713aa",
+  "itemName": "French Toast Sticks With Syrup Meals",
+  "itemType": "PICKER",
+  "sectionName": "Breakfast Meals",
+  "sections": [
+   "Breakfast Meals"
+  ],
+  "description": "Sweet, golden brown, and piping hot, our five-piece French Toast Sticks are perfect for dipping in a side of sweet syrup while you\u2019re on the go. Served with Hash Browns, your choice of Drink.",
+  "dayParts": [
+   "Breakfast"
+  ],
+  "price": 6.49,
+  "pickupPrice": 6.49,
+  "deliveryPrice": 8.29,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Small - Side and Drink Included",
+    "pickupPrice": 5.49,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium - Side and Drink Included",
+    "pickupPrice": 6.49,
+    "deliveryPrice": 8.29,
+    "calories": null
+   },
+   {
+    "name": "Large - Side and Drink Included",
+    "pickupPrice": 7.19,
+    "deliveryPrice": 9.27,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-6926407059028c4c93944737baebc662ac92f439-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "gy2bPvBhhRgPFSSGaFE3r4",
+  "itemName": "Egg-Normous Burrito Meals",
+  "itemType": "PICKER",
+  "sectionName": "Breakfast Meals",
+  "sections": [
+   "Breakfast Meals"
+  ],
+  "description": "Crispy bacon, fluffy eggs, melted American cheese, crunchy hash browns, and a creamy spicy sauce all wrapped up in a soft flour tortilla. Served with Hash Browns and your choice of drink",
+  "dayParts": [
+   "Breakfast"
+  ],
+  "price": 8.29,
+  "pickupPrice": 8.29,
+  "deliveryPrice": 11.09,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Small - Side and Drink Included",
+    "pickupPrice": 7.29,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium - Side and Drink Included",
+    "pickupPrice": 8.29,
+    "deliveryPrice": 11.09,
+    "calories": null
+   },
+   {
+    "name": "Large - Side and Drink Included",
+    "pickupPrice": 8.99,
+    "deliveryPrice": 12.07,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-8e989e23ef800d0b0cafe68468d995ce818db17d-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "92c1840a-8018-4a1e-a84c-76699d04e8e6",
+  "itemName": "Breakfast Burrito Jr. Meals",
+  "itemType": "PICKER",
+  "sectionName": "Breakfast Meals",
+  "sections": [
+   "Breakfast Meals"
+  ],
+  "description": "Sizzling sausage, fluffy eggs, melted American cheese, crunchy hash browns, and creamy spicy sauce wrapped up in a soft white flour tortilla.",
+  "dayParts": [
+   "Breakfast"
+  ],
+  "price": 8.39,
+  "pickupPrice": 8.39,
+  "deliveryPrice": 11.19,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Small - Side and Drink Included",
+    "pickupPrice": 7.39,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium - Side and Drink Included",
+    "pickupPrice": 8.39,
+    "deliveryPrice": 11.19,
+    "calories": null
+   },
+   {
+    "name": "Large - Side and Drink Included",
+    "pickupPrice": 9.09,
+    "deliveryPrice": 12.17,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-93197bd3f7b17ca667cad2e23b55e1e6e1e8d576-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "f76886f0-6b3d-4542-8156-b5a10c4bcc72",
+  "itemName": "Single Mix n' Match",
+  "itemType": "COMBO",
+  "sectionName": "Breakfast Sandwiches",
+  "sections": [
+   "Breakfast Sandwiches"
+  ],
+  "description": null,
+  "dayParts": [
+   "Breakfast"
+  ],
+  "price": 5,
+  "pickupPrice": 5,
+  "deliveryPrice": null,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": null,
+  "modifierGroups": null,
+  "comboItems": [
+   "Select Your First Breakfast Sandwich",
+   "Select Your Second Breakfast Sandwich"
+  ],
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-3faa440660fecf4aeb24f4fcbe6ebc2b2e73022a-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "579ec678-ca28-44c3-91c8-fafbe1ac1542",
+  "itemName": "Double Mix n' Match",
+  "itemType": "COMBO",
+  "sectionName": "Breakfast Sandwiches",
+  "sections": [
+   "Breakfast Sandwiches"
+  ],
+  "description": null,
+  "dayParts": [
+   "Breakfast"
+  ],
+  "price": 6,
+  "pickupPrice": 6,
+  "deliveryPrice": null,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": null,
+  "modifierGroups": null,
+  "comboItems": [
+   "Select Your First Double Breakfast Sandwich",
+   "Select Your Second Double Breakfast Sandwich"
+  ],
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-2b3d2dd496f72a86447b9875b5f3cdb89e814b19-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "item_14383",
+  "itemName": "Fully Loaded Croissan'wich",
+  "itemType": "ITEM",
+  "sectionName": "Breakfast Sandwiches",
+  "sections": [
+   "Breakfast Sandwiches"
+  ],
+  "description": "Black Forest ham, sizzling sausage, crispy bacon, fluffy eggs, and melted American cheese on a toasted croissant.",
+  "dayParts": [
+   "Breakfast"
+  ],
+  "price": 5.39,
+  "pickupPrice": 5.39,
+  "deliveryPrice": 7.19,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": null,
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-562a1014bc46bb1fcb060411ab33612b0e6c76ac-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "item_343",
+  "itemName": "Double Sausage, Egg, & Cheese Croissan'wich",
+  "itemType": "ITEM",
+  "sectionName": "Breakfast Sandwiches",
+  "sections": [
+   "Breakfast Sandwiches"
+  ],
+  "description": "Two sizzling sausage patties, fluffy eggs, and two slices of melted American cheese on a toasted croissant.",
+  "dayParts": [
+   "Breakfast"
+  ],
+  "price": 4.89,
+  "pickupPrice": 4.89,
+  "deliveryPrice": 6.49,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": null,
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-575d5d82b49e8ca06618721ac79b8023a995b70a-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "item_321",
+  "itemName": "Bacon, Sausage, Egg, & Cheese Croissan'wich",
+  "itemType": "ITEM",
+  "sectionName": "Breakfast Sandwiches",
+  "sections": [
+   "Breakfast Sandwiches"
+  ],
+  "description": "Sizzling sausage, crispy bacon, fluffy eggs, and two slices of melted American cheese on a toasted croissant.",
+  "dayParts": [
+   "Breakfast"
+  ],
+  "price": 4.89,
+  "pickupPrice": 4.89,
+  "deliveryPrice": 6.49,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": null,
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-87dc925a7a0f05daca2f8fa737a72b72274bb49a-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "item_312",
+  "itemName": "Sausage, Egg, & Cheese Croissan'wich",
+  "itemType": "ITEM",
+  "sectionName": "Breakfast Sandwiches",
+  "sections": [
+   "Breakfast Sandwiches"
+  ],
+  "description": "Sizzling sausage, fluffy eggs, and melted American cheese on a toasted croissant.",
+  "dayParts": [
+   "Breakfast"
+  ],
+  "price": 4.39,
+  "pickupPrice": 4.39,
+  "deliveryPrice": 5.79,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": null,
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-4e8adf24b703bf93aeba4e2868ce7d32c8ff7f9e-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "item_299",
+  "itemName": "Bacon, Egg, & Cheese Croissan'wich",
+  "itemType": "ITEM",
+  "sectionName": "Breakfast Sandwiches",
+  "sections": [
+   "Breakfast Sandwiches"
+  ],
+  "description": "Crispy bacon, fluffy eggs, and melted American cheese on a toasted croissant.",
+  "dayParts": [
+   "Breakfast"
+  ],
+  "price": 4.39,
+  "pickupPrice": 4.39,
+  "deliveryPrice": 5.79,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": null,
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-e5636df97fcc21630ac2b220bf6f400639f9994e-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "item_307",
+  "itemName": "Ham, Egg, & Cheese Croissan'wich",
+  "itemType": "ITEM",
+  "sectionName": "Breakfast Sandwiches",
+  "sections": [
+   "Breakfast Sandwiches"
+  ],
+  "description": "Black Forest ham, fluffy eggs, and melted American cheese on a toasted croissant.",
+  "dayParts": [
+   "Breakfast"
+  ],
+  "price": 4.39,
+  "pickupPrice": 4.39,
+  "deliveryPrice": 5.79,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": null,
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-f4d998014141e5d16ba77972ff6b34074ed59bef-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "item_306",
+  "itemName": "Egg & Cheese Croissan'wich",
+  "itemType": "ITEM",
+  "sectionName": "Breakfast Sandwiches",
+  "sections": [
+   "Breakfast Sandwiches"
+  ],
+  "description": "Fluffy eggs and melted American cheese on a toasted croissant.",
+  "dayParts": [
+   "Breakfast"
+  ],
+  "price": 3.29,
+  "pickupPrice": 3.29,
+  "deliveryPrice": 4.39,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": null,
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-48e3244262cee0c99099c796ec56ff8667de91ca-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "item_36984",
+  "itemName": "Fully Loaded Biscuit",
+  "itemType": "ITEM",
+  "sectionName": "Breakfast Sandwiches",
+  "sections": [
+   "Breakfast Sandwiches"
+  ],
+  "description": "Black Forest ham, sizzling sausage, crispy bacon, fluffy eggs, and melted American cheese on a warm buttermilk biscuit.",
+  "dayParts": [
+   "Breakfast"
+  ],
+  "price": 5.39,
+  "pickupPrice": 5.39,
+  "deliveryPrice": 7.19,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": null,
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-a82fcc90c6917b99c0794983b059348963ee1760-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "item_342",
+  "itemName": "Double Sausage, Egg, & Cheese Biscuit",
+  "itemType": "ITEM",
+  "sectionName": "Breakfast Sandwiches",
+  "sections": [
+   "Breakfast Sandwiches"
+  ],
+  "description": "Two sizzling sausage patties, fluffy eggs, and two slices of melted American cheese on a warm buttermilk biscuit.",
+  "dayParts": [
+   "Breakfast"
+  ],
+  "price": 4.89,
+  "pickupPrice": 4.89,
+  "deliveryPrice": 6.49,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": null,
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-8a05eda0ed557bef3b24a3e3754996c79cf47424-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "item_320",
+  "itemName": "Bacon, Sausage, Egg, & Cheese Biscuit",
+  "itemType": "ITEM",
+  "sectionName": "Breakfast Sandwiches",
+  "sections": [
+   "Breakfast Sandwiches"
+  ],
+  "description": "Sizzling sausage, crispy bacon, fluffy eggs, and two slices of melted American cheese on a warm buttermilk biscuit.",
+  "dayParts": [
+   "Breakfast"
+  ],
+  "price": 4.89,
+  "pickupPrice": 4.89,
+  "deliveryPrice": 6.49,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": null,
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-a9ee697feee134b29aff0408934768d0273b9c1c-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "item_91",
+  "itemName": "Sausage, Egg, & Cheese Biscuit",
+  "itemType": "ITEM",
+  "sectionName": "Breakfast Sandwiches",
+  "sections": [
+   "Breakfast Sandwiches"
+  ],
+  "description": "Sizzling sausage, fluffy eggs, and melted American cheese on a warm buttermilk biscuit.",
+  "dayParts": [
+   "Breakfast"
+  ],
+  "price": 4.39,
+  "pickupPrice": 4.39,
+  "deliveryPrice": 5.79,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": null,
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-054b93e18ecdd8893975af96d43953966fda76a8-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "item_64",
+  "itemName": "Bacon, Egg, & Cheese Biscuit",
+  "itemType": "ITEM",
+  "sectionName": "Breakfast Sandwiches",
+  "sections": [
+   "Breakfast Sandwiches"
+  ],
+  "description": "Crispy bacon, fluffy eggs, and melted American cheese on a warm buttermilk biscuit.",
+  "dayParts": [
+   "Breakfast"
+  ],
+  "price": 4.39,
+  "pickupPrice": 4.39,
+  "deliveryPrice": 5.79,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": null,
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-9d65559ca847fe252f0b15a57810ff138c90918b-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "item_68",
+  "itemName": "Ham, Egg, & Cheese Biscuit",
+  "itemType": "ITEM",
+  "sectionName": "Breakfast Sandwiches",
+  "sections": [
+   "Breakfast Sandwiches"
+  ],
+  "description": "Rise and shine with our Ham, Egg & Cheese Biscuit. Succulent black forest ham, fluffy eggs, and creamy American cheese are layered carefully between one of our warm buttermilk biscuits.",
+  "dayParts": [
+   "Breakfast"
+  ],
+  "price": 4.39,
+  "pickupPrice": 4.39,
+  "deliveryPrice": 5.79,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": null,
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-2cd9f8acf29f4791794800481e6cc540a814e697-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "item_83",
+  "itemName": "Egg & Cheese Biscuit",
+  "itemType": "ITEM",
+  "sectionName": "Breakfast Sandwiches",
+  "sections": [
+   "Breakfast Sandwiches"
+  ],
+  "description": "Fluffy eggs and melted American cheese on a warm buttermilk biscuit.",
+  "dayParts": [
+   "Breakfast"
+  ],
+  "price": 3.29,
+  "pickupPrice": 3.29,
+  "deliveryPrice": 4.39,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": null,
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-ef948aa23b76af0edae8403e2bec04e0a7d94c90-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "item_88",
+  "itemName": "Sausage Biscuit",
+  "itemType": "ITEM",
+  "sectionName": "Breakfast Sandwiches",
+  "sections": [
+   "Breakfast Sandwiches"
+  ],
+  "description": "Sizzling sausage on a warm buttermilk biscuit.",
+  "dayParts": [
+   "Breakfast"
+  ],
+  "price": 2.19,
+  "pickupPrice": 2.19,
+  "deliveryPrice": 2.89,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": null,
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-772955d593c1143c70ee6c0fea638b8d3fadad92-1333x1333-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "item_19146",
+  "itemName": "Egg-Normous Burrito",
+  "itemType": "ITEM",
+  "sectionName": "Burritos",
+  "sections": [
+   "Burritos"
+  ],
+  "description": "Crispy bacon, fluffy eggs,\u00a0shredded cheddar\u00a0cheese, crunchy hash browns, and a creamy spicy sauce all wrapped up in a soft flour tortilla.",
+  "dayParts": [
+   "Breakfast"
+  ],
+  "price": 4.79,
+  "pickupPrice": 4.79,
+  "deliveryPrice": 6.39,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": null,
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-20fb1705870883e86ff047e4244398c7a223cbff-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "item_17209",
+  "itemName": "Breakfast Burrito Jr.",
+  "itemType": "ITEM",
+  "sectionName": "Burritos",
+  "sections": [
+   "Burritos"
+  ],
+  "description": "Sizzling sausage, fluffy eggs, melted American cheese, crunchy hash browns, and creamy spicy sauce wrapped up in a soft white flour tortilla.",
+  "dayParts": [
+   "Breakfast"
+  ],
+  "price": 2.79,
+  "pickupPrice": 2.79,
+  "deliveryPrice": 3.69,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": null,
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-0782573a92260d0bc92f4f520779610491eb0d07-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "5b77f639-f2e3-457b-9817-d69434f850ab",
+  "itemName": "Hash Browns",
+  "itemType": "PICKER",
+  "sectionName": "Breakfast Sides",
+  "sections": [
+   "Breakfast Sides"
+  ],
+  "description": "Crunchy, sizzling hot, and golden brown.",
+  "dayParts": [
+   "Breakfast"
+  ],
+  "price": 2.49,
+  "pickupPrice": 2.49,
+  "deliveryPrice": 3.29,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Small",
+    "pickupPrice": 2.09,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium",
+    "pickupPrice": 2.49,
+    "deliveryPrice": 3.29,
+    "calories": null
+   },
+   {
+    "name": "Large",
+    "pickupPrice": 2.79,
+    "deliveryPrice": 3.69,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-2be77047da5fed20af77d638f5a1c80c5e174551-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "69cc3080-dddb-4a57-95a3-f20e714338e3",
+  "itemName": "French Toast Sticks",
+  "itemType": "PICKER",
+  "sectionName": "Breakfast Sides",
+  "sections": [
+   "Breakfast Sides"
+  ],
+  "description": "Golden brown, piping hot, and perfect for dipping in a side of sweet syrup.",
+  "dayParts": [
+   "Breakfast"
+  ],
+  "price": 1.99,
+  "pickupPrice": 1.99,
+  "deliveryPrice": 2.69,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "3 Sticks",
+    "pickupPrice": 1.99,
+    "deliveryPrice": 2.69,
+    "calories": null
+   },
+   {
+    "name": "5 Sticks",
+    "pickupPrice": 2.89,
+    "deliveryPrice": 3.89,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-ed849ea38b1aa4f13b9b30c8b1e677c66a76fda0-1333x1333-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "e25ae714-ff81-4d54-922d-d4b7fd40e1e6",
+  "itemName": "French Fries",
+  "itemType": "PICKER",
+  "sectionName": "Breakfast Sides",
+  "sections": [
+   "Breakfast Sides",
+   "Sides"
+  ],
+  "description": "Piping hot and perfectly salted.",
+  "dayParts": [
+   "Main Menu",
+   "Burgers for Breakfast"
+  ],
+  "price": 2.99,
+  "pickupPrice": 2.99,
+  "deliveryPrice": 3.99,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Value",
+    "pickupPrice": 1.69,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Small",
+    "pickupPrice": 2.69,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium",
+    "pickupPrice": 2.99,
+    "deliveryPrice": 3.99,
+    "calories": null
+   },
+   {
+    "name": "Large",
+    "pickupPrice": 3.29,
+    "deliveryPrice": 4.39,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-abe13a89f6674036f706b3dec2c15281c4ece17b-1333x1333-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "d7717848-6427-49fb-867a-4b3c547d42ea",
+  "itemName": "Onion Rings",
+  "itemType": "PICKER",
+  "sectionName": "Breakfast Sides",
+  "sections": [
+   "Breakfast Sides",
+   "Sides"
+  ],
+  "description": "Golden brown, hot, and crispy.",
+  "dayParts": [
+   "Main Menu",
+   "Burgers for Breakfast"
+  ],
+  "price": 2.99,
+  "pickupPrice": 2.99,
+  "deliveryPrice": 3.99,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Value",
+    "pickupPrice": 2.19,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Small",
+    "pickupPrice": 2.69,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium",
+    "pickupPrice": 2.99,
+    "deliveryPrice": 3.99,
+    "calories": null
+   },
+   {
+    "name": "Large",
+    "pickupPrice": 3.29,
+    "deliveryPrice": 4.39,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-2f1f1c87c082b18cee83d286921162a24dc869bd-1333x1333-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "0bb86e3c-ff6d-47b5-b5ab-8572b87b8ce3",
+  "itemName": "Have-sies\u2122",
+  "itemType": "PICKER",
+  "sectionName": "Breakfast Sides",
+  "sections": [
+   "Breakfast Sides",
+   "Sides"
+  ],
+  "description": "Burger King\u2019s signature Have-sies\u2122 are a mix of half Classic Fries and half Onion Rings to give you the best of both worlds.",
+  "dayParts": [
+   "Main Menu",
+   "Burgers for Breakfast"
+  ],
+  "price": 2.99,
+  "pickupPrice": 2.99,
+  "deliveryPrice": 3.99,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Value",
+    "pickupPrice": 1.69,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Small",
+    "pickupPrice": 2.69,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium",
+    "pickupPrice": 2.99,
+    "deliveryPrice": 3.99,
+    "calories": null
+   },
+   {
+    "name": "Large",
+    "pickupPrice": 3.29,
+    "deliveryPrice": 4.39,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-e6a60c88456a02dcf5f7cb4ef99d18661afd458e-1333x1333-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "mkHgKoKEtUqKZKIW9hMiIK",
+  "itemName": "Brewed Coffee",
+  "itemType": "PICKER",
+  "sectionName": "Drinks & Coffee",
+  "sections": [
+   "Drinks & Coffee"
+  ],
+  "description": "Smooth and medium-bodied coffee made from a blend of Central and South American 100% Arabica beans.",
+  "dayParts": [
+   "All",
+   "Main Menu",
+   "Breakfast",
+   "Burgers for Breakfast"
+  ],
+  "price": 2.19,
+  "pickupPrice": 2.19,
+  "deliveryPrice": 2.89,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Small",
+    "pickupPrice": 1.79,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium",
+    "pickupPrice": 2.19,
+    "deliveryPrice": 2.89,
+    "calories": null
+   },
+   {
+    "name": "Large",
+    "pickupPrice": 2.29,
+    "deliveryPrice": 3.09,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-8de92f01c595e33ee7f6c5cfca54f0292a574fb8-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "lXyLHRfR3ruSxzsSyarjjs",
+  "itemName": "Decaf Coffee",
+  "itemType": "PICKER",
+  "sectionName": "Drinks & Coffee",
+  "sections": [
+   "Drinks & Coffee"
+  ],
+  "description": "Our blend is made with 100% Arabica beans and freshly brewed to deliver perfectly balanced flavor in every cup.",
+  "dayParts": [
+   "All",
+   "Main Menu",
+   "Breakfast",
+   "Burgers for Breakfast"
+  ],
+  "price": 2.19,
+  "pickupPrice": 2.19,
+  "deliveryPrice": 2.89,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Small",
+    "pickupPrice": 1.79,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium",
+    "pickupPrice": 2.19,
+    "deliveryPrice": 2.89,
+    "calories": null
+   },
+   {
+    "name": "Large",
+    "pickupPrice": 2.29,
+    "deliveryPrice": 3.09,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-8de92f01c595e33ee7f6c5cfca54f0292a574fb8-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "HpO2rGNDdLIVDznXGJOUtA",
+  "itemName": "Iced Coffee",
+  "itemType": "PICKER",
+  "sectionName": "Drinks & Coffee",
+  "sections": [
+   "Drinks & Coffee"
+  ],
+  "description": "Our BK\u00ae Joe Iced Coffee starts with 100% Arabica beans combined with silky cream and your choice of flavored syrups \u2013 Vanilla, Mocha and Plain - for a deliciously cool iced coffee experience.",
+  "dayParts": [
+   "All",
+   "Main Menu",
+   "Breakfast",
+   "Burgers for Breakfast"
+  ],
+  "price": 2.19,
+  "pickupPrice": 2.19,
+  "deliveryPrice": 3.29,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Vanilla",
+    "pickupPrice": 2.19,
+    "deliveryPrice": 3.29,
+    "calories": null
+   },
+   {
+    "name": "Mocha",
+    "pickupPrice": 2.19,
+    "deliveryPrice": 3.29,
+    "calories": null
+   },
+   {
+    "name": "Plain",
+    "pickupPrice": 2.19,
+    "deliveryPrice": 3.29,
+    "calories": null
+   },
+   {
+    "name": "Black",
+    "pickupPrice": 2.19,
+    "deliveryPrice": 3.29,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-feeed77e6bc28f9220ec8543925b27b679d5326c-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "item_693",
+  "itemName": "Simply\u00ae Orange Juice",
+  "itemType": "ITEM",
+  "sectionName": "Drinks & Coffee",
+  "sections": [
+   "Drinks & Coffee"
+  ],
+  "description": "Delicious, not-from-concentrate orange juice with a taste that's the next best thing to fresh-squeezed.",
+  "dayParts": [
+   "All",
+   "Main Menu",
+   "Breakfast",
+   "Burgers for Breakfast"
+  ],
+  "price": 2.69,
+  "pickupPrice": 2.69,
+  "deliveryPrice": 3.59,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": null,
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-a1c8eb57d44b0c86aca8984d42b0d696aaa62d34-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "item_668",
+  "itemName": "Fat Free Milk",
+  "itemType": "ITEM",
+  "sectionName": "Drinks & Coffee",
+  "sections": [
+   "Drinks & Coffee"
+  ],
+  "description": "A good source of Calcium and Vitamin D, Fat Free Milk is a cool and refreshing complement to any meal.",
+  "dayParts": [
+   "All",
+   "Main Menu",
+   "Breakfast",
+   "Burgers for Breakfast"
+  ],
+  "price": 2.19,
+  "pickupPrice": 2.19,
+  "deliveryPrice": 2.89,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": null,
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-6a5fcef0af943140b0a2314016b7e33cf0a89009-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "item_97608",
+  "itemName": "Chocolate Milk",
+  "itemType": "ITEM",
+  "sectionName": "Drinks & Coffee",
+  "sections": [
+   "Drinks & Coffee"
+  ],
+  "description": "Our 1% Low Fat Chocolate Milk is a good source of calcium and Vitamins A & D.",
+  "dayParts": [
+   "Main Menu",
+   "Breakfast",
+   "All",
+   "Burgers for Breakfast"
+  ],
+  "price": 2.19,
+  "pickupPrice": 2.19,
+  "deliveryPrice": 2.89,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": null,
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-3be04bb79afa758d69d6a98960dba7734fd8ac03-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "d414148c-e103-4697-a1c3-69e6f2478b92",
+  "itemName": "Coca-Cola",
+  "itemType": "PICKER",
+  "sectionName": "Drinks & Coffee",
+  "sections": [
+   "Drinks & Coffee"
+  ],
+  "description": "Enjoy a variety of soft drinks that pair perfectly with your meal!",
+  "dayParts": [
+   "Main Menu",
+   "All",
+   "Breakfast",
+   "Burgers for Breakfast"
+  ],
+  "price": 2.89,
+  "pickupPrice": 2.89,
+  "deliveryPrice": 3.89,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Value",
+    "pickupPrice": 1.59,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Small",
+    "pickupPrice": 2.59,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium",
+    "pickupPrice": 2.89,
+    "deliveryPrice": 3.89,
+    "calories": null
+   },
+   {
+    "name": "Large",
+    "pickupPrice": 3.19,
+    "deliveryPrice": 4.29,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-101884a72a37be6bc3f99d69a340ea09594c020c-1333x1333-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "74d1cba3-1b60-49af-9759-86e7dbdc113a",
+  "itemName": "Diet Coke",
+  "itemType": "PICKER",
+  "sectionName": "Drinks & Coffee",
+  "sections": [
+   "Drinks & Coffee"
+  ],
+  "description": "Enjoy a variety of soft drinks that pair perfectly with your meal!",
+  "dayParts": [
+   "All",
+   "Main Menu",
+   "Breakfast",
+   "Burgers for Breakfast"
+  ],
+  "price": 2.89,
+  "pickupPrice": 2.89,
+  "deliveryPrice": 3.89,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Value",
+    "pickupPrice": 1.59,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Small",
+    "pickupPrice": 2.59,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium",
+    "pickupPrice": 2.89,
+    "deliveryPrice": 3.89,
+    "calories": null
+   },
+   {
+    "name": "Large",
+    "pickupPrice": 3.19,
+    "deliveryPrice": 4.29,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-96f798e4970efd695913094cbff782b66647265f-1333x1333-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "0327a0e6-ded3-4c86-ab9b-0a5a71e6aa8a",
+  "itemName": "Coca-Cola Zero Sugar",
+  "itemType": "PICKER",
+  "sectionName": "Drinks & Coffee",
+  "sections": [
+   "Drinks & Coffee"
+  ],
+  "description": "Enjoy a variety of soft drinks that pair perfectly with your meal!",
+  "dayParts": [
+   "All",
+   "Main Menu",
+   "Breakfast",
+   "Burgers for Breakfast"
+  ],
+  "price": 2.89,
+  "pickupPrice": 2.89,
+  "deliveryPrice": 3.89,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Value",
+    "pickupPrice": 1.59,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Small",
+    "pickupPrice": 2.59,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium",
+    "pickupPrice": 2.89,
+    "deliveryPrice": 3.89,
+    "calories": null
+   },
+   {
+    "name": "Large",
+    "pickupPrice": 3.19,
+    "deliveryPrice": 4.29,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-41f52a4939eb6876e66c92e1f2d8b98958d240f6-1333x1333-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "X523x0h1RfuoK0pFR4AD3e",
+  "itemName": "Dr Pepper\u00ae",
+  "itemType": "PICKER",
+  "sectionName": "Drinks & Coffee",
+  "sections": [
+   "Drinks & Coffee"
+  ],
+  "description": "Enjoy a variety of soft drinks that pair perfectly with your meal!",
+  "dayParts": [
+   "All",
+   "Main Menu",
+   "Breakfast",
+   "Burgers for Breakfast"
+  ],
+  "price": 2.89,
+  "pickupPrice": 2.89,
+  "deliveryPrice": 3.89,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Value",
+    "pickupPrice": 1.59,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Small",
+    "pickupPrice": 2.59,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium",
+    "pickupPrice": 2.89,
+    "deliveryPrice": 3.89,
+    "calories": null
+   },
+   {
+    "name": "Large",
+    "pickupPrice": 3.19,
+    "deliveryPrice": 4.29,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-80a7c7d1e2e46893af98f569f729a2b88a0a2107-1333x1333-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "61c8ad32-0ff5-4af3-a1e1-454d3020355f",
+  "itemName": "Sprite",
+  "itemType": "PICKER",
+  "sectionName": "Drinks & Coffee",
+  "sections": [
+   "Drinks & Coffee"
+  ],
+  "description": "Enjoy a variety of soft drinks that pair perfectly with your meal!",
+  "dayParts": [
+   "All",
+   "Main Menu",
+   "Breakfast",
+   "Burgers for Breakfast"
+  ],
+  "price": 2.89,
+  "pickupPrice": 2.89,
+  "deliveryPrice": 3.89,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Value",
+    "pickupPrice": 1.59,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Small",
+    "pickupPrice": 2.59,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium",
+    "pickupPrice": 2.89,
+    "deliveryPrice": 3.89,
+    "calories": null
+   },
+   {
+    "name": "Large",
+    "pickupPrice": 3.19,
+    "deliveryPrice": 4.29,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-6c69162041749e21fbdf9251ffb59be03195aa95-1333x1333-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "657fab87-4539-4003-965f-3a6925ebf378",
+  "itemName": "Sprite Zero",
+  "itemType": "PICKER",
+  "sectionName": "Drinks & Coffee",
+  "sections": [
+   "Drinks & Coffee"
+  ],
+  "description": "Enjoy a variety of soft drinks that pair perfectly with your meal!",
+  "dayParts": [
+   "All",
+   "Main Menu",
+   "Breakfast",
+   "Burgers for Breakfast"
+  ],
+  "price": 2.89,
+  "pickupPrice": 2.89,
+  "deliveryPrice": 3.89,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Value",
+    "pickupPrice": 1.59,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Small",
+    "pickupPrice": 2.59,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium",
+    "pickupPrice": 2.89,
+    "deliveryPrice": 3.89,
+    "calories": null
+   },
+   {
+    "name": "Large",
+    "pickupPrice": 3.19,
+    "deliveryPrice": 4.29,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-0d4af6e2ee9d3267667730b575c3b0f29af3f6e0-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "item_113",
+  "itemName": "Pure Life\u00ae Purified Water",
+  "itemType": "ITEM",
+  "sectionName": "Drinks & Coffee",
+  "sections": [
+   "Drinks & Coffee"
+  ],
+  "description": "A cool and refreshing way to wash down your signature favorites.",
+  "dayParts": [
+   "All",
+   "Main Menu",
+   "Breakfast",
+   "Burgers for Breakfast"
+  ],
+  "price": 2.19,
+  "pickupPrice": 2.19,
+  "deliveryPrice": 2.89,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": null,
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-9c5500c6a98cfa09efabef59fa3ead1a9e6a8d87-1333x1333-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "9247c67d-709a-4ec0-9f68-71e16b0560b8",
+  "itemName": "Signature Mango Peach Lemonade",
+  "itemType": "PICKER",
+  "sectionName": "Drinks & Coffee",
+  "sections": [
+   "Drinks & Coffee",
+   "Limited Time Only"
+  ],
+  "description": "Signature Mango Peach Lemonade is made with real fruit juice for a delicious and refreshing beverage.\n\n*Made with lemonade, sugar, fruit puree and natural flavors.",
+  "dayParts": [
+   "All",
+   "Main Menu",
+   "Burgers for Breakfast",
+   "Breakfast"
+  ],
+  "price": 3.09,
+  "pickupPrice": 3.09,
+  "deliveryPrice": 4.09,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Kids",
+    "pickupPrice": 2.29,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Small",
+    "pickupPrice": 2.69,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium",
+    "pickupPrice": 3.09,
+    "deliveryPrice": 4.09,
+    "calories": null
+   },
+   {
+    "name": "Large",
+    "pickupPrice": 4.09,
+    "deliveryPrice": 5.49,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-ea68e65fa55b593e5b6b355000756f76be01c9c9-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "6e9e6630-f65c-485e-ac6e-63798f773e82",
+  "itemName": "Signature Strawberry Lemonade",
+  "itemType": "PICKER",
+  "sectionName": "Drinks & Coffee",
+  "sections": [
+   "Drinks & Coffee"
+  ],
+  "description": "The NEW Strawberry Lemonade is made with real fruit juice for a delicious and refreshing beverage.*Made with lemonade, sugar, fruit puree and natural flavors.",
+  "dayParts": [
+   "Main Menu",
+   "Breakfast",
+   "All",
+   "Burgers for Breakfast"
+  ],
+  "price": 3.09,
+  "pickupPrice": 3.09,
+  "deliveryPrice": 4.09,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Kids",
+    "pickupPrice": 2.29,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Small",
+    "pickupPrice": 2.69,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium",
+    "pickupPrice": 3.09,
+    "deliveryPrice": 4.09,
+    "calories": null
+   },
+   {
+    "name": "Large",
+    "pickupPrice": 4.09,
+    "deliveryPrice": 5.39,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-3ac03e93e3e582e479a74f0f32b771d26670f397-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "187fc2f5-a48d-4dbe-982b-a5e9a1f53065",
+  "itemName": "Minute Maid Lemonade",
+  "itemType": "PICKER",
+  "sectionName": "Drinks & Coffee",
+  "sections": [
+   "Drinks & Coffee"
+  ],
+  "description": "Minute Maid Lemonade",
+  "dayParts": [
+   "All",
+   "Main Menu",
+   "Breakfast",
+   "Burgers for Breakfast"
+  ],
+  "price": 2.89,
+  "pickupPrice": 2.89,
+  "deliveryPrice": 3.89,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Small",
+    "pickupPrice": 2.59,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium",
+    "pickupPrice": 2.89,
+    "deliveryPrice": 3.89,
+    "calories": null
+   },
+   {
+    "name": "Large",
+    "pickupPrice": 3.19,
+    "deliveryPrice": 4.29,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-e990e248922cbe2116649daba1c7b83c9dca1198-1333x1333-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "lXyLHRfR3ruSxzsSyarNDE",
+  "itemName": "Sweetened Iced Tea",
+  "itemType": "PICKER",
+  "sectionName": "Drinks & Coffee",
+  "sections": [
+   "Drinks & Coffee"
+  ],
+  "description": "Brewed fresh daily.",
+  "dayParts": [
+   "All",
+   "Main Menu",
+   "Breakfast",
+   "Burgers for Breakfast"
+  ],
+  "price": 2.89,
+  "pickupPrice": 2.89,
+  "deliveryPrice": 3.89,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Value",
+    "pickupPrice": 1.59,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Small",
+    "pickupPrice": 2.59,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium",
+    "pickupPrice": 2.89,
+    "deliveryPrice": 3.89,
+    "calories": null
+   },
+   {
+    "name": "Large",
+    "pickupPrice": 3.19,
+    "deliveryPrice": 4.29,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-e0144ce9c1e610d92f9f7e2c2cd93ecd6b0dc64e-1333x1333-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "WyAujkDbyd7SS90d4E3orz",
+  "itemName": "Unsweetened Iced Tea",
+  "itemType": "PICKER",
+  "sectionName": "Drinks & Coffee",
+  "sections": [
+   "Drinks & Coffee"
+  ],
+  "description": "Brewed fresh daily.",
+  "dayParts": [
+   "All",
+   "Main Menu",
+   "Breakfast",
+   "Burgers for Breakfast"
+  ],
+  "price": 2.89,
+  "pickupPrice": 2.89,
+  "deliveryPrice": 3.89,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Value",
+    "pickupPrice": 1.59,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Small",
+    "pickupPrice": 2.59,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium",
+    "pickupPrice": 2.89,
+    "deliveryPrice": 3.89,
+    "calories": null
+   },
+   {
+    "name": "Large",
+    "pickupPrice": 3.19,
+    "deliveryPrice": 4.29,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-e0144ce9c1e610d92f9f7e2c2cd93ecd6b0dc64e-1333x1333-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "lXyLHRfR3ruSxzsSyaqSb6",
+  "itemName": "Barq's",
+  "itemType": "PICKER",
+  "sectionName": "Drinks & Coffee",
+  "sections": [
+   "Drinks & Coffee"
+  ],
+  "description": "Enjoy a variety of soft drinks that pair perfectly with your meal!",
+  "dayParts": [
+   "All",
+   "Main Menu",
+   "Breakfast",
+   "Burgers for Breakfast"
+  ],
+  "price": 2.89,
+  "pickupPrice": 2.89,
+  "deliveryPrice": 3.89,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Value",
+    "pickupPrice": 1.59,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Small",
+    "pickupPrice": 2.59,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium",
+    "pickupPrice": 2.89,
+    "deliveryPrice": 3.89,
+    "calories": null
+   },
+   {
+    "name": "Large",
+    "pickupPrice": 3.19,
+    "deliveryPrice": 4.29,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-072c209f815eae979efae758f10057586aca1f98-1333x1333-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "WyAujkDbyd7SS90d4E3UfF",
+  "itemName": "Diet Barq's",
+  "itemType": "PICKER",
+  "sectionName": "Drinks & Coffee",
+  "sections": [
+   "Drinks & Coffee"
+  ],
+  "description": "Enjoy a variety of soft drinks that pair perfectly with your meal!",
+  "dayParts": [
+   "All",
+   "Main Menu",
+   "Breakfast",
+   "Burgers for Breakfast"
+  ],
+  "price": 2.89,
+  "pickupPrice": 2.89,
+  "deliveryPrice": 3.89,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Value",
+    "pickupPrice": 1.59,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Small",
+    "pickupPrice": 2.59,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium",
+    "pickupPrice": 2.89,
+    "deliveryPrice": 3.89,
+    "calories": null
+   },
+   {
+    "name": "Large",
+    "pickupPrice": 3.19,
+    "deliveryPrice": 4.29,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-0364bf59826fce27c3916a471247bc7edd72c096-1333x1333-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "WyAujkDbyd7SS90d4E3kO0",
+  "itemName": "HI-C Fruit Punch",
+  "itemType": "PICKER",
+  "sectionName": "Drinks & Coffee",
+  "sections": [
+   "Drinks & Coffee"
+  ],
+  "description": "Enjoy a variety of soft drinks that pair perfectly with your meal!",
+  "dayParts": [
+   "All",
+   "Main Menu",
+   "Breakfast",
+   "Burgers for Breakfast"
+  ],
+  "price": 2.89,
+  "pickupPrice": 2.89,
+  "deliveryPrice": 3.89,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Value",
+    "pickupPrice": 1.59,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Small",
+    "pickupPrice": 2.59,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium",
+    "pickupPrice": 2.89,
+    "deliveryPrice": 3.89,
+    "calories": null
+   },
+   {
+    "name": "Large",
+    "pickupPrice": 3.19,
+    "deliveryPrice": 4.29,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-e378e4dac2c5804bfab1c9b58bf202b4b5e2973c-1333x1333-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "lXyLHRfR3ruSxzsSyar84C",
+  "itemName": "HI-C Pink Lemonade",
+  "itemType": "PICKER",
+  "sectionName": "Drinks & Coffee",
+  "sections": [
+   "Drinks & Coffee"
+  ],
+  "description": "Enjoy a variety of soft drinks that pair perfectly with your meal!",
+  "dayParts": [
+   "All",
+   "Main Menu",
+   "Breakfast",
+   "Burgers for Breakfast"
+  ],
+  "price": 2.89,
+  "pickupPrice": 2.89,
+  "deliveryPrice": 3.89,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Value",
+    "pickupPrice": 1.59,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Small",
+    "pickupPrice": 2.59,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium",
+    "pickupPrice": 2.89,
+    "deliveryPrice": 3.89,
+    "calories": null
+   },
+   {
+    "name": "Large",
+    "pickupPrice": 3.19,
+    "deliveryPrice": 4.29,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-1575c6523cac4eb6de729b7a2483ff55b47cf0bf-1333x1333-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "8633001a-3bc6-40ed-aac7-fb578fef1465",
+  "itemName": "Hi-C\u00ae Orange",
+  "itemType": "PICKER",
+  "sectionName": "Drinks & Coffee",
+  "sections": [
+   "Drinks & Coffee"
+  ],
+  "description": "Enjoy a variety of soft drinks that pair perfectly with your meal!",
+  "dayParts": [
+   "All",
+   "Breakfast",
+   "Main Menu",
+   "Burgers for Breakfast"
+  ],
+  "price": 2.89,
+  "pickupPrice": 2.89,
+  "deliveryPrice": 3.89,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Value",
+    "pickupPrice": 1.59,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Small",
+    "pickupPrice": 2.59,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium",
+    "pickupPrice": 2.89,
+    "deliveryPrice": 3.89,
+    "calories": null
+   },
+   {
+    "name": "Large",
+    "pickupPrice": 3.19,
+    "deliveryPrice": 4.29,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-bbabadbf3115e87244844374888b54629107e2a5-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "lXyLHRfR3ruSxzsSyar0z6",
+  "itemName": "Fanta Orange",
+  "itemType": "PICKER",
+  "sectionName": "Drinks & Coffee",
+  "sections": [
+   "Drinks & Coffee"
+  ],
+  "description": "Enjoy a variety of soft drinks that pair perfectly with your meal!",
+  "dayParts": [
+   "All",
+   "Breakfast",
+   "Main Menu",
+   "Burgers for Breakfast"
+  ],
+  "price": 2.89,
+  "pickupPrice": 2.89,
+  "deliveryPrice": 3.89,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Value",
+    "pickupPrice": 1.59,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Small",
+    "pickupPrice": 2.59,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium",
+    "pickupPrice": 2.89,
+    "deliveryPrice": 3.89,
+    "calories": null
+   },
+   {
+    "name": "Large",
+    "pickupPrice": 3.19,
+    "deliveryPrice": 4.29,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-9ea427079b175ad5ab49b837947eacb0f954c440-1333x1333-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "d1850470-6371-44f3-845f-d8a7c04336a3",
+  "itemName": "Fanta Strawberry",
+  "itemType": "PICKER",
+  "sectionName": "Drinks & Coffee",
+  "sections": [
+   "Drinks & Coffee"
+  ],
+  "description": null,
+  "dayParts": [
+   "All",
+   "Main Menu",
+   "Breakfast",
+   "Burgers for Breakfast"
+  ],
+  "price": 2.89,
+  "pickupPrice": 2.89,
+  "deliveryPrice": 3.89,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Value",
+    "pickupPrice": 1.59,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Small",
+    "pickupPrice": 2.59,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium",
+    "pickupPrice": 2.89,
+    "deliveryPrice": 3.89,
+    "calories": null
+   },
+   {
+    "name": "Large",
+    "pickupPrice": 3.19,
+    "deliveryPrice": 4.29,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-343c45a17ba09cd7978e80c2ca47d84f3772a4af-1333x1333-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "e8b081dc-1eda-4041-8589-82c11a808cca",
+  "itemName": "Mello Yello",
+  "itemType": "PICKER",
+  "sectionName": "Drinks & Coffee",
+  "sections": [
+   "Drinks & Coffee"
+  ],
+  "description": "Enjoy a variety of soft drinks that pair perfectly with your meal!",
+  "dayParts": [
+   "All",
+   "Main Menu",
+   "Breakfast",
+   "Burgers for Breakfast"
+  ],
+  "price": 2.89,
+  "pickupPrice": 2.89,
+  "deliveryPrice": 3.89,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Value",
+    "pickupPrice": 1.59,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Small",
+    "pickupPrice": 2.59,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium",
+    "pickupPrice": 2.89,
+    "deliveryPrice": 3.89,
+    "calories": null
+   },
+   {
+    "name": "Large",
+    "pickupPrice": 3.19,
+    "deliveryPrice": 4.29,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-7ff1152a28ddba14eede48494a45748fd054743a-1333x1333-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "o3sJ5YAauiy3u5QulKbraD",
+  "itemName": "Mello Yello Zero",
+  "itemType": "PICKER",
+  "sectionName": "Drinks & Coffee",
+  "sections": [
+   "Drinks & Coffee"
+  ],
+  "description": null,
+  "dayParts": [
+   "All",
+   "Main Menu",
+   "Breakfast",
+   "Burgers for Breakfast"
+  ],
+  "price": 1.59,
+  "pickupPrice": 1.59,
+  "deliveryPrice": 3.89,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Value",
+    "pickupPrice": 1.59,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Small",
+    "pickupPrice": 2.59,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium",
+    "pickupPrice": 2.89,
+    "deliveryPrice": 3.89,
+    "calories": null
+   },
+   {
+    "name": "Large",
+    "pickupPrice": 3.19,
+    "deliveryPrice": 4.29,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-7ba581f478410efd50761316d71311c66b7f8694-1333x1333-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "upnwEjOVjxUe2fWCg1zrJF",
+  "itemName": "Powerade\u00ae",
+  "itemType": "PICKER",
+  "sectionName": "Drinks & Coffee",
+  "sections": [
+   "Drinks & Coffee"
+  ],
+  "description": "\u00a9 2018 The Coca-Cola Company. \"POWERADE\" is a registered trademark of The Coca-Cola Company.",
+  "dayParts": [
+   "All",
+   "Breakfast",
+   "Main Menu",
+   "Burgers for Breakfast"
+  ],
+  "price": 2.89,
+  "pickupPrice": 2.89,
+  "deliveryPrice": 3.89,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Value",
+    "pickupPrice": 1.59,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Small",
+    "pickupPrice": 2.59,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium",
+    "pickupPrice": 2.89,
+    "deliveryPrice": 3.89,
+    "calories": null
+   },
+   {
+    "name": "Large",
+    "pickupPrice": 3.19,
+    "deliveryPrice": 4.29,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-dbb7eff98abbc391e360a29397fea7fa5a21b340-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "WyAujkDbyd7SS90d4E3QrM",
+  "itemName": "Powerade Zero",
+  "itemType": "PICKER",
+  "sectionName": "Drinks & Coffee",
+  "sections": [
+   "Drinks & Coffee"
+  ],
+  "description": "Enjoy a variety of soft drinks that pair perfectly with your meal!",
+  "dayParts": [
+   "All",
+   "Main Menu",
+   "Breakfast",
+   "Burgers for Breakfast"
+  ],
+  "price": 2.89,
+  "pickupPrice": 2.89,
+  "deliveryPrice": 3.89,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Value",
+    "pickupPrice": 1.59,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Small",
+    "pickupPrice": 2.59,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium",
+    "pickupPrice": 2.89,
+    "deliveryPrice": 3.89,
+    "calories": null
+   },
+   {
+    "name": "Large",
+    "pickupPrice": 3.19,
+    "deliveryPrice": 4.29,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-65a2603b49890f1e617ea634c756b9065d3903d8-1500x1500-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "item_13",
+  "itemName": "Honest Kids\u00ae Apple Juice Drink",
+  "itemType": "ITEM",
+  "sectionName": "Drinks & Coffee",
+  "sections": [
+   "Drinks & Coffee"
+  ],
+  "description": "Appley Ever After\u00ae is a refreshing, apple juice drink made from concentrate that will leave your taste buds feeling happy and satisfied.",
+  "dayParts": [
+   "All",
+   "Main Menu",
+   "Breakfast",
+   "Burgers for Breakfast"
+  ],
+  "price": 1.99,
+  "pickupPrice": 1.99,
+  "deliveryPrice": 2.69,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": null,
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-e07cefcc11be00fad4df7a5f43d83e0e2d9070b7-1333x1333-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "kmSrSXZ6YFjFNmEEqhtzlp",
+  "itemName": "Coke\u00ae Freezee King",
+  "itemType": "PICKER",
+  "sectionName": "Drinks & Coffee",
+  "sections": [
+   "Drinks & Coffee"
+  ],
+  "description": "The great taste of Coca-Cola\u00ae in a refreshing frozen drink.",
+  "dayParts": [
+   "All",
+   "Main Menu",
+   "Breakfast",
+   "Burgers for Breakfast"
+  ],
+  "price": 2.19,
+  "pickupPrice": 2.19,
+  "deliveryPrice": 2.89,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Small",
+    "pickupPrice": 1.49,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium",
+    "pickupPrice": 2.19,
+    "deliveryPrice": 2.89,
+    "calories": null
+   },
+   {
+    "name": "Large",
+    "pickupPrice": 2.59,
+    "deliveryPrice": 3.49,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-0692ea86e26875def14b39a5da2e934898cfc76a-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "502a9ee4-f48e-448a-aff1-e5998c087415",
+  "itemName": "Fanta\u00ae Strawberry Freezee King",
+  "itemType": "PICKER",
+  "sectionName": "Drinks & Coffee",
+  "sections": [
+   "Drinks & Coffee"
+  ],
+  "description": "The great taste of Fanta\u00ae Strawberry soda in a refreshing frozen drink.",
+  "dayParts": [
+   "All",
+   "Main Menu",
+   "Breakfast",
+   "Burgers for Breakfast"
+  ],
+  "price": 2.19,
+  "pickupPrice": 2.19,
+  "deliveryPrice": 2.89,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Small",
+    "pickupPrice": 1.49,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium",
+    "pickupPrice": 2.19,
+    "deliveryPrice": 2.89,
+    "calories": null
+   },
+   {
+    "name": "Large",
+    "pickupPrice": 2.59,
+    "deliveryPrice": 3.49,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-c6a0e656f4628fdb08733e275454b0ab8137c83c-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "0af93ec5-36a9-4af3-a1ac-2b79fad2500e",
+  "itemName": "Fanta\u00ae Blue Raspberry Freezee King",
+  "itemType": "PICKER",
+  "sectionName": "Drinks & Coffee",
+  "sections": [
+   "Drinks & Coffee"
+  ],
+  "description": "The great taste of Fanta\u00ae Blue Raspberry soda in a refreshing frozen drink.",
+  "dayParts": [
+   "All",
+   "Main Menu",
+   "Breakfast",
+   "Burgers for Breakfast"
+  ],
+  "price": 2.19,
+  "pickupPrice": 2.19,
+  "deliveryPrice": 2.89,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Small",
+    "pickupPrice": 1.49,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium",
+    "pickupPrice": 2.19,
+    "deliveryPrice": 2.89,
+    "calories": null
+   },
+   {
+    "name": "Large",
+    "pickupPrice": 2.59,
+    "deliveryPrice": 3.49,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-b006d7a1819cd0439ef14031f5458f3725d57a0c-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "item_95592",
+  "itemName": "Cinnamon Apple Pie",
+  "itemType": "ITEM",
+  "sectionName": "Sweets",
+  "sections": [
+   "Sweets"
+  ],
+  "description": "A tasty fried twist on traditional apple pie with golden, crispy crust and warm, cinnamon apple filling.",
+  "dayParts": [
+   "Main Menu",
+   "Breakfast"
+  ],
+  "price": 1.79,
+  "pickupPrice": 1.79,
+  "deliveryPrice": 2.39,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": null,
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-445c6427fa88b5cef5fe48658f8dbfcbf44c2812-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "item_724",
+  "itemName": "HERSHEY'S\u00ae Sundae Pie",
+  "itemType": "ITEM",
+  "sectionName": "Sweets",
+  "sections": [
+   "Sweets"
+  ],
+  "description": "A crunchy chocolate crust filled with chocolate cr\u00e8me filling and garnished with real HERSHEY\u2019S\u00ae Chocolate Chips. HERSHEY'S trademarks and trade dress used with permission.",
+  "dayParts": [
+   "Main Menu",
+   "Breakfast"
+  ],
+  "price": 2.59,
+  "pickupPrice": 2.59,
+  "deliveryPrice": 3.49,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": null,
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-2297011f3490e069656530a1fb11b58789ba483d-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "302d1515-4052-426e-9367-c735fbde4d8a",
+  "itemName": "Chocolate Chip Cookies",
+  "itemType": "PICKER",
+  "sectionName": "Sweets",
+  "sections": [
+   "Sweets"
+  ],
+  "description": null,
+  "dayParts": [
+   "All",
+   "Main Menu",
+   "Breakfast",
+   "Burgers for Breakfast"
+  ],
+  "price": 0.89,
+  "pickupPrice": 0.89,
+  "deliveryPrice": 1.19,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "1 Cookie",
+    "pickupPrice": 0.89,
+    "deliveryPrice": 1.19,
+    "calories": null
+   },
+   {
+    "name": "2 Cookies",
+    "pickupPrice": 1.69,
+    "deliveryPrice": 2.29,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-a365054522da39646ac8d6717ff59d46ce77b3ad-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "738cf5c3-f8ab-446b-aa57-3246e37a49df",
+  "itemName": "Tailgate Bundle",
+  "itemType": "COMBO",
+  "sectionName": "Digital Exclusives",
+  "sections": [
+   "Digital Exclusives"
+  ],
+  "description": "1x Game Day Pretzel Burger + 1x 4 Pc. Nacho Chicken Fries + 1x Small Fries + 1x Small Drink",
+  "dayParts": [
+   "Main Menu"
+  ],
+  "price": 16.49,
+  "pickupPrice": 16.49,
+  "deliveryPrice": null,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": null,
+  "modifierGroups": null,
+  "comboItems": [
+   "Game Day Pretzel Burger",
+   "4pc. Game Day Chicken Fries",
+   "Select Your Small Side",
+   "Small Combo Drinks"
+  ],
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-bf59ed756bfdaaa9f6f44f1c8c910c76cd9c4b20-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "f4ed5c31-48b2-4f84-b0bc-06120d0a828c",
+  "itemName": "Blitz Bundle",
+  "itemType": "COMBO",
+  "sectionName": "Digital Exclusives",
+  "sections": [
+   "Digital Exclusives"
+  ],
+  "description": "2x Game Day Pretzel Burger + 2x Original Chicken Sandwich + 1x 4 Pc. Game Day Chicken Fries with Nacho Cheese Sauce + 1x 4 Pc. Chicken Nuggets + 1x Small Fries + 1x Small Onion Rings",
+  "dayParts": [
+   "Main Menu"
+  ],
+  "price": 38.49,
+  "pickupPrice": 38.49,
+  "deliveryPrice": null,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": null,
+  "modifierGroups": null,
+  "comboItems": [
+   "Game Day Pretzel Burger",
+   "Game Day Pretzel Burger",
+   "Original Chicken Sandwich",
+   "Original Chicken Sandwich",
+   "4pc. Game Day Chicken Fries",
+   "4 Pc. Chicken Nuggets",
+   "Select Your Small Side",
+   "Select Your Small Side"
+  ],
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-46062e7ef50fa157310bdce25913eafa745cc36b-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "3d572272-3a23-4f25-b382-247669640cb0",
+  "itemName": "Double Coverage Bundle",
+  "itemType": "COMBO",
+  "sectionName": "Digital Exclusives",
+  "sections": [
+   "Digital Exclusives"
+  ],
+  "description": "1x Double Cheeseburger + 1x Original Chicken Sandwich + 1x 8 Pc. Game Day Chicken Fries with Nacho Cheese Sauce + 2x Small Drink",
+  "dayParts": [
+   "Main Menu"
+  ],
+  "price": 18.99,
+  "pickupPrice": 18.99,
+  "deliveryPrice": null,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": null,
+  "modifierGroups": null,
+  "comboItems": [
+   "Double Cheeseburger",
+   "Original Chicken Sandwich",
+   "8 Pc. Game Day Chicken Fries",
+   "Small Combo Drinks",
+   "Small Combo Drinks"
+  ],
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-7840ce49160215f29a660f6a0fe1c6e01cb28d40-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "923c8f67-e2e1-4caa-9a7e-8ae91fd7e385",
+  "itemName": "Red Zone Bites",
+  "itemType": "COMBO",
+  "sectionName": "Digital Exclusives",
+  "sections": [
+   "Digital Exclusives"
+  ],
+  "description": "1x 4 Pc. Nacho Chicken Fries + 1x 4 Pc. Jalape\u00f1o Cheddar Bites",
+  "dayParts": [
+   "Main Menu"
+  ],
+  "price": 4.49,
+  "pickupPrice": 4.49,
+  "deliveryPrice": null,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": null,
+  "modifierGroups": null,
+  "comboItems": [
+   "4pc. Game Day Chicken Fries",
+   "4 Pc. Jalapeno Cheddar Bites"
+  ],
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-cc9f5f7a4f0ed8f036702ab24a6ae68be070a7f7-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "74bf980e-3feb-4f6e-acad-ed5ebfc3d56b",
+  "itemName": "Game Day Pretzel Burger",
+  "itemType": "PICKER",
+  "sectionName": "Limited Time Only",
+  "sections": [
+   "Limited Time Only",
+   "Flame Grilled Burgers"
+  ],
+  "description": "The Game Day Pretzel Burger features \u00bc lb. 100% flame-grilled beef patty topped with nacho cheese sauce, bacon, melty American cheese, pickles, crispy onions, all served on a soft pretzel bun.",
+  "dayParts": [
+   "Main Menu"
+  ],
+  "price": 8.89,
+  "pickupPrice": 8.89,
+  "deliveryPrice": 11.79,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "Just the Sandwich - Entre\u00e9 only",
+    "pickupPrice": 8.89,
+    "deliveryPrice": 11.79,
+    "calories": null
+   },
+   {
+    "name": "Small - Side and Drink Included",
+    "pickupPrice": 12.69,
+    "deliveryPrice": null,
+    "calories": null
+   },
+   {
+    "name": "Medium - Side and Drink Included",
+    "pickupPrice": 13.69,
+    "deliveryPrice": 18.19,
+    "calories": null
+   },
+   {
+    "name": "Large - Side and Drink Included",
+    "pickupPrice": 14.39,
+    "deliveryPrice": 19.08,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-69edfb860296d77ce53d200af7492a72faa84dc3-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "a9b3d711-b926-47fe-9ead-46d65df31e75",
+  "itemName": "Game Day Chicken Fries",
+  "itemType": "PICKER",
+  "sectionName": "Limited Time Only",
+  "sections": [
+   "Limited Time Only",
+   "Chicken & Fish",
+   "Sides"
+  ],
+  "description": "Game Day Chicken Fries \u2013 our classic, perfectly dippable chicken fries served with a side of Nacho Cheese sauce",
+  "dayParts": [
+   "Main Menu"
+  ],
+  "price": 4.69,
+  "pickupPrice": 4.69,
+  "deliveryPrice": 6.29,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "4 Pc. Game Day Chicken Fries",
+    "pickupPrice": 2.59,
+    "deliveryPrice": 3.49,
+    "calories": null
+   },
+   {
+    "name": "8 Pc. Game Day Chicken Fries",
+    "pickupPrice": 4.69,
+    "deliveryPrice": 6.29,
+    "calories": null
+   },
+   {
+    "name": "12 Pc. Game Day Chicken Fries",
+    "pickupPrice": 6.39,
+    "deliveryPrice": 8.49,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-b661e9fdf2aa0f27ed107771ee46845610c3969f-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "091a414b-62e6-4b06-a111-ca5daa22191e",
+  "itemName": "Cheesy Bacon Tots",
+  "itemType": "PICKER",
+  "sectionName": "Limited Time Only",
+  "sections": [
+   "Limited Time Only",
+   "Sides"
+  ],
+  "description": "Crispy coin-shaped tots stuffed with melty cheese, crispy bacon bits and fluffy potatoes.",
+  "dayParts": [
+   "Main Menu"
+  ],
+  "price": 2.19,
+  "pickupPrice": 2.19,
+  "deliveryPrice": 2.99,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": [
+   {
+    "name": "4 Piece",
+    "pickupPrice": 2.19,
+    "deliveryPrice": 2.99,
+    "calories": null
+   },
+   {
+    "name": "8 Piece",
+    "pickupPrice": 3.19,
+    "deliveryPrice": 4.29,
+    "calories": null
+   }
+  ],
+  "modifierGroups": null,
+  "comboItems": null,
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-773ebbce15b9a6d4eefcf640f45ed3154957f837-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "18493c30-f4af-476d-a76f-25385df27ee7",
+  "itemName": "Duo",
+  "itemType": "COMBO",
+  "sectionName": "Limited Time Only",
+  "sections": [
+   "Limited Time Only"
+  ],
+  "description": "Get any combination of 2 of the following: Large Freezee King, Medium Soft Drink, Medium French Fries, 8 Pc. Chicken Fries, Whopper\u00ae Jr., Original Chicken Sandwich, Bacon Cheeseburger.",
+  "dayParts": [
+   "Main Menu",
+   "Burgers for Breakfast",
+   "All",
+   "Breakfast"
+  ],
+  "price": 5,
+  "pickupPrice": 5,
+  "deliveryPrice": null,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": null,
+  "modifierGroups": null,
+  "comboItems": [
+   "Choose Your First Item",
+   "Choose Your Second Item"
+  ],
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-966fcec4f5ebb133b81567831336b8c4228065dc-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ },
+ {
+  "type": "menu-item",
+  "storeId": "1848",
+  "storeNumber": "1848",
+  "storeName": "2121 Bloomingdale Road GLENDALE HTS, Illinois 60139-1851 - USA",
+  "storeAddress": "2121 Bloomingdale Road",
+  "storeCity": "GLENDALE HTS",
+  "storeState": "Illinois",
+  "storePostalCode": "60139-1851",
+  "storeCountry": "USA",
+  "storeLatitude": 41.936628,
+  "storeLongitude": -88.079772,
+  "storePhone": "6308942510",
+  "storeStatus": "Open",
+  "hasDriveThru": true,
+  "searchedAddress": "60108",
+  "itemId": "03d667f7-b30d-40f0-beed-e0972b739ae6",
+  "itemName": "Trio",
+  "itemType": "COMBO",
+  "sectionName": "Limited Time Only",
+  "sections": [
+   "Limited Time Only"
+  ],
+  "description": "Get any combination of 3 of the following: Large Freezee King, Medium Soft Drink, Medium French Fries, 8 Pc. Chicken Fries, Whopper\u00ae Jr., Original Chicken Sandwich, Bacon Cheeseburger.",
+  "dayParts": [
+   "Main Menu",
+   "Burgers for Breakfast",
+   "All",
+   "Breakfast"
+  ],
+  "price": 7,
+  "pickupPrice": 7,
+  "deliveryPrice": null,
+  "currency": "USD",
+  "isAvailable": true,
+  "calories": null,
+  "caloriesMin": null,
+  "caloriesMax": null,
+  "nutrition": null,
+  "allergens": null,
+  "variants": null,
+  "modifierGroups": null,
+  "comboItems": [
+   "Choose Your First Item",
+   "Choose Your Second Item",
+   "Choose Your Third Item"
+  ],
+  "imageUrl": "https://use1-prod-bk-menu.rbictg.com/api/v1/menu/image/us/image-b9662826f954f53123eb94242b5e4f0e96b9fd2d-1600x1600-png",
+  "scrapedAt": "2026-11-14T18:59:49.793Z"
+ }
+]

@@ -1,0 +1,191 @@
+[
+ {
+  "type": "menu-item",
+  "storeId": "99999",
+  "storeAddress": "100 TEST STREET",
+  "storeCity": "TESTVILLE",
+  "storeState": "Illinois",
+  "itemName": "Whopper",
+  "price": 6.19,
+  "currency": "USD",
+  "isAvailable": true,
+  "variants": [
+   {
+    "name": "Just the Sandwich - Entreé only",
+    "pickupPrice": 6.19
+   },
+   {
+    "name": "Medium - Side and Drink Included",
+    "pickupPrice": 10.29
+   }
+  ]
+ },
+ {
+  "type": "menu-item",
+  "storeId": "99999",
+  "storeAddress": "100 TEST STREET",
+  "storeCity": "TESTVILLE",
+  "storeState": "Illinois",
+  "itemName": "Double Whopper",
+  "price": 11.09,
+  "currency": "USD",
+  "isAvailable": true
+ },
+ {
+  "type": "menu-item",
+  "storeId": "99999",
+  "storeAddress": "100 TEST STREET",
+  "storeCity": "TESTVILLE",
+  "storeState": "Illinois",
+  "itemName": "Whopper Jr.®",
+  "price": 4.49,
+  "currency": "USD",
+  "isAvailable": true
+ },
+ {
+  "type": "menu-item",
+  "storeId": "99999",
+  "storeAddress": "100 TEST STREET",
+  "storeCity": "TESTVILLE",
+  "storeState": "Illinois",
+  "itemName": "Cheeseburger",
+  "price": 3.39,
+  "currency": "USD",
+  "isAvailable": true
+ },
+ {
+  "type": "menu-item",
+  "storeId": "99999",
+  "storeAddress": "100 TEST STREET",
+  "storeCity": "TESTVILLE",
+  "storeState": "Illinois",
+  "itemName": "Bacon King",
+  "price": 1.99,
+  "currency": "USD",
+  "isAvailable": true
+ },
+ {
+  "type": "menu-item",
+  "storeId": "99999",
+  "storeAddress": "100 TEST STREET",
+  "storeCity": "TESTVILLE",
+  "storeState": "Illinois",
+  "itemName": "Original Chicken Sandwich",
+  "price": 7.29,
+  "currency": "USD",
+  "isAvailable": true
+ },
+ {
+  "type": "menu-item",
+  "storeId": "99999",
+  "storeAddress": "100 TEST STREET",
+  "storeCity": "TESTVILLE",
+  "storeState": "Illinois",
+  "itemName": "French Fries",
+  "price": 4.29,
+  "currency": "USD",
+  "isAvailable": true,
+  "variants": [
+   {
+    "name": "Small",
+    "pickupPrice": 3.29
+   },
+   {
+    "name": "Medium",
+    "pickupPrice": 4.19
+   },
+   {
+    "name": "Large",
+    "pickupPrice": 4.79
+   }
+  ]
+ },
+ {
+  "type": "menu-item",
+  "storeId": "99999",
+  "storeAddress": "100 TEST STREET",
+  "storeCity": "TESTVILLE",
+  "storeState": "Illinois",
+  "itemName": "4 Pc. Chicken Nuggets",
+  "price": 2.49,
+  "currency": "USD",
+  "isAvailable": true
+ },
+ {
+  "type": "menu-item",
+  "storeId": "99999",
+  "storeAddress": "100 TEST STREET",
+  "storeCity": "TESTVILLE",
+  "storeState": "Illinois",
+  "itemName": "8 Pc. Chicken Nuggets",
+  "price": 4.59,
+  "currency": "USD",
+  "isAvailable": true
+ },
+ {
+  "type": "menu-item",
+  "storeId": "99999",
+  "storeAddress": "100 TEST STREET",
+  "storeCity": "TESTVILLE",
+  "storeState": "Illinois",
+  "itemName": "Medium Coca-Cola®",
+  "price": 3.69,
+  "currency": "USD",
+  "isAvailable": true
+ },
+ {
+  "type": "menu-item",
+  "storeId": "99999",
+  "storeAddress": "100 TEST STREET",
+  "storeCity": "TESTVILLE",
+  "storeState": "Illinois",
+  "itemName": "Large Coca-Cola®",
+  "price": 4.19,
+  "currency": "USD",
+  "isAvailable": true
+ },
+ {
+  "type": "menu-item",
+  "storeId": "99999",
+  "storeAddress": "100 TEST STREET",
+  "storeCity": "TESTVILLE",
+  "storeState": "Illinois",
+  "itemName": "Hash Browns",
+  "price": 2.39,
+  "currency": "USD",
+  "isAvailable": true
+ },
+ {
+  "type": "menu-item",
+  "storeId": "99999",
+  "storeAddress": "100 TEST STREET",
+  "storeCity": "TESTVILLE",
+  "storeState": "Illinois",
+  "itemName": "Hash Browns",
+  "price": 2.29,
+  "currency": "USD",
+  "isAvailable": true
+ },
+ {
+  "type": "menu-item",
+  "storeId": "99999",
+  "storeAddress": "100 TEST STREET",
+  "storeCity": "TESTVILLE",
+  "storeState": "Illinois",
+  "itemName": "Royal Crispy Chicken",
+  "price": 7.39,
+  "currency": "USD",
+  "isAvailable": false
+ },
+ {
+  "type": "menu-item",
+  "storeId": "99999",
+  "storeAddress": "100 TEST STREET",
+  "storeCity": "TESTVILLE",
+  "storeState": "Illinois",
+  "itemName": "Free Sauce",
+  "price": 0,
+  "currency": "USD",
+  "isAvailable": true
+ }
+]

@@ -129,3 +129,37 @@ current menus against this list while collecting data (task 6.2).
 coupon offers, deals that need a loyalty account, BOGO offers, "free with a
 purchase over $X", time-of-day menus such as breakfast hours, and limits on
 how many of a deal one order can have.
+
+## Checking your changes
+
+After editing a chain file, run:
+
+```
+combobite --check-data
+```
+
+It reads every `*.json` file in `data/chains/` and lists problems by chain and
+entry. **Errors** keep that chain from loading until they're fixed; **warnings**
+don't. It exits with code 0 when there are no errors, 1 when there are, and 2
+when the folder is missing or has no chain files. Use `--data <folder>` to
+check a different folder.
+
+| Errors (chain doesn't load) | Warnings (chain still loads) |
+|---|---|
+| A syntax error, reported with its line and column | An item size with no calorie data |
+| A missing field or a value of the wrong type, such as a price written in dollars | A combo or bundle that never costs less than its items bought separately (usually a typo) |
+| A missing, zero or negative price, or negative calories | Prices last checked more than 90 days ago, or a date in the future |
+| A combo, bundle or add-on that uses an item, size or category the file doesn't define | An unknown field name, usually a typo such as `"upsize"` for `"upsizes"` |
+| Two entries with the same id, or two items with the same name | An add-on that applies to nothing |
+| An item category missing from `categories` | |
+| A slot with no choices or a count below 1, or two slots with the same role | |
+| An upsize that resizes a slot nothing in it can be resized for | |
+| A `prices_checked` date that isn't a real `YYYY-MM-DD` date | |
+| Two chain files with the same chain id (the second doesn't load) | |
+
+**When a chain stops selling an item**, delete the item from the file and run
+the check. It lists every combo and bundle that still uses it, so you can
+remove or fix those too.
+
+If a file has a syntax or shape error, the other checks wait until it's fixed,
+so run the check again after each fix.

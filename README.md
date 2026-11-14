@@ -16,7 +16,7 @@ then explains why.
 | Front end | Python 3.10+ | `frontend/` | The `combobite` command, LLM request parsing, output and explanations |
 | Menu data | JSON | `data/` | One file per chain (`data/chains/`), plus a format example in `data/sample/` |
 | Test data | JSON | `tests/` | Target examples and parser sample requests shared by both halves |
-| Docs | Markdown | `docs/` | [Data file format](docs/data-format.md), [target format](docs/target-format.md) |
+| Docs | Markdown | `docs/` | [Data file format](docs/data-format.md), [target format](docs/target-format.md), [price refresh](docs/price-refresh.md) |
 
 Chains covered: McDonald's, Wendy's, Burger King and Taco Bell. Their prices
 are national-average estimates until they're checked at one store; see
@@ -75,6 +75,32 @@ Then run it and its tests:
 combobite --version
 pytest
 ```
+
+## Check the menu data
+
+After building the engine, check every chain file:
+
+```
+combobite --check-data
+```
+
+It lists errors (the chain won't load) and warnings by chain and entry. See
+[Checking your changes](docs/data-format.md#checking-your-changes) for every
+rule. The front end finds the engine in `build/`; set the `COMBOBITE_ENGINE`
+environment variable to use one somewhere else.
+
+## Refresh prices from a store
+
+With the engine built and a free Apify API token in the `APIFY_TOKEN`
+environment variable, pull one store's prices per chain:
+
+```
+combobite --refresh-prices --near 60446 --dry-run
+```
+
+Drop `--dry-run` to save. Prices are only saved after they pass the data
+check, and a failed pull keeps the last good prices. See
+[docs/price-refresh.md](docs/price-refresh.md) for setup, cost and limits.
 
 ## API key
 

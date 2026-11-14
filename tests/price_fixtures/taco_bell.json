@@ -1,0 +1,98 @@
+[
+ {
+  "type": "menu-item",
+  "storeNumber": "000001",
+  "storeAddress": "200 Sample Ave",
+  "storeCity": "Testville",
+  "storeState": "IL",
+  "itemName": "Crunchy Taco",
+  "price": 2.19,
+  "currency": "USD",
+  "calories": "170",
+  "isPurchasable": true
+ },
+ {
+  "type": "menu-item",
+  "storeNumber": "000001",
+  "storeAddress": "200 Sample Ave",
+  "storeCity": "Testville",
+  "storeState": "IL",
+  "itemName": "Soft Taco",
+  "price": 2.19,
+  "currency": "USD",
+  "calories": "180",
+  "isPurchasable": true
+ },
+ {
+  "type": "menu-item",
+  "storeNumber": "000001",
+  "storeAddress": "200 Sample Ave",
+  "storeCity": "Testville",
+  "storeState": "IL",
+  "itemName": "Bean Burrito",
+  "price": 2.29,
+  "currency": "USD",
+  "calories": "360",
+  "isPurchasable": true
+ },
+ {
+  "type": "menu-item",
+  "storeNumber": "000001",
+  "storeAddress": "200 Sample Ave",
+  "storeCity": "Testville",
+  "storeState": "IL",
+  "itemName": "Crunchwrap Supreme®",
+  "price": 6.49,
+  "currency": "USD",
+  "calories": "530",
+  "isPurchasable": true
+ },
+ {
+  "type": "menu-item",
+  "storeNumber": "000001",
+  "storeAddress": "200 Sample Ave",
+  "storeCity": "Testville",
+  "storeState": "IL",
+  "itemName": "Burrito Supreme®",
+  "price": 5.69,
+  "currency": "USD",
+  "calories": "390",
+  "isPurchasable": true
+ },
+ {
+  "type": "menu-item",
+  "storeNumber": "000001",
+  "storeAddress": "200 Sample Ave",
+  "storeCity": "Testville",
+  "storeState": "IL",
+  "itemName": "Cinnamon Twists",
+  "price": 1.79,
+  "currency": "USD",
+  "calories": "170",
+  "isPurchasable": true
+ },
+ {
+  "type": "menu-item",
+  "storeNumber": "000001",
+  "storeAddress": "200 Sample Ave",
+  "storeCity": "Testville",
+  "storeState": "IL",
+  "itemName": "Medium Pepsi®",
+  "price": 3.19,
+  "currency": "USD",
+  "calories": "250",
+  "isPurchasable": true
+ },
+ {
+  "type": "menu-item",
+  "storeNumber": "000001",
+  "storeAddress": "200 Sample Ave",
+  "storeCity": "Testville",
+  "storeState": "IL",
+  "itemName": "Hot Sauce Packet",
+  "price": 0,
+  "currency": "USD",
+  "calories": "0",
+  "isPurchasable": true
+ }
+]
