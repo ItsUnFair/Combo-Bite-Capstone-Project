@@ -1,0 +1,1491 @@
+{
+  "about": "Hand-calculated optimizer test cases (task 8.1). Each case is a target written directly in the target format (docs/target-format.md), so the LLM isn't involved, and the answer worked out by hand. The rules the answers follow are in docs/optimizer-rules.md. The optimizer test runner (task 8.2) sends every case through the real search; frontend/tests/test_optimizer_cases.py re-adds every expected order from the chain files to check the hand math and catch price changes.",
+  "data_folders": ["data/chains", "data/sample"],
+  "checks": {
+    "combo_beats_parts": "A combo or bundle is cheaper than the parts, sometimes even with an item the customer didn't ask for",
+    "upsize": "Making a combo large versus buying large sizes separately",
+    "substitution": "Choosing a non-default slot choice, with or without a charge",
+    "bundle": "Mix-and-match deals and fixed-price boxes",
+    "two_combos_vs_extras": "Two of the same combo versus one combo or a bundle plus separate items",
+    "add_on": "Add-ons, including on an item inside a combo",
+    "budget_only": "Budget-only targets (most calories, price breaks ties)",
+    "calorie_goal": "A calorie limit changes the answer",
+    "impossible": "No order meets the target",
+    "no_calorie_data": "Items with no calorie data: left out when calories matter, allowed otherwise",
+    "separate_is_cheapest": "Ordering separately is already cheapest",
+    "item_cap": "The 10-item cap",
+    "tie": "Two orders cost the same; either passes"
+  },
+  "cases": [
+    {
+      "id": "sample_combo_beats_parts",
+      "request": "Classic Burger, medium fries and a medium drink",
+      "checks": ["combo_beats_parts"],
+      "target": {
+        "format_version": 1,
+        "chain": "sample_burger",
+        "goal": "cheapest",
+        "max_price_cents": null,
+        "min_calories": null,
+        "max_calories": null,
+        "items": [
+          {"item": "classic_burger", "quantity": 1, "size": null, "add_ons": []},
+          {"item": "fries", "quantity": 1, "size": "medium", "add_ons": []},
+          {"item": "soft_drink", "quantity": 1, "size": "medium", "add_ons": []}
+        ],
+        "unsupported": []
+      },
+      "expected": {
+        "result": "order",
+        "total_cents": 849,
+        "calories": 1070,
+        "calories_complete": true,
+        "separately_cents": 937,
+        "order": [
+          {
+            "combo": "classic_burger_combo",
+            "upsize": null,
+            "quantity": 1,
+            "contents": [
+              {"role": "main", "item": "classic_burger", "size": "regular"},
+              {"role": "side", "item": "fries", "size": "medium"},
+              {"role": "drink", "item": "soft_drink", "size": "medium"}
+            ]
+          }
+        ]
+      },
+      "hand_calculation": [
+        "One at a time: burger $4.49 + medium fries $3.09 + medium drink $1.79 = $9.37",
+        "Classic Burger Combo: $8.49 (comes with exactly these three)",
+        "Combo wins by $0.88",
+        "Calories: 540 + 320 + 210 = 1,070"
+      ]
+    },
+    {
+      "id": "sample_upsize_beats_large_sides",
+      "request": "Classic Burger, large fries and a large drink",
+      "checks": ["upsize", "combo_beats_parts"],
+      "target": {
+        "format_version": 1,
+        "chain": "sample_burger",
+        "goal": "cheapest",
+        "max_price_cents": null,
+        "min_calories": null,
+        "max_calories": null,
+        "items": [
+          {"item": "classic_burger", "quantity": 1, "size": null, "add_ons": []},
+          {"item": "fries", "quantity": 1, "size": "large", "add_ons": []},
+          {"item": "soft_drink", "quantity": 1, "size": "large", "add_ons": []}
+        ],
+        "unsupported": []
+      },
+      "expected": {
+        "result": "order",
+        "total_cents": 969,
+        "calories": 1310,
+        "calories_complete": true,
+        "separately_cents": 1047,
+        "order": [
+          {
+            "combo": "classic_burger_combo",
+            "upsize": "large",
+            "quantity": 1,
+            "contents": [
+              {"role": "main", "item": "classic_burger", "size": "regular"},
+              {"role": "side", "item": "fries", "size": "large"},
+              {"role": "drink", "item": "soft_drink", "size": "large"}
+            ]
+          }
+        ]
+      },
+      "hand_calculation": [
+        "One at a time: $4.49 + large fries $3.79 + large drink $2.19 = $10.47",
+        "Combo made large: $8.49 + $1.20 upsize = $9.69 (side and drink become large)",
+        "Upsized combo wins by $0.78",
+        "Calories: 540 + 480 + 290 = 1,310"
+      ]
+    },
+    {
+      "id": "sample_large_fries_without_drink",
+      "request": "Classic Burger and large fries",
+      "checks": ["upsize", "separate_is_cheapest"],
+      "target": {
+        "format_version": 1,
+        "chain": "sample_burger",
+        "goal": "cheapest",
+        "max_price_cents": null,
+        "min_calories": null,
+        "max_calories": null,
+        "items": [
+          {"item": "classic_burger", "quantity": 1, "size": null, "add_ons": []},
+          {"item": "fries", "quantity": 1, "size": "large", "add_ons": []}
+        ],
+        "unsupported": []
+      },
+      "expected": {
+        "result": "order",
+        "total_cents": 828,
+        "calories": 1020,
+        "calories_complete": true,
+        "separately_cents": 828,
+        "order": [
+          {"item": "classic_burger", "size": "regular", "quantity": 1},
+          {"item": "fries", "size": "large", "quantity": 1}
+        ]
+      },
+      "hand_calculation": [
+        "One at a time: $4.49 + $3.79 = $8.28",
+        "Large combo: $9.69, and it adds a drink nobody asked for",
+        "Separate wins by $1.41",
+        "Calories: 540 + 480 = 1,020"
+      ]
+    },
+    {
+      "id": "sample_nuggets_in_chicken_combo",
+      "request": "10 piece nuggets, medium fries and a medium drink",
+      "checks": ["substitution", "combo_beats_parts"],
+      "target": {
+        "format_version": 1,
+        "chain": "sample_burger",
+        "goal": "cheapest",
+        "max_price_cents": null,
+        "min_calories": null,
+        "max_calories": null,
+        "items": [
+          {"item": "nuggets", "quantity": 1, "size": "10 pc", "add_ons": []},
+          {"item": "fries", "quantity": 1, "size": "medium", "add_ons": []},
+          {"item": "soft_drink", "quantity": 1, "size": "medium", "add_ons": []}
+        ],
+        "unsupported": []
+      },
+      "expected": {
+        "result": "order",
+        "total_cents": 899,
+        "calories": 950,
+        "calories_complete": true,
+        "separately_cents": 987,
+        "order": [
+          {
+            "combo": "chicken_combo",
+            "upsize": null,
+            "quantity": 1,
+            "contents": [
+              {"role": "main", "item": "nuggets", "size": "10 pc"},
+              {"role": "side", "item": "fries", "size": "medium"},
+              {"role": "drink", "item": "soft_drink", "size": "medium"}
+            ]
+          }
+        ]
+      },
+      "hand_calculation": [
+        "One at a time: 10 pc $4.99 + $3.09 + $1.79 = $9.87",
+        "Chicken Combo with 10 pc nuggets as the main (second main choice, no charge): $8.99",
+        "Combo wins by $0.88",
+        "Calories: 420 + 320 + 210 = 950"
+      ]
+    },
+    {
+      "id": "sample_salad_swap_not_worth_it",
+      "request": "Classic Burger, side salad and a medium drink",
+      "checks": ["substitution", "separate_is_cheapest"],
+      "target": {
+        "format_version": 1,
+        "chain": "sample_burger",
+        "goal": "cheapest",
+        "max_price_cents": null,
+        "min_calories": null,
+        "max_calories": null,
+        "items": [
+          {"item": "classic_burger", "quantity": 1, "size": null, "add_ons": []},
+          {"item": "side_salad", "quantity": 1, "size": null, "add_ons": []},
+          {"item": "soft_drink", "quantity": 1, "size": "medium", "add_ons": []}
+        ],
+        "unsupported": []
+      },
+      "expected": {
+        "result": "order",
+        "total_cents": 877,
+        "calories": 810,
+        "calories_complete": true,
+        "separately_cents": 877,
+        "order": [
+          {"item": "classic_burger", "size": "regular", "quantity": 1},
+          {"item": "side_salad", "size": "regular", "quantity": 1},
+          {"item": "soft_drink", "size": "medium", "quantity": 1}
+        ]
+      },
+      "hand_calculation": [
+        "One at a time: $4.49 + salad $2.49 + $1.79 = $8.77",
+        "Combo with the salad swap: $8.49 + $1.00 swap charge = $9.49",
+        "Separate wins by $0.72",
+        "Calories: 540 + 60 + 210 = 810"
+      ]
+    },
+    {
+      "id": "sample_combo_plus_separate_salad",
+      "request": "Classic Burger, side salad, medium fries and a medium drink",
+      "checks": ["substitution", "combo_beats_parts"],
+      "target": {
+        "format_version": 1,
+        "chain": "sample_burger",
+        "goal": "cheapest",
+        "max_price_cents": null,
+        "min_calories": null,
+        "max_calories": null,
+        "items": [
+          {"item": "classic_burger", "quantity": 1, "size": null, "add_ons": []},
+          {"item": "side_salad", "quantity": 1, "size": null, "add_ons": []},
+          {"item": "fries", "quantity": 1, "size": "medium", "add_ons": []},
+          {"item": "soft_drink", "quantity": 1, "size": "medium", "add_ons": []}
+        ],
+        "unsupported": []
+      },
+      "expected": {
+        "result": "order",
+        "total_cents": 1098,
+        "calories": 1130,
+        "calories_complete": true,
+        "separately_cents": 1186,
+        "order": [
+          {
+            "combo": "classic_burger_combo",
+            "upsize": null,
+            "quantity": 1,
+            "contents": [
+              {"role": "main", "item": "classic_burger", "size": "regular"},
+              {"role": "side", "item": "fries", "size": "medium"},
+              {"role": "drink", "item": "soft_drink", "size": "medium"}
+            ]
+          },
+          {"item": "side_salad", "size": "regular", "quantity": 1}
+        ]
+      },
+      "hand_calculation": [
+        "One at a time: $4.49 + $2.49 + $3.09 + $1.79 = $11.86",
+        "Combo with salad swap + fries separately: $9.49 + $3.09 = $12.58",
+        "Combo as it comes (fries) + salad separately: $8.49 + $2.49 = $10.98",
+        "Keeping the combo's fries and buying the salad on the side wins",
+        "Calories: 540 + 320 + 210 + 60 = 1,130"
+      ]
+    },
+    {
+      "id": "sample_apple_slices_stay_regular",
+      "request": "Classic Burger, apple slices and a large drink",
+      "checks": ["upsize", "separate_is_cheapest"],
+      "target": {
+        "format_version": 1,
+        "chain": "sample_burger",
+        "goal": "cheapest",
+        "max_price_cents": null,
+        "min_calories": null,
+        "max_calories": null,
+        "items": [
+          {"item": "classic_burger", "quantity": 1, "size": null, "add_ons": []},
+          {"item": "apple_slices", "quantity": 1, "size": null, "add_ons": []},
+          {"item": "soft_drink", "quantity": 1, "size": "large", "add_ons": []}
+        ],
+        "unsupported": []
+      },
+      "expected": {
+        "result": "order",
+        "total_cents": 797,
+        "calories": 845,
+        "calories_complete": true,
+        "separately_cents": 797,
+        "order": [
+          {"item": "classic_burger", "size": "regular", "quantity": 1},
+          {"item": "apple_slices", "size": "regular", "quantity": 1},
+          {"item": "soft_drink", "size": "large", "quantity": 1}
+        ]
+      },
+      "hand_calculation": [
+        "One at a time: $4.49 + $1.29 + $2.19 = $7.97",
+        "Large combo with apple slices: $8.49 + $1.20 = $9.69 (apple slices have no large, so they stay regular; the drink becomes large)",
+        "Separate wins by $1.72",
+        "Calories: 540 + 15 + 290 = 845"
+      ]
+    },
+    {
+      "id": "sample_two_for_six",
+      "request": "Classic Burger and a chicken sandwich",
+      "checks": ["bundle"],
+      "target": {
+        "format_version": 1,
+        "chain": "sample_burger",
+        "goal": "cheapest",
+        "max_price_cents": null,
+        "min_calories": null,
+        "max_calories": null,
+        "items": [
+          {"item": "classic_burger", "quantity": 1, "size": null, "add_ons": []},
+          {"item": "chicken_sandwich", "quantity": 1, "size": null, "add_ons": []}
+        ],
+        "unsupported": []
+      },
+      "expected": {
+        "result": "order",
+        "total_cents": 600,
+        "calories": 1010,
+        "calories_complete": true,
+        "separately_cents": 948,
+        "order": [
+          {
+            "bundle": "two_for_six",
+            "quantity": 1,
+            "contents": [
+              {"role": "pick", "item": "classic_burger", "size": "regular"},
+              {"role": "pick", "item": "chicken_sandwich", "size": "regular"}
+            ]
+          }
+        ]
+      },
+      "hand_calculation": [
+        "One at a time: $4.49 + $4.99 = $9.48",
+        "2 for $6 with both: $6.00",
+        "Bundle wins by $3.48",
+        "Calories: 540 + 470 = 1,010"
+      ]
+    },
+    {
+      "id": "sample_box_with_upcharge",
+      "request": "Double cheeseburger, 4 piece nuggets and small fries",
+      "checks": ["bundle", "combo_beats_parts"],
+      "target": {
+        "format_version": 1,
+        "chain": "sample_burger",
+        "goal": "cheapest",
+        "max_price_cents": null,
+        "min_calories": null,
+        "max_calories": null,
+        "items": [
+          {"item": "double_cheeseburger", "quantity": 1, "size": null, "add_ons": []},
+          {"item": "nuggets", "quantity": 1, "size": "4 pc", "add_ons": []},
+          {"item": "fries", "quantity": 1, "size": "small", "add_ons": []}
+        ],
+        "unsupported": []
+      },
+      "expected": {
+        "result": "order",
+        "total_cents": 600,
+        "calories": 1000,
+        "calories_complete": true,
+        "separately_cents": 906,
+        "order": [
+          {
+            "bundle": "five_dollar_box",
+            "quantity": 1,
+            "contents": [
+              {"role": "main", "item": "double_cheeseburger", "size": "regular"},
+              {"role": "nuggets", "item": "nuggets", "size": "4 pc"},
+              {"role": "side", "item": "fries", "size": "small"},
+              {"role": "drink", "item": "soft_drink", "size": "small"}
+            ]
+          }
+        ]
+      },
+      "hand_calculation": [
+        "One at a time: $3.49 + $2.29 + $1.99 = $7.77",
+        "$5 Snack Box with the double cheeseburger: $5.00 + $1.00 upcharge = $6.00 (includes a small drink nobody asked for)",
+        "Box wins by $1.77 even with the extra drink",
+        "Calories (drink included): 450 + 170 + 230 + 150 = 1,000"
+      ]
+    },
+    {
+      "id": "sample_double_and_fries_separate",
+      "request": "Double cheeseburger and small fries",
+      "checks": ["bundle", "separate_is_cheapest"],
+      "target": {
+        "format_version": 1,
+        "chain": "sample_burger",
+        "goal": "cheapest",
+        "max_price_cents": null,
+        "min_calories": null,
+        "max_calories": null,
+        "items": [
+          {"item": "double_cheeseburger", "quantity": 1, "size": null, "add_ons": []},
+          {"item": "fries", "quantity": 1, "size": "small", "add_ons": []}
+        ],
+        "unsupported": []
+      },
+      "expected": {
+        "result": "order",
+        "total_cents": 548,
+        "calories": 680,
+        "calories_complete": true,
+        "separately_cents": 548,
+        "order": [
+          {"item": "double_cheeseburger", "size": "regular", "quantity": 1},
+          {"item": "fries", "size": "small", "quantity": 1}
+        ]
+      },
+      "hand_calculation": [
+        "One at a time: $3.49 + $1.99 = $5.48",
+        "$5 Snack Box with the double: $6.00",
+        "Separate wins by $0.52",
+        "Calories: 450 + 230 = 680"
+      ]
+    },
+    {
+      "id": "sample_two_meals_vs_bundle",
+      "request": "Two Classic Burgers, two medium fries and two medium drinks",
+      "checks": ["two_combos_vs_extras", "bundle"],
+      "target": {
+        "format_version": 1,
+        "chain": "sample_burger",
+        "goal": "cheapest",
+        "max_price_cents": null,
+        "min_calories": null,
+        "max_calories": null,
+        "items": [
+          {"item": "classic_burger", "quantity": 2, "size": null, "add_ons": []},
+          {"item": "fries", "quantity": 2, "size": "medium", "add_ons": []},
+          {"item": "soft_drink", "quantity": 2, "size": "medium", "add_ons": []}
+        ],
+        "unsupported": []
+      },
+      "expected": {
+        "result": "order",
+        "total_cents": 1576,
+        "calories": 2140,
+        "calories_complete": true,
+        "separately_cents": 1874,
+        "order": [
+          {
+            "bundle": "two_for_six",
+            "quantity": 1,
+            "contents": [
+              {"role": "pick", "item": "classic_burger", "size": "regular"},
+              {"role": "pick", "item": "classic_burger", "size": "regular"}
+            ]
+          },
+          {"item": "fries", "size": "medium", "quantity": 2},
+          {"item": "soft_drink", "size": "medium", "quantity": 2}
+        ]
+      },
+      "hand_calculation": [
+        "One at a time: 2 x ($4.49 + $3.09 + $1.79) = $18.74",
+        "Two combos: 2 x $8.49 = $16.98",
+        "One combo + burger, fries and drink: $8.49 + $9.37 = $17.86",
+        "2 for $6 (both burgers) + 2 fries + 2 drinks: $6.00 + $6.18 + $3.58 = $15.76",
+        "The bundle with the sides bought separately wins by $1.22 over two combos",
+        "Calories: 2 x (540 + 320 + 210) = 2,140"
+      ]
+    },
+    {
+      "id": "sample_bacon_inside_combo",
+      "request": "Classic Burger with bacon, medium fries and a medium drink",
+      "checks": ["add_on", "combo_beats_parts"],
+      "target": {
+        "format_version": 1,
+        "chain": "sample_burger",
+        "goal": "cheapest",
+        "max_price_cents": null,
+        "min_calories": null,
+        "max_calories": null,
+        "items": [
+          {"item": "classic_burger", "quantity": 1, "size": null, "add_ons": ["add_bacon"]},
+          {"item": "fries", "quantity": 1, "size": "medium", "add_ons": []},
+          {"item": "soft_drink", "quantity": 1, "size": "medium", "add_ons": []}
+        ],
+        "unsupported": []
+      },
+      "expected": {
+        "result": "order",
+        "total_cents": 978,
+        "calories": 1160,
+        "calories_complete": true,
+        "separately_cents": 1066,
+        "order": [
+          {
+            "combo": "classic_burger_combo",
+            "upsize": null,
+            "quantity": 1,
+            "contents": [
+              {"role": "main", "item": "classic_burger", "size": "regular", "add_ons": ["add_bacon"]},
+              {"role": "side", "item": "fries", "size": "medium"},
+              {"role": "drink", "item": "soft_drink", "size": "medium"}
+            ]
+          }
+        ]
+      },
+      "hand_calculation": [
+        "One at a time: $4.49 + bacon $1.29 + $3.09 + $1.79 = $10.66",
+        "Combo with bacon on its burger: $8.49 + $1.29 = $9.78",
+        "Combo wins by $0.88 (the add-on costs the same either way)",
+        "Calories: 540 + 90 + 320 + 210 = 1,160"
+      ]
+    },
+    {
+      "id": "sample_double_cheese",
+      "request": "Cheeseburger with extra cheese twice",
+      "checks": ["add_on"],
+      "target": {
+        "format_version": 1,
+        "chain": "sample_burger",
+        "goal": "cheapest",
+        "max_price_cents": null,
+        "min_calories": null,
+        "max_calories": null,
+        "items": [{"item": "cheeseburger", "quantity": 1, "size": null, "add_ons": ["add_cheese", "add_cheese"]}],
+        "unsupported": []
+      },
+      "expected": {
+        "result": "order",
+        "total_cents": 369,
+        "calories": 400,
+        "calories_complete": true,
+        "separately_cents": 369,
+        "order": [{"item": "cheeseburger", "size": "regular", "quantity": 1, "add_ons": ["add_cheese", "add_cheese"]}]
+      },
+      "hand_calculation": [
+        "Cheeseburger $2.49 + 2 x cheese $0.60 = $3.69 (Add Cheese allows up to 2 per item)",
+        "Calories: 300 + 2 x 50 = 400"
+      ]
+    },
+    {
+      "id": "sample_five_dollars_most_calories",
+      "request": "What can I get for $5?",
+      "checks": ["budget_only"],
+      "target": {
+        "format_version": 1,
+        "chain": "sample_burger",
+        "goal": "most_calories",
+        "max_price_cents": 500,
+        "min_calories": null,
+        "max_calories": null,
+        "items": [],
+        "unsupported": []
+      },
+      "expected": {
+        "result": "order",
+        "total_cents": 500,
+        "calories": 850,
+        "calories_complete": true,
+        "separately_cents": 806,
+        "order": [
+          {
+            "bundle": "five_dollar_box",
+            "quantity": 1,
+            "contents": [
+              {"role": "main", "item": "cheeseburger", "size": "regular"},
+              {"role": "nuggets", "item": "nuggets", "size": "4 pc"},
+              {"role": "side", "item": "fries", "size": "small"},
+              {"role": "drink", "item": "soft_drink", "size": "small"}
+            ]
+          }
+        ]
+      },
+      "hand_calculation": [
+        "$5 Snack Box with the cheeseburger: $5.00 for 300 + 170 + 230 + 150 = 850 calories",
+        "Best single-item mixes under $5: 2 cheeseburgers $4.98 = 600; double cheeseburger + small drink $4.78 = 600; double + 4 pc $5.78 is over budget",
+        "Nothing else reaches 850 for $5.00, so the box wins (the cookie has no calorie data, so it's left out)"
+      ]
+    },
+    {
+      "id": "sample_cookie_no_calorie_data",
+      "request": "A cookie and a small drink",
+      "checks": ["no_calorie_data"],
+      "target": {
+        "format_version": 1,
+        "chain": "sample_burger",
+        "goal": "cheapest",
+        "max_price_cents": null,
+        "min_calories": null,
+        "max_calories": null,
+        "items": [
+          {"item": "cookie", "quantity": 1, "size": null, "add_ons": []},
+          {"item": "soft_drink", "quantity": 1, "size": "small", "add_ons": []}
+        ],
+        "unsupported": []
+      },
+      "expected": {
+        "result": "order",
+        "total_cents": 248,
+        "calories": 150,
+        "calories_complete": false,
+        "separately_cents": 248,
+        "order": [
+          {"item": "cookie", "size": "regular", "quantity": 1},
+          {"item": "soft_drink", "size": "small", "quantity": 1}
+        ]
+      },
+      "hand_calculation": [
+        "No calorie limit, so the cookie (no calorie data) is allowed",
+        "$1.19 + $1.29 = $2.48",
+        "Calories: 150 from the drink + the cookie's unknown amount, so the total is marked incomplete"
+      ]
+    },
+    {
+      "id": "sample_cookie_with_calorie_limit",
+      "request": "A cookie, under 500 calories",
+      "checks": ["no_calorie_data", "impossible"],
+      "target": {
+        "format_version": 1,
+        "chain": "sample_burger",
+        "goal": "cheapest",
+        "max_price_cents": null,
+        "min_calories": null,
+        "max_calories": 500,
+        "items": [{"item": "cookie", "quantity": 1, "size": null, "add_ons": []}],
+        "unsupported": []
+      },
+      "expected": {"result": "no_valid_order"},
+      "hand_calculation": [
+        "The target has a calorie limit, so items with no calorie data are left out",
+        "The cookie is the only thing that matches, so there is no valid order"
+      ]
+    },
+    {
+      "id": "sample_eleven_items",
+      "request": "Eleven cheeseburgers",
+      "checks": ["item_cap"],
+      "target": {
+        "format_version": 1,
+        "chain": "sample_burger",
+        "goal": "cheapest",
+        "max_price_cents": null,
+        "min_calories": null,
+        "max_calories": null,
+        "items": [{"item": "cheeseburger", "quantity": 11, "size": null, "add_ons": []}],
+        "unsupported": []
+      },
+      "expected": {"result": "too_many_items"},
+      "hand_calculation": ["11 items wanted is over the 10-item cap, so the search is refused before it starts"]
+    },
+    {
+      "id": "mcd_cheapest_burger_and_drink",
+      "request": "Cheapest burger and a drink",
+      "checks": ["separate_is_cheapest"],
+      "target": {
+        "format_version": 1,
+        "chain": "mcdonalds",
+        "goal": "cheapest",
+        "max_price_cents": null,
+        "min_calories": null,
+        "max_calories": null,
+        "items": [
+          {"category": "burger", "quantity": 1, "size": null, "add_ons": []},
+          {"category": "drink", "quantity": 1, "size": null, "add_ons": []}
+        ],
+        "unsupported": []
+      },
+      "expected": {
+        "result": "order",
+        "total_cents": 418,
+        "calories": 450,
+        "calories_complete": true,
+        "separately_cents": 418,
+        "order": [
+          {"item": "hamburger", "size": "regular", "quantity": 1},
+          {"item": "coca_cola", "size": "small", "quantity": 1}
+        ]
+      },
+      "hand_calculation": [
+        "Cheapest burger: Hamburger $2.39. Cheapest drink: small Coca-Cola $1.79. Total $4.18",
+        "The $5 Meal Deal has a burger and a drink but costs $5.00",
+        "Calories: 250 + 200 = 450"
+      ]
+    },
+    {
+      "id": "mcd_big_mac_meal",
+      "request": "Big Mac, medium fries and a medium Coke",
+      "checks": ["combo_beats_parts"],
+      "target": {
+        "format_version": 1,
+        "chain": "mcdonalds",
+        "goal": "cheapest",
+        "max_price_cents": null,
+        "min_calories": null,
+        "max_calories": null,
+        "items": [
+          {"item": "big_mac", "quantity": 1, "size": null, "add_ons": []},
+          {"item": "fries", "quantity": 1, "size": "medium", "add_ons": []},
+          {"item": "coca_cola", "quantity": 1, "size": "medium", "add_ons": []}
+        ],
+        "unsupported": []
+      },
+      "expected": {
+        "result": "order",
+        "total_cents": 1049,
+        "calories": 1170,
+        "calories_complete": true,
+        "separately_cents": 1217,
+        "order": [
+          {
+            "combo": "big_mac_meal",
+            "upsize": null,
+            "quantity": 1,
+            "contents": [
+              {"role": "main", "item": "big_mac", "size": "regular"},
+              {"role": "side", "item": "fries", "size": "medium"},
+              {"role": "drink", "item": "coca_cola", "size": "medium"}
+            ]
+          }
+        ]
+      },
+      "hand_calculation": [
+        "One at a time: $5.99 + $3.99 + $2.19 = $12.17",
+        "Big Mac Meal: $10.49",
+        "2 for $6 needs a second sandwich: $6.00 + $3.99 + $2.19 = $12.18",
+        "Meal wins by $1.68",
+        "Calories: 580 + 320 + 270 = 1,170"
+      ]
+    },
+    {
+      "id": "mcd_large_big_mac_meal",
+      "request": "Big Mac, large fries and a large Coke",
+      "checks": ["upsize", "combo_beats_parts"],
+      "target": {
+        "format_version": 1,
+        "chain": "mcdonalds",
+        "goal": "cheapest",
+        "max_price_cents": null,
+        "min_calories": null,
+        "max_calories": null,
+        "items": [
+          {"item": "big_mac", "quantity": 1, "size": null, "add_ons": []},
+          {"item": "fries", "quantity": 1, "size": "large", "add_ons": []},
+          {"item": "coca_cola", "quantity": 1, "size": "large", "add_ons": []}
+        ],
+        "unsupported": []
+      },
+      "expected": {
+        "result": "order",
+        "total_cents": 1130,
+        "calories": 1440,
+        "calories_complete": true,
+        "separately_cents": 1307,
+        "order": [
+          {
+            "combo": "big_mac_meal",
+            "upsize": "large",
+            "quantity": 1,
+            "contents": [
+              {"role": "main", "item": "big_mac", "size": "regular"},
+              {"role": "side", "item": "fries", "size": "large"},
+              {"role": "drink", "item": "coca_cola", "size": "large"}
+            ]
+          }
+        ]
+      },
+      "hand_calculation": [
+        "One at a time: $5.99 + $4.49 + $2.59 = $13.07",
+        "2 for $6 + large fries + large Coke: $6.00 + $4.49 + $2.59 = $13.08",
+        "Big Mac Meal made large: $10.49 + $0.81 = $11.30",
+        "Upsized meal wins by $1.77",
+        "Calories: 580 + 480 + 380 = 1,440"
+      ]
+    },
+    {
+      "id": "mcd_two_big_mac_meals",
+      "request": "Two Big Macs, two medium fries and two medium Cokes",
+      "checks": ["two_combos_vs_extras", "bundle"],
+      "target": {
+        "format_version": 1,
+        "chain": "mcdonalds",
+        "goal": "cheapest",
+        "max_price_cents": null,
+        "min_calories": null,
+        "max_calories": null,
+        "items": [
+          {"item": "big_mac", "quantity": 2, "size": null, "add_ons": []},
+          {"item": "fries", "quantity": 2, "size": "medium", "add_ons": []},
+          {"item": "coca_cola", "quantity": 2, "size": "medium", "add_ons": []}
+        ],
+        "unsupported": []
+      },
+      "expected": {
+        "result": "order",
+        "total_cents": 1836,
+        "calories": 2340,
+        "calories_complete": true,
+        "separately_cents": 2434,
+        "order": [
+          {
+            "bundle": "two_for_six",
+            "quantity": 1,
+            "contents": [
+              {"role": "pick", "item": "big_mac", "size": "regular"},
+              {"role": "pick", "item": "big_mac", "size": "regular"}
+            ]
+          },
+          {"item": "fries", "size": "medium", "quantity": 2},
+          {"item": "coca_cola", "size": "medium", "quantity": 2}
+        ]
+      },
+      "hand_calculation": [
+        "Two Big Mac Meals: 2 x $10.49 = $20.98",
+        "One meal + Big Mac, fries, Coke separately: $10.49 + $12.17 = $22.66",
+        "2 for $6 (two Big Macs) + 2 medium fries + 2 medium Cokes: $6.00 + $7.98 + $4.38 = $18.36",
+        "The 2 for $6 with the sides bought separately beats two meals by $2.62",
+        "Calories: 2 x (580 + 320 + 270) = 2,340"
+      ]
+    },
+    {
+      "id": "mcd_calorie_goal_extra_sandwich",
+      "request": "Big Mac with a side and a drink, at least 1,300 calories",
+      "checks": ["calorie_goal", "combo_beats_parts", "tie"],
+      "target": {
+        "format_version": 1,
+        "chain": "mcdonalds",
+        "goal": "cheapest",
+        "max_price_cents": null,
+        "min_calories": 1300,
+        "max_calories": null,
+        "items": [
+          {"item": "big_mac", "quantity": 1, "size": null, "add_ons": []},
+          {"category": "side", "quantity": 1, "size": null, "add_ons": []},
+          {"category": "drink", "quantity": 1, "size": null, "add_ons": []}
+        ],
+        "unsupported": []
+      },
+      "expected": {
+        "result": "order",
+        "total_cents": 918,
+        "calories": 1375,
+        "calories_complete": true,
+        "separately_cents": 1516,
+        "order": [
+          {
+            "bundle": "two_for_six",
+            "quantity": 1,
+            "contents": [
+              {"role": "pick", "item": "big_mac", "size": "regular"},
+              {"role": "pick", "item": "big_mac", "size": "regular"}
+            ]
+          },
+          {"item": "apple_slices", "size": "regular", "quantity": 1},
+          {"item": "coca_cola", "size": "small", "quantity": 1}
+        ],
+        "equal_price_alternatives": [
+          [
+            {
+              "bundle": "two_for_six",
+              "quantity": 1,
+              "contents": [
+                {"role": "pick", "item": "big_mac", "size": "regular"},
+                {"role": "pick", "item": "quarter_pounder_cheese", "size": "regular"}
+              ]
+            },
+            {"item": "apple_slices", "size": "regular", "quantity": 1},
+            {"item": "coca_cola", "size": "small", "quantity": 1}
+          ]
+        ]
+      },
+      "hand_calculation": [
+        "Cheapest way to get the three parts: Big Mac $5.99 + apple slices $1.39 + small Coke $1.79 = $9.17, but only 795 calories",
+        "A second sandwich from the 2 for $6 adds 580 calories for $0.01 more: $6.00 + $1.39 + $1.79 = $9.18, 580 + 580 + 15 + 200 = 1,375 calories",
+        "Large Big Mac Meal reaches 1,440 calories but costs $11.30",
+        "Equal price: Big Mac + Quarter Pounder in the 2 for $6 gives 1,315 calories for the same $9.18"
+      ]
+    },
+    {
+      "id": "mcd_six_dollars_most_calories",
+      "request": "What can I get for $6?",
+      "checks": ["budget_only", "bundle"],
+      "target": {
+        "format_version": 1,
+        "chain": "mcdonalds",
+        "goal": "most_calories",
+        "max_price_cents": 600,
+        "min_calories": null,
+        "max_calories": null,
+        "items": [],
+        "unsupported": []
+      },
+      "expected": {
+        "result": "order",
+        "total_cents": 600,
+        "calories": 1160,
+        "calories_complete": true,
+        "separately_cents": 1198,
+        "order": [
+          {
+            "bundle": "two_for_six",
+            "quantity": 1,
+            "contents": [
+              {"role": "pick", "item": "big_mac", "size": "regular"},
+              {"role": "pick", "item": "big_mac", "size": "regular"}
+            ]
+          }
+        ]
+      },
+      "hand_calculation": [
+        "2 for $6 with the two highest-calorie choices: 2 Big Macs = 1,160 calories for $6.00",
+        "$5 Meal Deal: 390 + 170 + 230 + 200 = 990 calories, and $1.00 left buys nothing",
+        "Best singles for $6: 2 cheeseburgers $4.98 = 600; Big Mac $5.99 = 580",
+        "2 for $6 wins"
+      ]
+    },
+    {
+      "id": "mcd_1500_calories_for_5",
+      "request": "At least 1,500 calories for $5 or less",
+      "checks": ["impossible", "calorie_goal"],
+      "target": {
+        "format_version": 1,
+        "chain": "mcdonalds",
+        "goal": "cheapest",
+        "max_price_cents": 500,
+        "min_calories": 1500,
+        "max_calories": null,
+        "items": [],
+        "unsupported": []
+      },
+      "expected": {"result": "no_valid_order"},
+      "hand_calculation": [
+        "Most calories for $5.00: the $5 Meal Deal at 990 calories",
+        "Singles for $5: 2 hamburgers $4.78 = 500 calories; nothing else gets close",
+        "1,500 can't be reached, so there is no valid order"
+      ]
+    },
+    {
+      "id": "mcd_600_calories_under_10",
+      "request": "Under $10, at least 600 calories",
+      "checks": ["calorie_goal", "tie"],
+      "target": {
+        "format_version": 1,
+        "chain": "mcdonalds",
+        "goal": "cheapest",
+        "max_price_cents": 1000,
+        "min_calories": 600,
+        "max_calories": null,
+        "items": [],
+        "unsupported": []
+      },
+      "expected": {
+        "result": "order",
+        "total_cents": 478,
+        "calories": 650,
+        "calories_complete": true,
+        "separately_cents": 478,
+        "order": [
+          {"item": "coca_cola", "size": "medium", "quantity": 1},
+          {"item": "coca_cola", "size": "large", "quantity": 1}
+        ],
+        "equal_price_alternatives": [
+          [
+            {"item": "apple_pie", "size": "regular", "quantity": 1},
+            {"item": "coca_cola", "size": "large", "quantity": 1}
+          ]
+        ]
+      },
+      "hand_calculation": [
+        "No single item has 600 calories, so it takes at least two",
+        "Large Coke (380 cal, $2.59) + something with 220+ cal: medium Coke $2.19 (270) or apple pie $2.19 (230) = $4.78",
+        "Other pairs cost more: 2 cheeseburgers $4.98; cheeseburger + hamburger $4.88 is only 550 cal",
+        "The only three-item orders under $4.78 are apple slices and small Cokes, 230 calories at most",
+        "Two orders tie at $4.78; either passes"
+      ]
+    },
+    {
+      "id": "bk_whopper_and_fries",
+      "request": "Whopper and fries",
+      "checks": ["combo_beats_parts"],
+      "target": {
+        "format_version": 1,
+        "chain": "burger_king",
+        "goal": "cheapest",
+        "max_price_cents": null,
+        "min_calories": null,
+        "max_calories": null,
+        "items": [
+          {"item": "whopper", "quantity": 1, "size": null, "add_ons": []},
+          {"item": "fries", "quantity": 1, "size": null, "add_ons": []}
+        ],
+        "unsupported": []
+      },
+      "expected": {
+        "result": "order",
+        "total_cents": 1149,
+        "calories": 1380,
+        "calories_complete": true,
+        "separately_cents": 1557,
+        "order": [
+          {
+            "combo": "whopper_meal",
+            "upsize": null,
+            "quantity": 1,
+            "contents": [
+              {"role": "main", "item": "whopper", "size": "regular"},
+              {"role": "side", "item": "fries", "size": "medium"},
+              {"role": "drink", "item": "coca_cola", "size": "medium"}
+            ]
+          }
+        ]
+      },
+      "hand_calculation": [
+        "One at a time: $7.59 + $4.29 = $11.88",
+        "Whopper Meal: $11.49, and it adds a medium Coke nobody asked for",
+        "Meal wins by $0.39 even with the extra drink",
+        "Calories (drink included): 670 + 380 + 330 = 1,380"
+      ]
+    },
+    {
+      "id": "bk_nuggets_and_fries",
+      "request": "8 piece nuggets and fries",
+      "checks": ["combo_beats_parts"],
+      "target": {
+        "format_version": 1,
+        "chain": "burger_king",
+        "goal": "cheapest",
+        "max_price_cents": null,
+        "min_calories": null,
+        "max_calories": null,
+        "items": [
+          {"item": "nuggets", "quantity": 1, "size": "8 pc", "add_ons": []},
+          {"item": "fries", "quantity": 1, "size": null, "add_ons": []}
+        ],
+        "unsupported": []
+      },
+      "expected": {
+        "result": "order",
+        "total_cents": 829,
+        "calories": 1050,
+        "calories_complete": true,
+        "separately_cents": 1257,
+        "order": [
+          {
+            "combo": "nuggets_8_meal",
+            "upsize": null,
+            "quantity": 1,
+            "contents": [
+              {"role": "main", "item": "nuggets", "size": "8 pc"},
+              {"role": "side", "item": "fries", "size": "medium"},
+              {"role": "drink", "item": "coca_cola", "size": "medium"}
+            ]
+          }
+        ]
+      },
+      "hand_calculation": [
+        "One at a time: $4.59 + $4.29 = $8.88",
+        "8 pc Nuggets Meal: $8.29 with an extra medium Coke",
+        "Meal wins by $0.59",
+        "Calories (drink included): 340 + 380 + 330 = 1,050"
+      ]
+    },
+    {
+      "id": "bk_whopper_and_large_coke",
+      "request": "Whopper and a large Coke",
+      "checks": ["separate_is_cheapest"],
+      "target": {
+        "format_version": 1,
+        "chain": "burger_king",
+        "goal": "cheapest",
+        "max_price_cents": null,
+        "min_calories": null,
+        "max_calories": null,
+        "items": [
+          {"item": "whopper", "quantity": 1, "size": null, "add_ons": []},
+          {"item": "coca_cola", "quantity": 1, "size": "large", "add_ons": []}
+        ],
+        "unsupported": []
+      },
+      "expected": {
+        "result": "order",
+        "total_cents": 1178,
+        "calories": 1100,
+        "calories_complete": true,
+        "separately_cents": 1178,
+        "order": [
+          {"item": "whopper", "size": "regular", "quantity": 1},
+          {"item": "coca_cola", "size": "large", "quantity": 1}
+        ]
+      },
+      "hand_calculation": [
+        "One at a time: $7.59 + $4.19 = $11.78",
+        "The Whopper Meal's Coke is medium and the data has no large upsize, so the meal would need a separate large Coke: $11.49 + $4.19 = $15.68",
+        "Separate wins",
+        "Calories: 670 + 430 = 1,100"
+      ]
+    },
+    {
+      "id": "wendys_daves_double_and_fries",
+      "request": "Dave's Double and medium fries",
+      "checks": ["combo_beats_parts"],
+      "target": {
+        "format_version": 1,
+        "chain": "wendys",
+        "goal": "cheapest",
+        "max_price_cents": null,
+        "min_calories": null,
+        "max_calories": null,
+        "items": [
+          {"item": "daves_double", "quantity": 1, "size": null, "add_ons": []},
+          {"item": "fries", "quantity": 1, "size": "medium", "add_ons": []}
+        ],
+        "unsupported": []
+      },
+      "expected": {
+        "result": "order",
+        "total_cents": 1109,
+        "calories": 1420,
+        "calories_complete": true,
+        "separately_cents": 1407,
+        "order": [
+          {
+            "combo": "daves_double_combo",
+            "upsize": null,
+            "quantity": 1,
+            "contents": [
+              {"role": "main", "item": "daves_double", "size": "regular"},
+              {"role": "side", "item": "fries", "size": "medium"},
+              {"role": "drink", "item": "soft_drink", "size": "medium"}
+            ]
+          }
+        ]
+      },
+      "hand_calculation": [
+        "One at a time: $8.49 + $2.79 = $11.28",
+        "Dave's Double Combo: $11.09 with an extra medium drink",
+        "Combo wins by $0.19",
+        "Calories (drink included): 810 + 320 + 290 = 1,420"
+      ]
+    },
+    {
+      "id": "wendys_daves_single_and_fries",
+      "request": "Dave's Single and medium fries",
+      "checks": ["separate_is_cheapest"],
+      "target": {
+        "format_version": 1,
+        "chain": "wendys",
+        "goal": "cheapest",
+        "max_price_cents": null,
+        "min_calories": null,
+        "max_calories": null,
+        "items": [
+          {"item": "daves_single", "quantity": 1, "size": null, "add_ons": []},
+          {"item": "fries", "quantity": 1, "size": "medium", "add_ons": []}
+        ],
+        "unsupported": []
+      },
+      "expected": {
+        "result": "order",
+        "total_cents": 928,
+        "calories": 890,
+        "calories_complete": true,
+        "separately_cents": 928,
+        "order": [
+          {"item": "daves_single", "size": "regular", "quantity": 1},
+          {"item": "fries", "size": "medium", "quantity": 1}
+        ]
+      },
+      "hand_calculation": [
+        "One at a time: $6.49 + $2.79 = $9.28",
+        "Dave's Single Combo: $9.29",
+        "Separate wins by one cent",
+        "Calories: 570 + 320 = 890"
+      ]
+    },
+    {
+      "id": "wendys_biggie_bites",
+      "request": "Jr. Bacon Cheeseburger and 4 piece nuggets",
+      "checks": ["bundle"],
+      "target": {
+        "format_version": 1,
+        "chain": "wendys",
+        "goal": "cheapest",
+        "max_price_cents": null,
+        "min_calories": null,
+        "max_calories": null,
+        "items": [
+          {"item": "jr_bacon_cheeseburger", "quantity": 1, "size": null, "add_ons": []},
+          {"item": "nuggets", "quantity": 1, "size": "4 pc", "add_ons": []}
+        ],
+        "unsupported": []
+      },
+      "expected": {
+        "result": "order",
+        "total_cents": 400,
+        "calories": 520,
+        "calories_complete": true,
+        "separately_cents": 528,
+        "order": [
+          {
+            "bundle": "biggie_bites_4",
+            "quantity": 1,
+            "contents": [
+              {"role": "first", "item": "jr_bacon_cheeseburger", "size": "regular"},
+              {"role": "second", "item": "nuggets", "size": "4 pc"}
+            ]
+          }
+        ]
+      },
+      "hand_calculation": [
+        "One at a time: $3.29 + $1.99 = $5.28",
+        "$4 Biggie Bites: first pick Jr. Bacon Cheeseburger, second pick 4 pc nuggets = $4.00",
+        "Bundle wins by $1.28",
+        "Calories: 350 + 170 = 520"
+      ]
+    },
+    {
+      "id": "wendys_two_4pc_nuggets",
+      "request": "Two 4 piece nuggets",
+      "checks": ["bundle", "separate_is_cheapest"],
+      "target": {
+        "format_version": 1,
+        "chain": "wendys",
+        "goal": "cheapest",
+        "max_price_cents": null,
+        "min_calories": null,
+        "max_calories": null,
+        "items": [{"item": "nuggets", "quantity": 2, "size": "4 pc", "add_ons": []}],
+        "unsupported": []
+      },
+      "expected": {
+        "result": "order",
+        "total_cents": 398,
+        "calories": 340,
+        "calories_complete": true,
+        "separately_cents": 398,
+        "order": [{"item": "nuggets", "size": "4 pc", "quantity": 2}]
+      },
+      "hand_calculation": [
+        "One at a time: 2 x $1.99 = $3.98",
+        "$4 Biggie Bites with 4 pc nuggets for both picks: $4.00",
+        "Separate wins by two cents",
+        "Calories: 2 x 170 = 340"
+      ]
+    },
+    {
+      "id": "wendys_biggie_bag",
+      "request": "A burger, 4 piece nuggets, a side and a drink",
+      "checks": ["bundle", "no_calorie_data"],
+      "target": {
+        "format_version": 1,
+        "chain": "wendys",
+        "goal": "cheapest",
+        "max_price_cents": null,
+        "min_calories": null,
+        "max_calories": null,
+        "items": [
+          {"category": "burger", "quantity": 1, "size": null, "add_ons": []},
+          {"item": "nuggets", "quantity": 1, "size": "4 pc", "add_ons": []},
+          {"category": "side", "quantity": 1, "size": null, "add_ons": []},
+          {"category": "drink", "quantity": 1, "size": null, "add_ons": []}
+        ],
+        "unsupported": []
+      },
+      "expected": {
+        "result": "order",
+        "total_cents": 600,
+        "calories": 590,
+        "calories_complete": false,
+        "separately_cents": 996,
+        "order": [
+          {
+            "bundle": "biggie_bag_6",
+            "quantity": 1,
+            "contents": [
+              {"role": "main", "item": "double_stack", "size": "regular"},
+              {"role": "nuggets", "item": "nuggets", "size": "4 pc"},
+              {"role": "side", "item": "fries", "size": "small"},
+              {"role": "drink", "item": "soft_drink", "size": "small"}
+            ]
+          }
+        ]
+      },
+      "hand_calculation": [
+        "$6 Biggie Bag with the Double Stack covers all four: $6.00",
+        "Cheapest singles: Jr. Cheeseburger $2.49 + $1.99 + small fries $2.19 + small drink $2.29 = $8.97",
+        "No calorie limit, so the Double Stack (no calorie data) is allowed",
+        "Calories: 170 + 210 + 210 = 590 + the Double Stack's unknown amount, so the total is marked incomplete"
+      ]
+    },
+    {
+      "id": "wendys_biggie_bag_with_calorie_limit",
+      "request": "A burger, 4 piece nuggets, a side and a drink, under 1,500 calories",
+      "checks": ["no_calorie_data", "bundle", "tie"],
+      "target": {
+        "format_version": 1,
+        "chain": "wendys",
+        "goal": "cheapest",
+        "max_price_cents": null,
+        "min_calories": null,
+        "max_calories": 1500,
+        "items": [
+          {"category": "burger", "quantity": 1, "size": null, "add_ons": []},
+          {"item": "nuggets", "quantity": 1, "size": "4 pc", "add_ons": []},
+          {"category": "side", "quantity": 1, "size": null, "add_ons": []},
+          {"category": "drink", "quantity": 1, "size": null, "add_ons": []}
+        ],
+        "unsupported": []
+      },
+      "expected": {
+        "result": "order",
+        "total_cents": 818,
+        "calories": 860,
+        "calories_complete": true,
+        "separately_cents": 896,
+        "order": [
+          {
+            "bundle": "biggie_bites_4",
+            "quantity": 1,
+            "contents": [
+              {"role": "first", "item": "jr_cheeseburger", "size": "regular"},
+              {"role": "second", "item": "soft_drink", "size": "small"}
+            ]
+          },
+          {"item": "nuggets", "size": "4 pc", "quantity": 1},
+          {"item": "fries", "size": "small", "quantity": 1}
+        ],
+        "equal_price_alternatives": [
+          [
+            {
+              "bundle": "biggie_bites_4",
+              "quantity": 1,
+              "contents": [
+                {"role": "first", "item": "jr_bacon_cheeseburger", "size": "regular"},
+                {"role": "second", "item": "soft_drink", "size": "small"}
+              ]
+            },
+            {"item": "nuggets", "size": "4 pc", "quantity": 1},
+            {"item": "fries", "size": "small", "quantity": 1}
+          ]
+        ]
+      },
+      "hand_calculation": [
+        "Same request with a calorie limit: the Double Stack has no calorie data, so it's left out",
+        "The Biggie Bag's other main is a chicken sandwich, so the bag no longer covers 'a burger'",
+        "$4 Biggie Bites (Jr. Cheeseburger + small drink) + 4 pc $1.99 + small fries $2.19 = $8.18",
+        "Biggie Bites with nuggets as the second pick instead: $4.00 + small fries $2.19 + small drink $2.29 = $8.48",
+        "Calories: 270 + 210 + 170 + 210 = 860 (under 1,500)",
+        "Equal price: Jr. Bacon Cheeseburger in the Biggie Bites, also $8.18"
+      ]
+    },
+    {
+      "id": "wendys_double_stack_calorie_limit",
+      "request": "Double Stack, under 800 calories",
+      "checks": ["no_calorie_data", "impossible"],
+      "target": {
+        "format_version": 1,
+        "chain": "wendys",
+        "goal": "cheapest",
+        "max_price_cents": null,
+        "min_calories": null,
+        "max_calories": 800,
+        "items": [{"item": "double_stack", "quantity": 1, "size": null, "add_ons": []}],
+        "unsupported": []
+      },
+      "expected": {"result": "no_valid_order"},
+      "hand_calculation": [
+        "The target has a calorie limit and the Double Stack has no calorie data, so it's left out",
+        "Nothing else matches, so there is no valid order"
+      ]
+    },
+    {
+      "id": "tb_any_drink",
+      "request": "A drink",
+      "checks": ["no_calorie_data"],
+      "target": {
+        "format_version": 1,
+        "chain": "taco_bell",
+        "goal": "cheapest",
+        "max_price_cents": null,
+        "min_calories": null,
+        "max_calories": null,
+        "items": [{"category": "drink", "quantity": 1, "size": null, "add_ons": []}],
+        "unsupported": []
+      },
+      "expected": {
+        "result": "order",
+        "total_cents": 299,
+        "calories": 0,
+        "calories_complete": false,
+        "separately_cents": 299,
+        "order": [{"item": "fountain_drink", "size": "small", "quantity": 1}]
+      },
+      "hand_calculation": [
+        "Cheapest drink: small fountain drink $2.99",
+        "Its calories aren't published, so the total is 0 known calories, marked incomplete"
+      ]
+    },
+    {
+      "id": "tb_drink_under_300_calories",
+      "request": "A drink under 300 calories",
+      "checks": ["no_calorie_data"],
+      "target": {
+        "format_version": 1,
+        "chain": "taco_bell",
+        "goal": "cheapest",
+        "max_price_cents": null,
+        "min_calories": null,
+        "max_calories": 300,
+        "items": [{"category": "drink", "quantity": 1, "size": null, "add_ons": []}],
+        "unsupported": []
+      },
+      "expected": {
+        "result": "order",
+        "total_cents": 319,
+        "calories": 250,
+        "calories_complete": true,
+        "separately_cents": 319,
+        "order": [{"item": "fountain_drink", "size": "medium", "quantity": 1}]
+      },
+      "hand_calculation": [
+        "Calorie limit, so the small and large drinks (no calorie data) are left out",
+        "Medium fountain drink: $3.19, 250 calories"
+      ]
+    },
+    {
+      "id": "tb_five_dollars_most_calories",
+      "request": "What can I get for $5?",
+      "checks": ["budget_only"],
+      "target": {
+        "format_version": 1,
+        "chain": "taco_bell",
+        "goal": "most_calories",
+        "max_price_cents": 500,
+        "min_calories": null,
+        "max_calories": null,
+        "items": [],
+        "unsupported": []
+      },
+      "expected": {
+        "result": "order",
+        "total_cents": 447,
+        "calories": 1200,
+        "calories_complete": true,
+        "separately_cents": 447,
+        "order": [{"item": "cheesy_bean_rice_burrito", "size": "regular", "quantity": 3}]
+      },
+      "hand_calculation": [
+        "Cheesy Bean and Rice Burrito: 400 calories for $1.49, the most calories per dollar",
+        "3 of them: $4.47, 1,200 calories; $0.53 left buys nothing",
+        "Swapping one for a Bean Burrito ($1.99, 360) or a Cheesy Roll Up ($1.39, 170) lowers calories"
+      ]
+    },
+    {
+      "id": "tb_twenty_dollars_item_cap",
+      "request": "What can I get for $20?",
+      "checks": ["budget_only", "item_cap"],
+      "target": {
+        "format_version": 1,
+        "chain": "taco_bell",
+        "goal": "most_calories",
+        "max_price_cents": 2000,
+        "min_calories": null,
+        "max_calories": null,
+        "items": [],
+        "unsupported": []
+      },
+      "expected": {
+        "result": "order",
+        "total_cents": 1930,
+        "calories": 4090,
+        "calories_complete": true,
+        "separately_cents": 1930,
+        "order": [
+          {"item": "cheesy_bean_rice_burrito", "size": "regular", "quantity": 9},
+          {"item": "chicken_quesadilla", "size": "regular", "quantity": 1}
+        ]
+      },
+      "hand_calculation": [
+        "Without a cap, 13 Cheesy Bean and Rice Burritos ($19.37) would give 5,200 calories, but the order is capped at 10 items",
+        "10 burritos: $14.90, 4,000 calories, $5.10 left",
+        "Swap one burrito ($1.49, 400) for something bigger costing at most $1.49 + $5.10 = $6.59: Chicken Quesadilla $5.89 (490) adds 90 calories",
+        "Nachos BellGrande ($6.79) and Crunchwrap ($6.89) cost too much; a second swap can't be afforded",
+        "9 burritos + 1 quesadilla: $13.41 + $5.89 = $19.30, 3,600 + 490 = 4,090 calories"
+      ]
+    }
+  ]
+}

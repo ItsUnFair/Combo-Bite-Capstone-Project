@@ -16,7 +16,7 @@ then explains why.
 | Front end | Python 3.10+ | `frontend/` | The `combobite` command, LLM request parsing, output and explanations |
 | Menu data | JSON | `data/` | One file per chain (`data/chains/`), plus a format example in `data/sample/` |
 | Test data | JSON | `tests/` | Target examples and parser sample requests shared by both halves |
-| Docs | Markdown | `docs/` | [Data file format](docs/data-format.md), [target format](docs/target-format.md), [price refresh](docs/price-refresh.md) |
+| Docs | Markdown | `docs/` | [Data file format](docs/data-format.md), [target format](docs/target-format.md), [price refresh](docs/price-refresh.md), [optimizer rules](docs/optimizer-rules.md) |
 
 Chains covered: McDonald's, Wendy's, Burger King and Taco Bell. Their prices
 are national-average estimates until they're checked at one store; see
