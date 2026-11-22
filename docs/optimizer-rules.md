@@ -79,6 +79,35 @@ the goal `most_calories`.
 - No order meets the target: the result is `no_valid_order` (task 3.6 then
   looks for the nearest alternatives).
 
+## How candidate orders are built (task 3.1)
+
+The engine first lists every **thing to order** on the chain: each size of
+each item, each combo with every mix of slot choices (as it comes and made
+large), and each bundle with every mix of choices. A slot with `count: 2`
+gets every pair of choices once, so A + B and B + A are the same thing. When
+the target uses calories, item sizes with no calorie data are left out here.
+
+Then it builds orders one thing at a time, keeping every order that covers
+the target. These are the **candidates** that pricing (task 3.2) and choosing
+(task 3.3) work through.
+
+- **Goal `cheapest`, no calorie minimum:** only orders where every thing is
+  needed are candidates. Taking any one thing away has to leave a wanted item
+  uncovered, since an unneeded thing only adds cost. So only things that fit
+  at least one wanted item are tried, no order has more things than there are
+  wanted units, and an order that already covers everything isn't grown.
+- **A calorie minimum, or the goal `most_calories`:** extra things can help,
+  so every thing on the menu is tried, up to 10 things. Without a budget this
+  is a very large search, which is why tasks 3.3 and 3.4 cut it short using
+  the budget and the best order found so far.
+- Each mix of things is built once, whatever order its things are listed in.
+- An order always has at least one thing.
+
+`combobite-engine candidates <target file>` shows the candidates for a
+target. For example, the target in the `sample_combo_beats_parts` case has 16
+things that help and 42 candidate orders. The combo alone is one of them, and
+the three items bought separately is another.
+
 ## What the same items cost one at a time
 
 For the "Why this order" explanation, the optimizer also reports what the

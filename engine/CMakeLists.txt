@@ -5,11 +5,12 @@ else()
 endif()
 
 # Shared code: the menu and target data models, the loader and the data
-# checks. The optimizer will be added here later.
+# checks, and the optimizer (task 3.1 onward).
 add_library(combobite_core STATIC
     src/dates.cpp
     src/loader.cpp
-    src/checks.cpp)
+    src/checks.cpp
+    src/candidates.cpp)
 target_include_directories(combobite_core PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 target_link_libraries(combobite_core PUBLIC nlohmann_json::nlohmann_json)
 target_compile_definitions(combobite_core PUBLIC COMBOBITE_VERSION="${PROJECT_VERSION}")
@@ -44,3 +45,11 @@ target_link_libraries(loader_tests PRIVATE combobite_core)
 target_compile_options(loader_tests PRIVATE ${COMBOBITE_WARNINGS})
 add_test(NAME loader_and_checks
     COMMAND loader_tests ${PROJECT_SOURCE_DIR}/data/chains)
+
+# Task 3.1: things to order and candidate orders, including every
+# hand-calculated case in tests/optimizer_cases.json.
+add_executable(candidates_tests tests/test_candidates.cpp)
+target_link_libraries(candidates_tests PRIVATE combobite_core)
+target_compile_options(candidates_tests PRIVATE ${COMBOBITE_WARNINGS})
+add_test(NAME candidates
+    COMMAND candidates_tests ${PROJECT_SOURCE_DIR})

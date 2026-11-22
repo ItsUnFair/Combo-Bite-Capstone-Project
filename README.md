@@ -49,6 +49,17 @@ combobite-engine --version
 combobite-engine summary data/sample/sample_chain.json
 ```
 
+To see the orders the optimizer will choose from for a target (task 3.1;
+prices are added up in task 3.2):
+
+```
+combobite-engine candidates <target file> [--data <folder>] [--show 10] [--limit 100000]
+combobite-engine candidates --case mcd_two_big_mac_meals
+```
+
+`--case` uses a target from the hand-calculated cases in
+`tests/optimizer_cases.json`.
+
 **Visual Studio 2022:** choose *File → Open → Folder* and pick the project
 folder. Visual Studio reads `CMakePresets.json` on its own; pick the
 `default` preset and build. Install the "Desktop development with C++"
