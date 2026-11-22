@@ -100,7 +100,10 @@ class Priced:
             assert applies, f"'{add_on_id}' can't go on {item}"
             self.total += add_on["price_cents"] * n
             self.separately += add_on["price_cents"] * n
-            self.calories += (add_on.get("calories") or 0) * n
+            if add_on.get("calories") is None:
+                self.complete = False
+            else:
+                self.calories += add_on["calories"] * n
         self.units.append({"item": item, "size": size, "add_ons": sorted(add_ons)})
 
 

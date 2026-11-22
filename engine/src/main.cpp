@@ -14,6 +14,7 @@
 #include <vector>
 
 #include "combobite/candidates.hpp"
+#include "combobite/pricing.hpp"
 #include "combobite/checks.hpp"
 #include "combobite/dates.hpp"
 #include "combobite/loader.hpp"
@@ -99,8 +100,16 @@ int summary(const std::string& path) {
     return 0;
 }
 
-// Task 3.1: lists the candidate orders for a target. Prices aren't added
-// up yet (task 3.2), so this shows what the search will choose from.
+// "1,170 cal", or "590+ cal" when some items have no calorie data.
+std::string calories_text(const PricedOrder& order) {
+    std::string n = std::to_string(order.calories);
+    for (int i = static_cast<int>(n.size()) - 3; i > 0; i -= 3) n.insert(static_cast<std::size_t>(i), ",");
+    return n + (order.calories_complete ? "" : "+") + " cal";
+}
+
+// Tasks 3.1 and 3.2: lists the candidate orders for a target with each
+// one's price and calories. Budget and calorie limits aren't applied yet
+// (task 3.3), so this shows everything the search will choose from.
 // With case_id set, the target is that case from tests/optimizer_cases.json
 // (task 8.1), and the sample chain is read from data/sample.
 int candidates(const std::string& target_file, const std::string& case_id, std::string folder, long long show,
@@ -163,9 +172,18 @@ int candidates(const std::string& target_file, const std::string& case_id, std::
     // Show the first `show` candidates; stop counting at `limit` (0 = no limit).
     SearchHooks hooks;
     long long seen = 0;
+    Cents lowest = -1;
+    std::string lowest_text;
     hooks.visit = [&](const Candidate& c) {
         ++seen;
-        if (seen <= show) std::cout << "  " << seen << ". " << describe_candidate(c) << '\n';
+        const PricedOrder priced = price_order(c);
+        if (lowest < 0 || priced.total_cents < lowest) {
+            lowest = priced.total_cents;
+            lowest_text = describe_candidate(c);
+        }
+        if (seen <= show)
+            std::cout << "  " << seen << ". " << format_money(priced.total_cents) << "  " << calories_text(priced)
+                      << "  " << describe_candidate(c) << '\n';
         return limit <= 0 || seen < limit;
     };
     std::cout << "Candidate orders" << (show > 0 ? " (first " + std::to_string(show) + ")" : "") << ":\n";
@@ -177,8 +195,11 @@ int candidates(const std::string& target_file, const std::string& case_id, std::
               << (result.status == SearchStatus::Stopped ? "Stopped after " : "")
               << plural(static_cast<int>(result.candidates), "candidate order") << " ("
               << result.partial_orders << " orders looked at).\n";
+    if (lowest >= 0 && result.status == SearchStatus::Done)
+        std::cout << "Lowest total: " << format_money(lowest) << ", " << lowest_text << '\n'
+                  << "(Budget and calorie limits aren't applied yet; that's task 3.3.)\n";
     if (result.status == SearchStatus::Stopped)
-        std::cout << "Budget and calorie limits will narrow this once prices are added (tasks 3.2 to 3.4).\n";
+        std::cout << "Budget and calorie limits will narrow this search (tasks 3.3 and 3.4).\n";
     return 0;
 }
 

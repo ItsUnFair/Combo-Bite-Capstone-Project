@@ -49,8 +49,8 @@ combobite-engine --version
 combobite-engine summary data/sample/sample_chain.json
 ```
 
-To see the orders the optimizer will choose from for a target (task 3.1;
-prices are added up in task 3.2):
+To see the orders the optimizer will choose from for a target, each with
+its price and calories (tasks 3.1 and 3.2):
 
 ```
 combobite-engine candidates <target file> [--data <folder>] [--show 10] [--limit 100000]

@@ -8,84 +8,20 @@
 //
 // Usage: candidates_tests <project folder>
 #include <algorithm>
-#include <filesystem>
-#include <fstream>
-#include <initializer_list>
-#include <iostream>
-#include <map>
 #include <set>
-#include <stdexcept>
 #include <string>
 #include <vector>
 
-#include "combobite/candidates.hpp"
-#include "combobite/dates.hpp"
-#include "combobite/loader.hpp"
+#include "test_helpers.hpp"
 
 using namespace combobite;
-using nlohmann::json;
-namespace fs = std::filesystem;
+using namespace test;
 
 namespace {
-
-int failures = 0;
-
-void check(bool ok, const std::string& what) {
-    if (!ok) {
-        ++failures;
-        std::cerr << "FAIL: " << what << '\n';
-    }
-}
-
-Chain load(const fs::path& file) {
-    ChainReport report = load_chain_file(file, Date{2026, 11, 21});
-    if (!report.loaded()) throw std::runtime_error("couldn't load " + file.string());
-    return *report.chain;
-}
-
-Target make_target(const json& j) { return j.get<Target>(); }
-
-json wanted(const std::string& item, int quantity = 1, const json& size = nullptr,
-            const json& add_ons = json::array()) {
-    return {{"item", item}, {"quantity", quantity}, {"size", size}, {"add_ons", add_ons}};
-}
-
-json target_json(const std::string& chain, std::initializer_list<json> item_list,
-                 const std::string& goal = "cheapest") {
-    json items = json::array();
-    for (const auto& i : item_list) items.push_back(i);
-    return {{"format_version", 1}, {"chain", chain}, {"goal", goal}, {"max_price_cents", nullptr},
-            {"min_calories", nullptr}, {"max_calories", nullptr}, {"items", items},
-            {"unsupported", json::array()}};
-}
 
 int count_kind(const PurchaseList& list, PurchaseKind kind) {
     return static_cast<int>(std::count_if(list.purchases.begin(), list.purchases.end(),
                                           [&](const Purchase& p) { return p.kind == kind; }));
-}
-
-const Purchase* find_by_text(const PurchaseList& list, const std::string& text) {
-    for (const auto& p : list.purchases)
-        if (p.describe() == text) return &p;
-    return nullptr;
-}
-
-// Order lines in a fixed order, so two orders can be compared.
-json canonical(json order) {
-    for (auto& line : order)
-        if (line.contains("contents")) {
-            std::vector<std::string> parts;
-            for (const auto& c : line["contents"]) parts.push_back(c.dump());
-            std::sort(parts.begin(), parts.end());
-            line["contents"] = json::array();
-            for (const auto& p : parts) line["contents"].push_back(json::parse(p));
-        }
-    std::vector<std::string> lines;
-    for (const auto& line : order) lines.push_back(line.dump());
-    std::sort(lines.begin(), lines.end());
-    json out = json::array();
-    for (const auto& l : lines) out.push_back(json::parse(l));
-    return out;
 }
 
 std::vector<json> all_candidates(const Chain& chain, const Target& target, const PurchaseList& list,
@@ -256,15 +192,9 @@ void test_left_out_items(const Chain& sample) {
 
 // Every hand-calculated case (task 8.1): the expected order is a candidate.
 void test_optimizer_cases(const fs::path& project) {
-    std::ifstream in(project / "tests" / "optimizer_cases.json");
-    const json doc = json::parse(in);
-    std::map<std::string, Chain> chains;
-    for (const auto& folder : doc.at("data_folders"))
-        for (const auto& entry : fs::directory_iterator(project / folder.get<std::string>()))
-            if (entry.path().extension() == ".json") {
-                Chain c = load(entry.path());
-                chains[c.id] = c;
-            }
+    const OptimizerCases cases = load_optimizer_cases(project);
+    const json& doc = cases.doc;
+    const auto& chains = cases.chains;
 
     int searched = 0, checked = 0;
     for (const auto& c : doc.at("cases")) {
@@ -302,32 +232,16 @@ void test_optimizer_cases(const fs::path& project) {
             // budget limits of tasks 3.3 and 3.4. Instead, check each
             // expected order is made of listed things and covers the target,
             // which is exactly what makes it a candidate.
-            std::map<std::string, const Purchase*> by_line;
-            for (const auto& p : list.purchases) {
-                Candidate one{{&p}, {}};
-                by_line[canonical(candidate_to_json(one))[0].dump()] = &p;
-            }
             const Coverage coverage(chain, target);
             for (const auto& order : wanted_orders) {
                 std::vector<const Purchase*> things;
-                bool all_listed = true;
-                for (json line : order) {
-                    const int quantity = line.at("quantity");
-                    line["quantity"] = 1;
-                    line.erase("add_ons");
-                    if (line.contains("contents"))
-                        for (auto& part : line["contents"]) part.erase("add_ons");
-                    auto it = by_line.find(canonical(json::array({line}))[0].dump());
-                    if (it == by_line.end()) {
-                        all_listed = false;
-                        check(false, id + ": not a listed thing to order: " + line.dump());
-                        continue;
-                    }
-                    for (int q = 0; q < quantity; ++q) things.push_back(it->second);
+                std::string missing;
+                if (!order_things(list, order, things, missing)) {
+                    check(false, id + ": not a listed thing to order: " + missing);
+                    continue;
                 }
-                if (all_listed)
-                    check(static_cast<int>(things.size()) <= kItemCap && coverage.covers(things),
-                          id + ": expected order should be a candidate");
+                check(static_cast<int>(things.size()) <= kItemCap && coverage.covers(things),
+                      id + ": expected order should be a candidate");
             }
             ++checked;
         }

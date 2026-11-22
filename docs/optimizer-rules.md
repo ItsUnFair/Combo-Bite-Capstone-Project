@@ -29,6 +29,13 @@ All money is in whole cents.
 - Bundle: the bundle's `price_cents` plus the `extra_cents` of every choice.
 - Add-ons: each add-on's `price_cents`, once per item it's on.
 
+Calories are added up the same way: every item in the order, extras like a
+combo's drink included, at the size it comes in, plus each add-on's
+calories. If any item or add-on has no calorie data, the total counts only
+the known values and is marked incomplete.
+
+In the engine this is `price_order` in `engine/src/pricing.cpp` (task 3.2).
+
 ## Upsizes
 
 Making a combo large changes the size of each slot named in the upsize's
@@ -104,7 +111,7 @@ the target. These are the **candidates** that pricing (task 3.2) and choosing
 - An order always has at least one thing.
 
 `combobite-engine candidates <target file>` shows the candidates for a
-target. For example, the target in the `sample_combo_beats_parts` case has 16
+target, each with its price and calories (task 3.2). For example, the target in the `sample_combo_beats_parts` case has 16
 things that help and 42 candidate orders. The combo alone is one of them, and
 the three items bought separately is another.
 

@@ -10,7 +10,8 @@ add_library(combobite_core STATIC
     src/dates.cpp
     src/loader.cpp
     src/checks.cpp
-    src/candidates.cpp)
+    src/candidates.cpp
+    src/pricing.cpp)
 target_include_directories(combobite_core PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 target_link_libraries(combobite_core PUBLIC nlohmann_json::nlohmann_json)
 target_compile_definitions(combobite_core PUBLIC COMBOBITE_VERSION="${PROJECT_VERSION}")
@@ -53,3 +54,10 @@ target_link_libraries(candidates_tests PRIVATE combobite_core)
 target_compile_options(candidates_tests PRIVATE ${COMBOBITE_WARNINGS})
 add_test(NAME candidates
     COMMAND candidates_tests ${PROJECT_SOURCE_DIR})
+
+# Task 3.2: prices and calories, checked against every hand-calculated case.
+add_executable(pricing_tests tests/test_pricing.cpp)
+target_link_libraries(pricing_tests PRIVATE combobite_core)
+target_compile_options(pricing_tests PRIVATE ${COMBOBITE_WARNINGS})
+add_test(NAME pricing
+    COMMAND pricing_tests ${PROJECT_SOURCE_DIR})
